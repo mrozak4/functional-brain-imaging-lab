@@ -2,4 +2,7 @@ CompileFlags:
   Add:
     - -I/usr/local/include
     - -I/usr/local/include/SDL2
+    - -I/usr/local/Cellar/sdl2/2.32.10/include
+    - -I/usr/local/Cellar/sdl2_image/2.8.12/include
     - -std=c++17
+    - -D_THREAD_SAFE

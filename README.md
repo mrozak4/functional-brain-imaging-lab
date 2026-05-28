@@ -43,7 +43,7 @@ All routine updates are done by editing JSON files — **no HTML/CSS knowledge r
 | Add/edit lab member | `data/people.json` | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Add news or event | `data/news.json` | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Add publication | `data/publications.json` | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| Member self-service | [member-form.html](https://brainimaginglab.com/member-form.html) | — |
+| Member self-service | [member-form.html](https://mrozak4.github.io/functional-brain-imaging-lab/member-form.html) | — |
 
 See **[CONTRIBUTING.md](CONTRIBUTING.md)** for full details, JSON schemas, and image specs.
 

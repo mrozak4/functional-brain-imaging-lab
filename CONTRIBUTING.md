@@ -24,7 +24,7 @@ All pages read from these JSON files at page load. **Edit JSON → push to GitHu
 
 ### Adding a New Member
 
-1. Have them fill out the **[Member Profile Form](/member-form.html)** — it generates JSON
+1. Have them fill out the **[Member Profile Form](https://mrozak4.github.io/functional-brain-imaging-lab/member-form.html)** — it generates JSON
 2. Add their photo to `images/people/` (square crop, min 300×300px)
 3. Paste the generated JSON into the `members` array in `data/people.json`
 4. Commit and push
