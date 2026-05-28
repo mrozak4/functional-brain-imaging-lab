@@ -149,6 +149,8 @@
             margin-top: 0.25rem;
         }
     </style>
+
+    <link rel="icon" href="images/logo.gif" type="image/gif">
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -176,7 +178,7 @@
     <main>
         <section class="section">
             <div class="container form-container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2>Update Your Profile</h2>
                     <p style="color: var(--color-text-muted); max-width: 500px; margin: 1rem auto 0;">Fill out this form and send the generated JSON to Matt to update your profile on the website.</p>
                 </div>
@@ -352,6 +354,8 @@
         </div>
     </footer>
 
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
+
     <script src="js/i18n.js"></script>
     <script src="js/neural-bg.js"></script>
     <script>
@@ -448,5 +452,6 @@
             });
         }
     </script>
+<script src="js/animations.js"></script>
 </body>
 </html>

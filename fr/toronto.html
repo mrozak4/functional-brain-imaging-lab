@@ -6,6 +6,8 @@
     <title>Ce que nous aimons de Toronto | Laboratoire d'imagerie cérébrale fonctionnelle</title>
     <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="Reconnaissance territoriale et recommandations locales à Toronto de l'équipe du Laboratoire d'imagerie cérébrale fonctionnelle.">
+
+    <link rel="icon" href="../images/logo.gif" type="image/gif">
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -54,7 +56,7 @@
         <!-- Team Favorites Grid -->
         <section class="section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2>Nos recommandations locales</h2>
                     <p style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted);">Explorez les recommandations soigneusement choisies par l'équipe du fBIL.</p>
                 </div>
@@ -194,7 +196,7 @@
         <!-- Resources Section -->
         <section class="section section-alt">
             <div class="container">
-                <div class="section-header" style="margin-bottom: 3rem;">
+                <div class="section-header reveal-on-scroll" style="margin-bottom: 3rem;">
                     <h2>Ressources sur Toronto</h2>
                     <p style="color: var(--color-text-muted);">Liens utiles et répertoires pour en découvrir davantage sur notre ville.</p>
                 </div>
@@ -202,7 +204,7 @@
                 <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                     
                     <!-- blogTO -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
+                    <div class="card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
                         <div>
                             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                                 <img src="../images/toronto/blogto.png" alt="blogTO Logo" style="max-height: 100%; object-fit: contain;">
@@ -214,7 +216,7 @@
                     </div>
 
                     <!-- NOW Magazine -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
+                    <div class="card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
                         <div>
                             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                                 <img src="../images/toronto/now.jpg" alt="NOW Magazine Logo" style="max-height: 100%; object-fit: contain; border-radius: var(--border-radius-sm);">
@@ -226,7 +228,7 @@
                     </div>
 
                     <!-- City of Toronto -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
+                    <div class="card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
                         <div>
                             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                                 <img src="../images/toronto/cityoftoronto.jpg" alt="City of Toronto Logo" style="max-height: 100%; object-fit: contain; border-radius: 50%;">
@@ -260,16 +262,18 @@
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="footer.connect">Nous joindre</h4>
-                    <p><a href="#">Google Scholar</a></p>
-                    <p><a href="#">Twitter / X</a></p>
-                </div>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    </div>
             </div>
             <div class="footer-bottom">
                 &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
     <script src="../js/i18n.js"></script>
     <script src="../js/neural-bg.js"></script>
+<script src="../js/animations.js"></script>
 </body>
 </html>

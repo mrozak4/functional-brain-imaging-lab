@@ -6,6 +6,8 @@
     <title>Join Us | Functional Brain Imaging Lab</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Open positions and opportunities to join the Functional Brain Imaging Lab in Toronto.">
+
+    <link rel="icon" href="images/logo.gif" type="image/gif">
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -32,7 +34,7 @@
     <main>
         <section class="section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2>Join Our Lab</h2>
                 </div>
                 
@@ -42,14 +44,14 @@
 
                 <h3 style="margin-bottom: 2rem;">Open Positions</h3>
                 <div class="card-grid">
-                    <div class="card">
+                    <div class="card reveal-on-scroll">
                         <span class="tagline">Postdoctoral Fellow</span>
                         <h3>Neurovascular Coupling in AD</h3>
                         <p>Seeking a postdoc to lead in vivo imaging studies of neurovascular dysfunction in Alzheimer's disease models.</p>
                         <a href="mailto:bojana.stefanovic@sri.utoronto.ca" class="btn btn-secondary" style="margin-top: 1rem;">Apply Now</a>
                     </div>
                     
-                    <div class="card">
+                    <div class="card reveal-on-scroll">
                         <span class="tagline">Graduate Students (MSc/PhD)</span>
                         <h3>Computational Image Analysis</h3>
                         <p>Opportunities for students interested in developing deep learning pipelines for microvascular network analysis.</p>
@@ -61,7 +63,7 @@
 
         <section class="section section-alt">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2>Life in Toronto</h2>
                 </div>
                 <div style="display: flex; gap: 3rem; align-items: center; max-width: 900px; margin: 0 auto; flex-wrap: wrap;">
@@ -95,16 +97,18 @@
                 </div>
                 <div class="footer-col">
                     <h4>Connect</h4>
-                    <p><a href="#">Google Scholar</a></p>
-                    <p><a href="#">Twitter / X</a></p>
-                </div>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    </div>
             </div>
             <div class="footer-bottom">
                 &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
     <script src="js/i18n.js"></script>
     <script src="js/neural-bg.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

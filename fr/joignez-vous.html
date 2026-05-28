@@ -6,6 +6,8 @@
     <title>Joignez-vous | Laboratoire d'imagerie cérébrale fonctionnelle</title>
     <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="Postes ouverts et possibilités de joindre le Laboratoire d'imagerie cérébrale fonctionnelle à Toronto.">
+
+    <link rel="icon" href="../images/logo.gif" type="image/gif">
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -32,7 +34,7 @@
     <main>
         <section class="section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2 data-i18n="joinus.title">Joignez-vous à nous</h2>
                 </div>
                 
@@ -42,14 +44,14 @@
 
                 <h3 style="margin-bottom: 2rem;">Postes ouverts</h3>
                 <div class="card-grid">
-                    <div class="card">
+                    <div class="card reveal-on-scroll">
                         <span class="tagline">Stagiaire postdoctoral(e)</span>
                         <h3>Couplage neurovasculaire dans la MA</h3>
                         <p>Nous recherchons un(e) postdoctorant(e) pour diriger des études d'imagerie in vivo de la dysfonction neurovasculaire dans des modèles de la maladie d'Alzheimer.</p>
                         <a href="mailto:bojana.stefanovic@sri.utoronto.ca" class="btn btn-secondary" style="margin-top: 1rem;">Postuler</a>
                     </div>
                     
-                    <div class="card">
+                    <div class="card reveal-on-scroll">
                         <span class="tagline">Étudiants aux cycles supérieurs (M.Sc./Ph.D.)</span>
                         <h3>Analyse computationnelle d'images</h3>
                         <p>Possibilités pour les étudiants intéressés par le développement de pipelines d'apprentissage profond pour l'analyse de réseaux microvasculaires.</p>
@@ -61,7 +63,7 @@
 
         <section class="section section-alt">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2>La vie à Toronto</h2>
                 </div>
                 <div style="display: flex; gap: 3rem; align-items: center; max-width: 900px; margin: 0 auto; flex-wrap: wrap;">
@@ -95,16 +97,18 @@
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="footer.connect">Nous joindre</h4>
-                    <p><a href="#">Google Scholar</a></p>
-                    <p><a href="#">Twitter / X</a></p>
-                </div>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    </div>
             </div>
             <div class="footer-bottom">
                 &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
     <script src="../js/i18n.js"></script>
     <script src="../js/neural-bg.js"></script>
+<script src="../js/animations.js"></script>
 </body>
 </html>

@@ -28,6 +28,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             return date.toLocaleDateString(localeCode, options);
         };
 
+        // Helper to assign a category icon
+        const getCategoryIcon = (title) => {
+            const lowerTitle = title.toLowerCase();
+            if (/grant|award|funding|cihr|nserc|prize/i.test(lowerTitle)) return '🏆';
+            if (/paper|published|article|journal/i.test(lowerTitle)) return '📄';
+            if (/welcome|joins|member/i.test(lowerTitle)) return '👋';
+            if (/conference|presentation|talk|poster/i.test(lowerTitle)) return '🎤';
+            return '📰';
+        };
+
         const isFrLocale = document.documentElement.lang && document.documentElement.lang.startsWith('fr');
 
         let html = '';
@@ -47,11 +57,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             const content = isFrLocale ? item.content_fr : item.content_en;
             const dateFormatted = formatNewsDate(item.date);
             const readMoreText = isFrLocale ? 'Lire la suite &rarr;' : 'Read More &rarr;';
+            const icon = getCategoryIcon(title);
             
             html += `
-                <div class="card">
+                <div class="card reveal-on-scroll">
                     <span class="tagline">${dateFormatted}</span>
-                    <h3>${title}</h3>
+                    <h3>${icon} ${title}</h3>
                     <p>${content}</p>
                     ${item.link ? `<a href="${item.link}" target="_blank">${readMoreText}</a>` : ''}
                 </div>
