@@ -1,6 +1,6 @@
 #pragma once
-#include "renderer.h"
 #include "parallax.h"
+#include "renderer.h"
 
 enum class SceneState {
     WALKING,
@@ -11,14 +11,17 @@ enum class SceneState {
 class SceneManager {
 public:
     SceneManager();
+    void init(Renderer& renderer);
     void update(float dt);
     void render(Renderer& renderer);
 
 private:
     SceneState currentState;
     float stateTime;
-    Parallax parallax;
-    
     float characterX;
     float characterY;
+    Parallax parallax;
+    
+    SDL_Texture* texRbc;
+    SDL_Texture* texMicroscope;
 };

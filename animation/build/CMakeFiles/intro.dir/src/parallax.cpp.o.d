@@ -224,6 +224,7 @@ CMakeFiles/intro.dir/src/parallax.cpp.o: \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_version.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_locale.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_misc.h \
+  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_image.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/max.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/comp.h \

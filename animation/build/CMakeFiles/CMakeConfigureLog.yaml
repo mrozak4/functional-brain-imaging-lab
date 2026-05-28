@@ -1254,3 +1254,57 @@ events:
         - "/"
       CMAKE_FIND_ROOT_PATH: "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot;/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Platform/Emscripten.cmake:6 (find_file)"
+      - "/usr/local/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "_EMSCRIPTEN_PLATFORM_MODULE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "Platform/Emscripten.cmake"
+    candidate_directories:
+      - "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cmake/Modules/"
+    searched_directories:
+      - "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cmake/Modules/Platform.framework/Headers/Emscripten.cmake"
+    found: "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
+    search_context:
+      ENV{PATH}:
+        - "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk"
+        - "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten"
+        - "/Users/matt/.gemini/antigravity/bin"
+        - "/Users/matt/Library/Application Support/Antigravity/bin"
+        - "/Users/matt/.antigravity-ide/antigravity-ide/bin"
+        - "/Users/matt/.antigravity/antigravity/bin"
+        - "/Users/matt/exec -l /bin/zsh/google-cloud-sdk/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+      CMAKE_INSTALL_PREFIX: "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot"
+...

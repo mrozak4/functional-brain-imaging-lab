@@ -1,6 +1,7 @@
 CMakeFiles/intro.dir/src/scene_manager.cpp.o: \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.cpp \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.h \
+  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_main.h \
@@ -224,6 +225,7 @@ CMakeFiles/intro.dir/src/scene_manager.cpp.o: \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_version.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_locale.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_misc.h \
+  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_image.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/max.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/comp.h \
@@ -619,7 +621,6 @@ CMakeFiles/intro.dir/src/scene_manager.cpp.o: \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/raw_storage_iterator.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temporary_buffer.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/optional \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iostream \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ios \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__locale \
