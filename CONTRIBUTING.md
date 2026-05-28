@@ -65,12 +65,6 @@ Change their entry:
 + "currentPosition": "Postdoc at MIT",
 ```
 
-### Removing the Nespresso Machine
-
-Don't. George is a valued team member.
-
----
-
 ## 📰 Adding News / Events (`data/news.json`)
 
 Add a new entry to the top of the `entries` array:

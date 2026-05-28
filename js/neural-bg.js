@@ -30,40 +30,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function resize() {
     w = canvas.width = window.innerWidth;
-    h = canvas.height = document.documentElement.scrollHeight;
+    h = canvas.height = window.innerHeight;
   }
   resize();
   window.addEventListener('resize', resize);
 
-  // Re-measure height when content might change (e.g. tabs, dynamic loads)
-  const ro = new ResizeObserver(() => resize());
-  ro.observe(document.body);
-
   // --- margin config ---
-  const MARGIN_WIDTH = 180;       // px width of each margin zone
-  const CONTENT_FADE = 80;        // px fade zone into content area
-  const COUNT = 60;
-  const CONNECT_DIST = 160;
-  const SPEED = 0.25;
+  const MARGIN_WIDTH = 300;       // px width of each margin zone (wider = more visible)
+  const CONTENT_FADE = 120;       // px fade zone into content area
+  const COUNT = 90;               // total particle count (split between both margins)
+  const CONNECT_DIST = 200;       // px max distance for connection lines
+  const SPEED = 0.3;
   const particles = [];
 
   // Spawn a particle in a margin zone
-  function spawnInMargin(yMax) {
+  function spawnInMargin() {
     const side = Math.random() < 0.5 ? 'left' : 'right';
     let x;
     if (side === 'left') {
-      x = Math.random() * (MARGIN_WIDTH + CONTENT_FADE);
+      x = Math.random() * (MARGIN_WIDTH + CONTENT_FADE * 0.5);
     } else {
-      x = w - Math.random() * (MARGIN_WIDTH + CONTENT_FADE);
+      x = w - Math.random() * (MARGIN_WIDTH + CONTENT_FADE * 0.5);
     }
     return {
       x,
-      y: Math.random() * yMax,
+      y: Math.random() * h,
       vx: (Math.random() - 0.5) * SPEED,
       vy: (Math.random() - 0.5) * SPEED,
-      r: Math.random() * 1.8 + 1,
+      r: Math.random() * 2.5 + 2,    // bigger: 2–4.5px radius
       pulse: Math.random() * Math.PI * 2,
-      ps: 0.012 + Math.random() * 0.018,
+      ps: 0.01 + Math.random() * 0.02,
       side
     };
   }
@@ -71,18 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
   function seed() {
     particles.length = 0;
     for (let i = 0; i < COUNT; i++) {
-      particles.push(spawnInMargin(h));
+      particles.push(spawnInMargin());
     }
   }
   seed();
+  window.addEventListener('resize', () => { seed(); });
 
   // mouse interaction
   let mx = null, my = null;
-  const MOUSE_R = 200;
-  window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY + window.scrollY; });
+  const MOUSE_R = 250;
+  window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
   window.addEventListener('mouseout', () => { mx = my = null; });
 
-  // Get opacity based on distance from edges
+  // Get opacity based on distance from edges (1 = at edge, 0 = deep in content)
   function getMarginAlpha(x) {
     const leftDist = x;
     const rightDist = w - x;
@@ -97,11 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- draw loop ---
   function frame() {
-    // Update canvas height if body grew
-    if (canvas.height !== document.documentElement.scrollHeight) {
-      resize();
-    }
-
     ctx.clearRect(0, 0, w, h);
 
     // update positions — soft-constrain to margins
@@ -112,16 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
       // Bounce off edges
       if (p.x < 0) { p.x = 0; p.vx *= -1; }
       if (p.x > w) { p.x = w; p.vx *= -1; }
-      if (p.y < 0 || p.y > h) p.vy *= -1;
+      if (p.y < 0) { p.y = 0; p.vy *= -1; }
+      if (p.y > h) { p.y = h; p.vy *= -1; }
 
-      // Gentle pull back toward margins
+      // Pull back toward margins if drifting into content
       const center = w / 2;
       const distFromCenter = Math.abs(p.x - center);
       const marginEdge = center - MARGIN_WIDTH - CONTENT_FADE;
 
       if (distFromCenter < marginEdge) {
-        // Particle drifted too far into content — nudge it back
-        const pull = 0.003;
+        const pull = 0.008;   // stronger pull
         if (p.x < center) {
           p.vx -= pull;
         } else {
@@ -132,15 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
       p.pulse += p.ps;
     }
 
-    // connections
-    ctx.lineWidth = 0.8;
+    // connections — thicker, brighter
+    ctx.lineWidth = 1.2;
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const d = Math.sqrt(dx * dx + dy * dy);
         if (d < CONNECT_DIST) {
-          const lineFade = (1 - d / CONNECT_DIST) * 0.18;
+          const lineFade = (1 - d / CONNECT_DIST) * 0.35;
           const alphaI = getMarginAlpha(particles[i].x);
           const alphaJ = getMarginAlpha(particles[j].x);
           const a = lineFade * Math.min(alphaI, alphaJ);
@@ -161,28 +153,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const dy = p.y - my;
         const d = Math.sqrt(dx * dx + dy * dy);
         if (d < MOUSE_R) {
-          const a = (1 - d / MOUSE_R) * 0.35 * getMarginAlpha(p.x);
+          const a = (1 - d / MOUSE_R) * 0.5 * getMarginAlpha(p.x);
           if (a < 0.005) continue;
           ctx.strokeStyle = `rgba(240,180,41,${a})`;
+          ctx.lineWidth = 1.5;
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(mx, my);
           ctx.stroke();
+          ctx.lineWidth = 1.2;
         }
       }
     }
 
-    // particles
+    // particles — bigger, brighter, stronger glow
     for (const p of particles) {
       const alpha = getMarginAlpha(p.x);
       if (alpha < 0.01) continue;
 
-      const cr = p.r + Math.sin(p.pulse) * 0.6;
+      const cr = p.r + Math.sin(p.pulse) * 0.8;
       ctx.beginPath();
       ctx.arc(p.x, p.y, cr, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(45,212,191,${0.55 * alpha})`;
-      ctx.shadowBlur = 8 * alpha;
-      ctx.shadowColor = `rgba(45,212,191,${0.5 * alpha})`;
+      ctx.fillStyle = `rgba(45,212,191,${0.8 * alpha})`;
+      ctx.shadowBlur = 15 * alpha;
+      ctx.shadowColor = `rgba(45,212,191,${0.7 * alpha})`;
       ctx.fill();
     }
     ctx.shadowBlur = 0;
@@ -192,3 +186,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   requestAnimationFrame(frame);
 })();
+

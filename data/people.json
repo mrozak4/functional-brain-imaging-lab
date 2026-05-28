@@ -51,7 +51,7 @@
       "links": {
         "email": "monica.bellvila@gmail.com"
       },
-      "yearJoined": 2021
+      "yearJoined": 2020
     },
     {
       "name": "Matthew (Matt) Rozak",
@@ -85,7 +85,7 @@
       "links": {
         "email": "dustin.almanza@mail.utoronto.ca"
       },
-      "yearJoined": 2020
+      "yearJoined": 2021
     },
     {
       "name": "Emma Pineau",
@@ -137,19 +137,6 @@
       "yearJoined": 2015
     },
     {
-      "name": "George",
-      "role": "Nespresso Machine",
-      "status": "current",
-      "photo": "images/people/george.gif",
-      "bio_en": "Originally from Switzerland, George joined the lab in February 2018. George rapidly distinguished itself by bringing together lab members and providing comforting warm drinks, and quickly became an invaluable and celebrated member of the group.",
-      "bio_fr": "Originaire de Suisse, George a rejoint le laboratoire en février 2018. George s'est rapidement distingué en rassemblant les membres du laboratoire et en offrant des boissons chaudes réconfortantes, devenant rapidement un membre indispensable et célébré du groupe.",
-      "quote_en": "What goes best with a cup of coffee? Another cup.",
-      "quote_fr": "Qu'est-ce qui va le mieux avec une tasse de café? Une autre tasse.",
-      "quote_author": "Henry Rollins",
-      "links": {},
-      "yearJoined": 2018
-    },
-    {
       "name": "Andrew Stanisz",
       "role": "Research Staff / Technicians",
       "status": "current",
@@ -176,7 +163,7 @@
       "bio_en": "Jack is an undergraduate student in the Functional Brain Imaging Lab.",
       "bio_fr": "Jack est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
       "links": {},
-      "yearJoined": 2024
+      "yearJoined": 2011
     },
     {
       "name": "Keying Chen",
@@ -220,21 +207,17 @@
       "bio_en": "Kim is a current member of the Functional Brain Imaging Lab.",
       "bio_fr": "Kim est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
       "links": {},
-      "yearJoined": 2025
+      "yearJoined": 2018
     },
     {
-      "name": "Johnson Yu",
-      "role": "Graduate Student",
-      "status": "alumni",
+      "name": "Yu",
+      "role": "Undergraduate Student",
+      "status": "current",
       "photo": "images/people/placeholder.jpg",
-      "bio_en": "Johnson was a graduate student in the Functional Brain Imaging Lab.",
-      "bio_fr": "Johnson était étudiant au laboratoire d'imagerie fonctionnelle du cerveau.",
+      "bio_en": "Yu is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Yu est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
       "links": {},
-      "yearJoined": 2020,
-      "yearLeft": 2024,
-      "research_en": "Johnson's first-author paper in JCBFM (2024) used micro-ultrasound to characterize cerebrovasculature following focal ischemic stroke, establishing a novel imaging approach for tracking vascular remodeling after brain injury. He also contributed to work on light-sheet microscopy connectomics and focused ultrasound blood-brain barrier modulation.",
-      "research_fr": "L'article de premier auteur de Johnson dans JCBFM (2024) a utilisé la micro-échographie pour caractériser la cérébrovasculature suite à un AVC ischémique focal, établissant une nouvelle approche d'imagerie pour suivre le remodelage vasculaire après une lésion cérébrale.",
-      "currentPosition": ""
+      "yearJoined": 2018
     },
     {
       "name": "Bharathy Lingamoorthy",
@@ -338,7 +321,7 @@
       "yearLeft": 2012,
       "currentPosition": "Radiation Resident at McMaster University",
       "links": {},
-      "yearJoined": 2010
+      "yearJoined": 2013
     },
     {
       "name": "Liis Lindvere",
@@ -362,7 +345,7 @@
       "yearLeft": 2011,
       "currentPosition": "Head of Operations, Xanadu",
       "links": {},
-      "yearJoined": 2009
+      "yearJoined": 2013
     },
     {
       "name": "Aaron Lai",
@@ -398,7 +381,7 @@
       "yearLeft": 2011,
       "currentPosition": "CEO & Co-Founder, AttolloSE",
       "links": {},
-      "yearJoined": 2009
+      "yearJoined": 2012
     },
     {
       "name": "Martijn Van Raaij",
@@ -422,7 +405,7 @@
       "yearLeft": 2009,
       "currentPosition": "Patent Agent, Integral IP",
       "links": {},
-      "yearJoined": 2007
+      "yearJoined": 2013
     },
     {
       "name": "Jamie Graham",
@@ -434,7 +417,7 @@
       "yearLeft": 2020,
       "currentPosition": "Undergraduate Student, U of T",
       "links": {},
-      "yearJoined": 2018
+      "yearJoined": 2024
     }
   ]
 }

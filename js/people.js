@@ -76,10 +76,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             current.forEach(member => {
                 const isFeatured = featuredRoles.includes(member.role);
-                const isNespresso = member.role === 'Nespresso Machine';
 
                 // Add role group header when role changes
-                if (member.role !== currentRole && !isNespresso) {
+                if (member.role !== currentRole) {
                     currentRole = member.role;
                     html += `<div class="role-group-header"><h3>${translateRole(member.role)}</h3></div>`;
                 }
@@ -127,7 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 } else {
                     // Standard grid card (students, staff, etc.)
                     html += `
-                        <div class="person-card person-card--grid ${isNespresso ? 'person-card--nespresso' : ''}">
+                        <div class="person-card person-card--grid">
                             <img src="${prefix}${member.photo}" alt="${member.name}" class="person-photo person-photo--circle" onerror="this.src='${prefix}images/people/placeholder.jpg'">
                             <div class="person-details">
                                 <h3>${member.name}</h3>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Functional Brain Imaging Lab</title>
+    <title>Recherche | Laboratoire d'imagerie cérébrale fonctionnelle</title>
     <link rel="stylesheet" href="../css/style.css">
-    <meta name="description" content="Research areas and projects at the Functional Brain Imaging Lab.">
+    <meta name="description" content="Axes de recherche et projets du Laboratoire d'imagerie cérébrale fonctionnelle.">
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -14,15 +14,18 @@
             <a href="index.html" class="logo">
                 <span class="logo-accent">Brain</span>Imaging Lab
             </a>
-            <nav class="nav-links">
-                <a href="index.html" data-i18n="nav.home">Home</a>
-                <a href="equipe.html" data-i18n="nav.people">People</a>
-                <a href="recherche.html" class="active" data-i18n="nav.research">Research</a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Basculer la navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="nav.home">Accueil</a>
+                <a href="equipe.html" data-i18n="nav.people">Équipe</a>
+                <a href="recherche.html" class="active" data-i18n="nav.research">Recherche</a>
                 <a href="publications.html" data-i18n="nav.publications">Publications</a>
-                <a href="installations.html" data-i18n="nav.facilities">Facilities</a>
-                <a href="nouvelles.html" data-i18n="nav.news">News</a>
+                <a href="installations.html" data-i18n="nav.facilities">Installations</a>
+                <a href="nouvelles.html" data-i18n="nav.news">Nouvelles</a>
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
-                <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
+                <a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a>
                 <a href="../research.html" class="lang-toggle">EN</a>
             </nav>
         </div>
@@ -30,10 +33,10 @@
 
     <main>
         <!-- Hero Header -->
-        <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/projects/cleared-perfused-mouse.png'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
+        <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('../images/projects/cleared-perfused-mouse.png'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
             <div class="container">
-                <h1 style="color: white; margin-bottom: 1rem;">Our Research Projects</h1>
-                <p style="max-width: 600px; margin: 0 auto; color: var(--color-bg);">Investigating cellular mechanics and macroscopic signals in Alzheimer's, stroke, and concussions.</p>
+                <h1 style="color: white; margin-bottom: 1rem;">Nos projets de recherche</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--color-bg);">Étude des mécanismes cellulaires et des signaux macroscopiques dans la maladie d'Alzheimer, l'AVC et les commotions cérébrales.</p>
             </div>
         </section>
 
@@ -44,17 +47,17 @@
                 <!-- Project 1 -->
                 <div class="project-detail-section" style="margin-bottom: 6rem;">
                     <div style="border-bottom: 2px solid var(--color-primary); padding-bottom: 1rem; margin-bottom: 2rem;">
-                        <span class="tagline">Project 01</span>
-                        <h2>Examining the Consequences of Concussions</h2>
+                        <span class="tagline">Projet 01</span>
+                        <h2>Examiner les conséquences des commotions cérébrales</h2>
                     </div>
                     
                     <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: start;">
                         <div class="project-text">
-                            <p>Traumatic Brain Injury (TBI) and concussions are pervasive in their negative effects on the brain throughout many demographics. It has been shown that even minor injuries to the brain (mild TBI), either singular or repeated, can cause far-reaching neurological deficits in patients. However, the biological mechanisms leading to neurophysiological and morphological changes are not well understood.</p>
-                            <p>In this project, we are characterizing the functional deficits seen in the brain following repeated mild TBI. Using a closed-head injury model, we have described the effects of this injury in the cortex in mice using BOLD and ASL fMRI to characterize compromised cerebrovascular function alongside electrophysiological recordings of cortical neurons. Recently, our lab has examined these effects at a finer scale using two-photon fluorescence microscopy, in which we utilized optogenetic techniques to obtain vascular and neuronal responses of excitation volumes on the order of single vessels. Our goal with this work is to assess the mechanism mild injuries have on the brain.</p>
+                            <p>Les traumatismes crâniens (TC) et les commotions cérébrales ont des effets négatifs omniprésents sur le cerveau dans de nombreuses populations. Il a été démontré que même des blessures mineures au cerveau (TC légers), qu'elles soient uniques ou répétées, peuvent entraîner des déficits neurologiques importants chez les patients. Cependant, les mécanismes biologiques menant aux changements neurophysiologiques et morphologiques restent mal compris.</p>
+                            <p>Dans ce projet, nous caractérisons les déficits fonctionnels observés dans le cerveau à la suite de TC légers répétés. À l'aide d'un modèle de traumatisme crânien fermé, nous avons décrit les effets de cette blessure dans le cortex de souris en utilisant l'IRMf BOLD et ASL pour caractériser la fonction cérébrovasculaire compromise, parallèlement à des enregistrements électrophysiologiques des neurones corticaux. Récemment, notre laboratoire a examiné ces effets à une échelle plus fine grâce à la microscopie à fluorescence biphotonique, dans laquelle nous avons utilisé des techniques optogénétiques pour obtenir des réponses vasculaires et neuronales de volumes d'excitation de l'ordre de vaisseaux individuels. Notre objectif est d'évaluer les mécanismes par lesquels les blessures légères affectent le cerveau.</p>
                             
                             <div class="team-involved" style="margin-top: 2rem;">
-                                <strong>Team Members Involved:</strong>
+                                <strong>Membres de l'équipe impliqués :</strong>
                                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
                                     <span class="badge">James</span>
                                     <span class="badge">Adrienne</span>
@@ -66,12 +69,12 @@
                         
                         <div class="project-gallery" style="display: flex; flex-direction: column; gap: 2rem;">
                             <figure class="project-figure">
-                                <img src="../images/projects/tbi-mouse-pericyte-3d.jpg" alt="TBI Mouse Pericytes 3D" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
-                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Two-photon microscopy XYZ stack of cortical vasculature (red, Alexa 680) and capillary pericytes (white, NeuroTrace 500/525) in the TBI mouse model.</figcaption>
+                                <img src="../images/projects/tbi-mouse-pericyte-3d.jpg" alt="Péricytes de souris TBI 3D" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Pile XYZ de microscopie biphotonique de la vascularisation corticale (rouge, Alexa 680) et des péricytes capillaires (blanc, NeuroTrace 500/525) dans le modèle murin de TC.</figcaption>
                             </figure>
                             <figure class="project-figure">
-                                <img src="../images/projects/cleared-perfused-mouse.png" alt="Cleared Mouse Brain" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
-                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Two-photon microscopy XYZ stack of a chemically cleared transgenic mouse brain expressing tdTomato (red) on endothelial cells and perfused with FITC (yellow-green) in the vascular lumen.</figcaption>
+                                <img src="../images/projects/cleared-perfused-mouse.png" alt="Cerveau de souris clarifié" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Pile XYZ de microscopie biphotonique d'un cerveau de souris transgénique chimiquement clarifié exprimant tdTomato (rouge) sur les cellules endothéliales et perfusé avec du FITC (jaune-vert) dans la lumière vasculaire.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -82,18 +85,18 @@
                 <!-- Project 2 -->
                 <div class="project-detail-section" style="margin-bottom: 6rem;">
                     <div style="border-bottom: 2px solid var(--color-secondary); padding-bottom: 1rem; margin-bottom: 2rem;">
-                        <span class="tagline">Project 02</span>
-                        <h2>Metabolic Profiling of Alzheimer's Disease</h2>
+                        <span class="tagline">Projet 02</span>
+                        <h2>Profilage métabolique de la maladie d'Alzheimer</h2>
                     </div>
                     
                     <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: start;">
                         <div class="project-text">
-                            <p>The brain’s demand for energy is disproportionately large for its size, accentuating the importance of robust microvascular function to compensate for the dynamic range of energy demands the neuronal network has for normal brain function. In fact, various forms of neurodegeneration that exhibit progressive decline in brain function can be associated with alterations in microvascular function and metabolism.</p>
-                            <p>At the Functional Brain Imaging Lab (fBIL), we utilize a rat model of Alzheimer’s disease (the TgF344-AD rat: TgAD) to further our understanding of how different aspects of brain function and underlying mechanisms are altered. Emerging evidence in both AD patients and animal models shows alterations in metabolic pathways in the presymptomatic stage of AD. Characterizing changes in metabolic pathways prior to manifestation of cognitive deficits in our rat model serves the purpose of identifying early biomarkers of AD and completing our understanding of AD pathology before the onset of clinical symptoms.</p>
-                            <p>Our goal is to establish metabolic alterations in the hippocampus and entorhinal cortex of TgAD rats during their presymptomatic disease stage. Here, brain metabolism is assessed by glucose uptake and ketone metabolism using MRI Chemical Exchange Saturation Transfer (CEST) and MR spectroscopy, respectively. Additionally, the imaging protocol devised for this study enables repeated scans at higher spatial and temporal resolution.</p>
+                            <p>La demande énergétique du cerveau est disproportionnellement élevée par rapport à sa taille, soulignant l'importance d'une fonction microvasculaire robuste pour compenser la gamme dynamique des besoins énergétiques du réseau neuronal nécessaires au fonctionnement cérébral normal. En fait, diverses formes de neurodégénérescence qui présentent un déclin progressif de la fonction cérébrale peuvent être associées à des altérations de la fonction microvasculaire et du métabolisme.</p>
+                            <p>Au Laboratoire d'imagerie cérébrale fonctionnelle (fBIL), nous utilisons un modèle de rat de la maladie d'Alzheimer (le rat TgF344-AD : TgAD) pour approfondir notre compréhension de la façon dont différents aspects de la fonction cérébrale et les mécanismes sous-jacents sont altérés. Des données émergentes chez les patients atteints de la MA et dans les modèles animaux montrent des altérations des voies métaboliques au stade présymptomatique de la MA. La caractérisation des changements dans les voies métaboliques avant la manifestation des déficits cognitifs dans notre modèle de rat sert à identifier les biomarqueurs précoces de la MA et à compléter notre compréhension de la pathologie de la MA avant l'apparition des symptômes cliniques.</p>
+                            <p>Notre objectif est d'établir les altérations métaboliques dans l'hippocampe et le cortex entorhinal des rats TgAD au stade présymptomatique de la maladie. Ici, le métabolisme cérébral est évalué par l'absorption du glucose et le métabolisme des cétones à l'aide du transfert de saturation par échange chimique (CEST) par IRM et de la spectroscopie par résonance magnétique, respectivement. De plus, le protocole d'imagerie conçu pour cette étude permet des acquisitions répétées à une résolution spatiale et temporelle plus élevée.</p>
                             
                             <div class="team-involved" style="margin-top: 2rem;">
-                                <strong>Team Members Involved:</strong>
+                                <strong>Membres de l'équipe impliqués :</strong>
                                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
                                     <span class="badge">Lewis</span>
                                     <span class="badge">Tina</span>
@@ -104,12 +107,12 @@
                         
                         <div class="project-gallery" style="display: flex; flex-direction: column; gap: 2rem;">
                             <figure class="project-figure">
-                                <img src="../images/projects/cest-glucose.png" alt="CEST Glucose Uptake" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
-                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Estimated glucose uptake using CEST contrast with the preclinical 7T MR system. Presymptomatic TgAD rats show significantly attenuated hippocampal glucose uptake compared to nTg rats.</figcaption>
+                                <img src="../images/projects/cest-glucose.png" alt="Absorption de glucose CEST" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Estimation de l'absorption de glucose par contraste CEST avec le système IRM préclinique 7T. Les rats TgAD présymptomatiques montrent une absorption hippocampique de glucose significativement atténuée par rapport aux rats nTg.</figcaption>
                             </figure>
                             <figure class="project-figure">
-                                <img src="../images/projects/mrs-signal.png" alt="MRS Spectroscopy Data" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
-                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Estimation of hippocampal metabolite concentration in presymptomatic TgAD rats. Modelling single-voxel spectroscopy data (black) with individual basis sets (pink) enables precise quantification.</figcaption>
+                                <img src="../images/projects/mrs-signal.png" alt="Données de spectroscopie SRM" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Estimation de la concentration des métabolites hippocampiques chez les rats TgAD présymptomatiques. La modélisation des données de spectroscopie à voxel unique (noir) avec des ensembles de base individuels (rose) permet une quantification précise.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -120,17 +123,17 @@
                 <!-- Project 3 -->
                 <div class="project-detail-section" style="margin-bottom: 4rem;">
                     <div style="border-bottom: 2px solid var(--color-tertiary); padding-bottom: 1rem; margin-bottom: 2rem;">
-                        <span class="tagline">Project 03</span>
-                        <h2>The Neurovascular Unit in Stroke Recovery</h2>
+                        <span class="tagline">Projet 03</span>
+                        <h2>L'unité neurovasculaire dans la récupération post-AVC</h2>
                     </div>
                     
                     <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: start;">
                         <div class="project-text">
-                            <p>Most stroke survivors suffer moderate to severe long-term functional deficits despite the treatment availability of tissue plasminogen activator and endovascular thrombectomy. Potentiating the beneficial effects of rehabilitation therapy in the chronic stage of stroke thus remains a major clinical challenge. We study the acute neurovascular sequelae following focal cortical ischemia to design better tools to promote long term recovery.</p>
-                            <p>To this end, we use multi-scale and multi-modal imaging (MRI, fUS, 2PLSM and PET) and electrophysiology (laminar and multi electrode arrays) to study the long term benefits of treatments on neurovascular recovery following stroke. By imaging neuronal and vascular collapse <em>in real time</em> before, during, and after ischemia, we can examine the efficacy of different therapeutic approaches on neurovascular coupling and use Machine Learning to build models that predict the trajectory of the recovery.</p>
+                            <p>La plupart des survivants d'un AVC souffrent de déficits fonctionnels à long terme modérés à sévères malgré la disponibilité du traitement par l'activateur tissulaire du plasminogène et la thrombectomie endovasculaire. Potentialiser les effets bénéfiques de la thérapie de réadaptation au stade chronique de l'AVC reste donc un défi clinique majeur. Nous étudions les séquelles neurovasculaires aiguës suivant une ischémie corticale focale pour concevoir de meilleurs outils favorisant la récupération à long terme.</p>
+                            <p>À cette fin, nous utilisons l'imagerie multi-échelle et multimodale (IRM, échographie fonctionnelle, microscopie biphotonique et TEP) et l'électrophysiologie (réseaux d'électrodes laminaires et multiélectrodes) pour étudier les bénéfices à long terme des traitements sur la récupération neurovasculaire après un AVC. En imageant l'effondrement neuronal et vasculaire <em>en temps réel</em> avant, pendant et après l'ischémie, nous pouvons examiner l'efficacité de différentes approches thérapeutiques sur le couplage neurovasculaire et utiliser l'apprentissage automatique pour construire des modèles prédictifs de la trajectoire de récupération.</p>
                             
                             <div class="team-involved" style="margin-top: 2rem;">
-                                <strong>Team Members Involved:</strong>
+                                <strong>Membres de l'équipe impliqués :</strong>
                                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
                                     <span class="badge">Paolo</span>
                                     <span class="badge">Johnson</span>
@@ -142,12 +145,12 @@
                         
                         <div class="project-gallery" style="display: flex; flex-direction: column; gap: 2rem;">
                             <figure class="project-figure">
-                                <img src="../images/projects/stroke-et1-collapse.png" alt="Two-Photon Stroke Collapse" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
-                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Two-photon fluorescence microscopy of cortical vasculature surrounding the vasoconstrictor injection site showing propagation of vessel collapse (red arrows: arteries, blue arrows: veins).</figcaption>
+                                <img src="../images/projects/stroke-et1-collapse.png" alt="Effondrement vasculaire biphotonique" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Microscopie à fluorescence biphotonique de la vascularisation corticale entourant le site d'injection du vasoconstricteur montrant la propagation de l'effondrement des vaisseaux (flèches rouges : artères, flèches bleues : veines).</figcaption>
                             </figure>
                             <figure class="project-figure">
-                                <img src="../images/projects/stroke-activity-map.png" alt="Stroke Activity Map" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
-                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Activity map for stroke murine neurovasculature. The colour gradient depicts relative activity percentages for individual vessels over the 20 second acquisition period.</figcaption>
+                                <img src="../images/projects/stroke-activity-map.png" alt="Carte d'activité AVC" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Carte d'activité de la neurovasculature murine après AVC. Le gradient de couleur représente les pourcentages d'activité relative pour chaque vaisseau sur la période d'acquisition de 20 secondes.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -162,25 +165,25 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <h4>Brain Imaging Lab</h4>
-                    <p>Sunnybrook Research Institute<br>
+                    <p><span data-i18n="footer.address">Institut de recherche Sunnybrook</span><br>
                     2075 Bayview Avenue<br>
                     Toronto, ON M4N 3M5<br>
                     Canada</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <p><a href="recherche.html" data-i18n="nav.research">Research</a></p>
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <p><a href="recherche.html" data-i18n="nav.research">Recherche</a></p>
                     <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
-                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a></p>
+                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a></p>
                 </div>
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h4 data-i18n="footer.connect">Nous joindre</h4>
                     <p><a href="#">Google Scholar</a></p>
                     <p><a href="#">Twitter / X</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
+                &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
             </div>
         </div>
     </footer>

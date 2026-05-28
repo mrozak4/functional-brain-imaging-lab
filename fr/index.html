@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functional Brain Imaging Lab | Sunnybrook Research Institute</title>
+    <title>Laboratoire d'imagerie cérébrale fonctionnelle | Institut de recherche Sunnybrook</title>
     <link rel="stylesheet" href="../css/style.css">
-    <meta name="description" content="The Functional Brain Imaging Lab at Sunnybrook Research Institute investigates neurovascular coupling using two-photon microscopy and fMRI.">
+    <meta name="description" content="Le Laboratoire d'imagerie cérébrale fonctionnelle de l'Institut de recherche Sunnybrook étudie le couplage neurovasculaire par microscopie biphotonique et IRMf.">
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -14,15 +14,18 @@
             <a href="index.html" class="logo">
                 <span class="logo-accent">Brain</span>Imaging Lab
             </a>
-            <nav class="nav-links">
-                <a href="index.html" class="active" data-i18n="nav.home">Home</a>
-                <a href="equipe.html" data-i18n="nav.people">People</a>
-                <a href="recherche.html" data-i18n="nav.research">Research</a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Basculer la navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
+                <a href="equipe.html" data-i18n="nav.people">Équipe</a>
+                <a href="recherche.html" data-i18n="nav.research">Recherche</a>
                 <a href="publications.html" data-i18n="nav.publications">Publications</a>
-                <a href="installations.html" data-i18n="nav.facilities">Facilities</a>
-                <a href="nouvelles.html" data-i18n="nav.news">News</a>
+                <a href="installations.html" data-i18n="nav.facilities">Installations</a>
+                <a href="nouvelles.html" data-i18n="nav.news">Nouvelles</a>
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
-                <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
+                <a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a>
                 <a href="../index.html" class="lang-toggle">EN</a>
             </nav>
         </div>
@@ -33,39 +36,39 @@
             <div class="mcm-shape-1"></div>
             <div class="mcm-shape-2"></div>
             <div class="container hero-content">
-                <span class="tagline">Sunnybrook Research Institute</span>
-                <h1>Mapping the Mind in Motion</h1>
-                <p>Welcome to the Functional Brain Imaging Lab (fBIL) at the Sunnybrook Research Institute! We are keen on developing tools for studying the inner workings of the coolest organ of the body and examining new ways of supporting recovery processes in Alzheimer’s disease, stroke, and traumatic brain injury.</p>
-                <a href="recherche.html" class="btn btn-primary">Explore Our Research</a>
-                <a href="equipe.html" class="btn btn-secondary" style="margin-left: 1rem;">Meet the Team</a>
+                <span class="tagline">Institut de recherche Sunnybrook</span>
+                <h1>Cartographier l'esprit en mouvement</h1>
+                <p>Bienvenue au Laboratoire d'imagerie cérébrale fonctionnelle (fBIL) de l'Institut de recherche Sunnybrook ! Nous développons des outils pour étudier le fonctionnement interne de l'organe le plus fascinant du corps et explorons de nouvelles façons de soutenir les processus de rétablissement dans la maladie d'Alzheimer, l'AVC et les traumatismes crâniens.</p>
+                <a href="recherche.html" class="btn btn-primary">Explorer nos recherches</a>
+                <a href="equipe.html" class="btn btn-secondary" style="margin-left: 1rem;">Rencontrer l'équipe</a>
             </div>
         </section>
 
         <section class="section section-alt">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Research Pillars</h2>
+                    <h2>Nos axes de recherche</h2>
                 </div>
                 <div class="card-grid">
                     <div class="card">
                         <div class="starburst" style="margin-bottom: 1rem;"></div>
-                        <h3>Neurovascular Coupling</h3>
-                        <p>Investigating how blood flow dynamically adjusts to neuronal activity in health and neurodegenerative diseases.</p>
+                        <h3>Couplage neurovasculaire</h3>
+                        <p>Étude de l'ajustement dynamique du débit sanguin à l'activité neuronale en santé et dans les maladies neurodégénératives.</p>
                     </div>
                     <div class="card">
                         <div class="starburst" style="background-color: var(--color-primary); margin-bottom: 1rem;"></div>
-                        <h3>Two-Photon Microscopy</h3>
-                        <p>High-resolution 3D imaging of cerebral microcirculation and neuronal population dynamics.</p>
+                        <h3>Microscopie biphotonique</h3>
+                        <p>Imagerie 3D à haute résolution de la microcirculation cérébrale et de la dynamique des populations neuronales.</p>
                     </div>
                     <div class="card">
                         <div class="starburst" style="background-color: var(--color-secondary); margin-bottom: 1rem;"></div>
-                        <h3>Functional MRI</h3>
-                        <p>Non-invasive brain function imaging at high field strengths to connect cellular mechanisms to macroscopic signals.</p>
+                        <h3>IRM fonctionnelle</h3>
+                        <p>Imagerie non invasive des fonctions cérébrales à haut champ pour relier les mécanismes cellulaires aux signaux macroscopiques.</p>
                     </div>
                     <div class="card">
                         <div class="starburst" style="background-color: var(--color-dark); margin-bottom: 1rem;"></div>
-                        <h3>Optogenetics</h3>
-                        <p>Precise light-activated neuronal stimulation combined with multi-modal recording techniques.</p>
+                        <h3>Optogénétique</h3>
+                        <p>Stimulation neuronale précise par activation lumineuse combinée à des techniques d'enregistrement multimodal.</p>
                     </div>
                 </div>
             </div>
@@ -74,10 +77,10 @@
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Latest News</h2>
+                    <h2 data-i18n="news.title">Nouvelles et événements</h2>
                 </div>
                 <div class="card-grid" id="news-container">
-                    <div class="loading-spinner">Loading news...</div>
+                    <div class="loading-spinner">Chargement des nouvelles…</div>
                 </div>
             </div>
         </section>
@@ -88,26 +91,26 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <h4>Brain Imaging Lab</h4>
-                    <p>Sunnybrook Research Institute<br>
+                    <p><span data-i18n="footer.address">Institut de recherche Sunnybrook</span><br>
                     2075 Bayview Avenue<br>
                     Toronto, ON M4N 3M5<br>
                     Canada</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <p><a href="recherche.html" data-i18n="nav.research">Research</a></p>
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <p><a href="recherche.html" data-i18n="nav.research">Recherche</a></p>
                     <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
                     <p><a href="toronto.html" data-i18n="nav.toronto">Toronto</a></p>
-                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a></p>
+                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a></p>
                 </div>
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h4 data-i18n="footer.connect">Nous joindre</h4>
                     <p><a href="#">Google Scholar</a></p>
                     <p><a href="#">Twitter / X</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
+                &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
             </div>
         </div>
     </footer>
@@ -115,7 +118,7 @@
     <!-- Intro overlay -->
     <div id="intro-overlay">
         <canvas id="intro-canvas"></canvas>
-        <button id="skip-intro" class="btn btn-primary">Skip Intro</button>
+        <button id="skip-intro" class="btn btn-primary">Passer l'intro</button>
     </div>
 
     <script src="../js/intro-controller.js"></script>
