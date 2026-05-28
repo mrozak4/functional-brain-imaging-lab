@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const newsItems = await response.json();
+        let newsItems = await response.json();
+
+        // Ensure news items are always sorted by date (newest first)
+        newsItems.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         // Helper to format dates
         const formatNewsDate = (dateStr) => {
