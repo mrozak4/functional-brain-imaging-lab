@@ -1,6 +1,7 @@
 /**
- * animations.js — "MRI Focus" scroll reveal, stats counter, card tilt, back-to-top, dark mode
- * Automatically discovers and animates elements — no manual HTML classes needed.
+ * animations.js — Award-winning animation suite for fBIL
+ * MRI Focus scroll reveal, stats counter, custom cursor, magnetic buttons,
+ * preloader, scroll progress, mouse spotlight, staggered hero text.
  */
 
 // Global: Copy citation to clipboard
@@ -13,7 +14,6 @@ function copyCitation(btn, citation) {
             btn.classList.remove('copied');
         }, 2000);
     }).catch(() => {
-        // Fallback for older browsers
         const ta = document.createElement('textarea');
         ta.value = citation;
         document.body.appendChild(ta);
@@ -31,9 +31,24 @@ function copyCitation(btn, citation) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ─── 0. PRELOADER ──────────────────────────────────────────────────
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            preloader.classList.add('loaded');
+            setTimeout(() => preloader.remove(), 600);
+        });
+        // Fallback: remove after 3s no matter what
+        setTimeout(() => {
+            if (preloader.parentNode) {
+                preloader.classList.add('loaded');
+                setTimeout(() => preloader.remove(), 600);
+            }
+        }, 3000);
+    }
+
+
     // ─── 1. MRI FOCUS SCROLL REVEAL ────────────────────────────────────
-    // Auto-detect animatable elements instead of relying on HTML classes
-    // NOTE: .stat-item is excluded — stats are handled by the counter observer below
     const animateSelectors = [
         '.card',
         '.pub-highlight-card',
@@ -51,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const allTargets = document.querySelectorAll(animateSelectors.join(', '));
 
-    // Apply the hidden state via JS (not CSS class) to avoid flash-of-invisible
     allTargets.forEach((el, i) => {
         el.style.opacity = '0';
         el.style.filter = 'blur(12px)';
@@ -75,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     allTargets.forEach(el => revealObserver.observe(el));
 
-    // Also handle dynamically loaded content (news cards, pub cards from JS)
+    // Dynamic content observer
     const dynamicObserver = new MutationObserver(mutations => {
         mutations.forEach(mut => {
             mut.addedNodes.forEach(node => {
@@ -99,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ─── 2. ANIMATED STATS COUNTER ─────────────────────────────────────
-    // First, hide the stats bar so it can animate in
     const statsBar = document.querySelector('.stats-bar');
     if (statsBar) {
         statsBar.style.opacity = '0';
@@ -112,22 +125,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const counterObserver = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Reveal the stats bar first
                     if (statsBar) {
                         statsBar.style.opacity = '1';
                         statsBar.style.transform = 'translateY(0)';
                     }
-
                     const el = entry.target;
                     const target = parseInt(el.dataset.target, 10);
                     const suffix = el.dataset.suffix || '';
                     const duration = 2000;
                     const start = performance.now();
-
                     const animate = (now) => {
                         const elapsed = now - start;
                         const progress = Math.min(elapsed / duration, 1);
-                        // Ease out cubic
                         const eased = 1 - Math.pow(1 - progress, 3);
                         el.textContent = Math.floor(eased * target) + suffix;
                         if (progress < 1) requestAnimationFrame(animate);
@@ -141,35 +150,99 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ─── 3. CARD HOVER TILT + GLOW ────────────────────────────────────
-    const tiltCards = document.querySelectorAll('.card, .pub-highlight-card, .person-card, .conference-card');
-    tiltCards.forEach(card => {
-        card.addEventListener('mousemove', e => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = ((y - centerY) / centerY) * -6;
-            const rotateY = ((x - centerX) / centerX) * 6;
+    // ─── 3. SCROLL PROGRESS BAR ────────────────────────────────────────
+    const progressBar = document.getElementById('scroll-progress');
+    if (progressBar) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = progress + '%';
+        }, { passive: true });
+    }
 
-            card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-            card.style.boxShadow = `
-                ${rotateY * 2}px ${-rotateX * 2}px 30px rgba(45, 212, 191, 0.15),
-                0 8px 32px rgba(0,0,0,0.3)
-            `;
+
+    // ─── 4. CUSTOM CURSOR ──────────────────────────────────────────────
+    const cursorDot = document.getElementById('cursor-dot');
+    const cursorRing = document.getElementById('cursor-ring');
+    if (cursorDot && cursorRing && window.matchMedia('(pointer: fine)').matches) {
+        let mouseX = 0, mouseY = 0;
+        let ringX = 0, ringY = 0;
+
+        document.addEventListener('mousemove', e => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorDot.style.left = mouseX + 'px';
+            cursorDot.style.top = mouseY + 'px';
         });
 
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = '';
-            card.style.boxShadow = '';
-            card.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
-            setTimeout(() => { card.style.transition = ''; }, 500);
+        // Smooth ring follow
+        function animateRing() {
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+            cursorRing.style.left = ringX + 'px';
+            cursorRing.style.top = ringY + 'px';
+            requestAnimationFrame(animateRing);
+        }
+        animateRing();
+
+        // Expand on interactive elements
+        const interactives = 'a, button, input, select, textarea, .card, .person-card, .pub-highlight-card, .conference-card';
+        document.addEventListener('mouseover', e => {
+            if (e.target.closest(interactives)) {
+                cursorRing.classList.add('cursor-hover');
+                cursorDot.classList.add('cursor-hover');
+            }
         });
-    });
+        document.addEventListener('mouseout', e => {
+            if (e.target.closest(interactives)) {
+                cursorRing.classList.remove('cursor-hover');
+                cursorDot.classList.remove('cursor-hover');
+            }
+        });
+    }
 
 
-    // ─── 4. BACK TO TOP BUTTON ─────────────────────────────────────────
+    // ─── 5. MOUSE-REACTIVE GRADIENT SPOTLIGHT ──────────────────────────
+    const spotlight = document.getElementById('mouse-spotlight');
+    if (spotlight && window.matchMedia('(pointer: fine)').matches) {
+        document.addEventListener('mousemove', e => {
+            spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(45, 212, 191, 0.06), transparent 60%)`;
+        });
+    }
+
+
+    // ─── 6. MAGNETIC BUTTONS ───────────────────────────────────────────
+    const magneticBtns = document.querySelectorAll('.btn-primary, .btn-secondary');
+    if (window.matchMedia('(pointer: fine)').matches) {
+        magneticBtns.forEach(btn => {
+            btn.addEventListener('mousemove', e => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+                btn.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+                setTimeout(() => { btn.style.transition = ''; }, 400);
+            });
+        });
+    }
+
+
+    // ─── 7. STAGGERED HERO TEXT REVEAL ─────────────────────────────────
+    const heroP = document.querySelector('.hero-content > p');
+    if (heroP) {
+        const text = heroP.textContent;
+        const words = text.split(' ');
+        heroP.innerHTML = words.map((word, i) => 
+            `<span class="hero-word" style="animation-delay: ${0.8 + i * 0.04}s">${word}</span>`
+        ).join(' ');
+    }
+
+
+    // ─── 8. BACK TO TOP BUTTON ─────────────────────────────────────────
     const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
@@ -182,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ─── 5. DARK/LIGHT MODE TOGGLE ─────────────────────────────────────
+    // ─── 9. DARK/LIGHT MODE TOGGLE ─────────────────────────────────────
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
         const savedTheme = localStorage.getItem('fbil-theme');
@@ -190,7 +263,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.add('light-mode');
             themeToggle.textContent = '🌙';
         }
-
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('light-mode');
             const isLight = document.body.classList.contains('light-mode');
@@ -200,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ─── 6. SKIP-TO-CONTENT ────────────────────────────────────────────
+    // ─── 10. SKIP-TO-CONTENT ───────────────────────────────────────────
     const skipLink = document.getElementById('skip-to-content');
     if (skipLink) {
         skipLink.addEventListener('click', e => {

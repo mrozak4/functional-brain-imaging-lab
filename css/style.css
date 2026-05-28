@@ -1044,9 +1044,13 @@ header { position: sticky; z-index: 100; }
 main   { position: relative; z-index: 1; }
 footer { position: relative; z-index: 1; }
 
-/* ── Card tilt transition smoothing ── */
+/* ── Card hover lift ── */
 .card, .pub-highlight-card, .person-card, .conference-card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover, .pub-highlight-card:hover, .person-card:hover, .conference-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(45, 212, 191, 0.12), 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* ── Back to Top Button ── */
@@ -1401,4 +1405,135 @@ body.light-mode .hero {
   width: 14px;
   height: 14px;
   fill: currentColor;
+}
+
+/* ── Smooth Scroll ── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* ── Noise Texture Overlay ── */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+body.light-mode .noise-overlay { opacity: 0.03; }
+
+/* ── Preloader ── */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+#preloader .preloader-logo {
+  width: 80px;
+  height: 80px;
+  animation: pulse-loader 1.2s ease-in-out infinite;
+}
+#preloader .preloader-text {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+@keyframes pulse-loader {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+/* ── Scroll Progress Bar ── */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  z-index: 10001;
+  transition: width 0.1s linear;
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Custom Cursor ── */
+#cursor-dot, #cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99998;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+#cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+}
+#cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--color-primary);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+}
+#cursor-ring.cursor-hover {
+  width: 56px;
+  height: 56px;
+  border-color: var(--color-secondary);
+}
+#cursor-dot.cursor-hover {
+  background: var(--color-secondary);
+}
+/* Hide custom cursor on touch devices */
+@media (pointer: coarse) {
+  #cursor-dot, #cursor-ring { display: none; }
+}
+/* Use default cursor when custom is active */
+@media (pointer: fine) {
+  body { cursor: none; }
+  a, button, input, select, textarea { cursor: none; }
+}
+
+/* ── Mouse Spotlight ── */
+#mouse-spotlight {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Magnetic Button Transition ── */
+.btn-primary, .btn-secondary {
+  transition: transform 0.15s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ── Staggered Hero Word Reveal ── */
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: word-reveal 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+@keyframes word-reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
