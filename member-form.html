@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Member Profile Form | Functional Brain Imaging Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Update your lab member profile for the Functional Brain Imaging Lab website.">
+    <style>
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-family: var(--font-accent);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .form-group .hint {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-bottom: 0.5rem;
+            font-family: var(--font-body);
+        }
+        .form-input, .form-textarea, .form-select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: var(--border-radius-md);
+            border: 1px solid var(--color-border);
+            background-color: var(--color-bg-alt);
+            color: var(--color-text-main);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .form-input:focus, .form-textarea:focus, .form-select:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.1);
+        }
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+            line-height: 1.6;
+        }
+        .form-select {
+            cursor: pointer;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (max-width: 600px) {
+            .form-row { grid-template-columns: 1fr; }
+        }
+        .form-divider {
+            border: 0;
+            height: 1px;
+            background: var(--color-border);
+            margin: 2.5rem 0;
+        }
+        .form-section-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .photo-upload-area {
+            border: 2px dashed var(--color-border);
+            border-radius: var(--border-radius-md);
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color var(--transition-fast), background-color var(--transition-fast);
+        }
+        .photo-upload-area:hover {
+            border-color: var(--color-primary);
+            background-color: rgba(45, 212, 191, 0.05);
+        }
+        .photo-upload-area img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .photo-upload-area p {
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+        #photo-input { display: none; }
+        .output-area {
+            background-color: rgba(12, 18, 34, 0.9);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-md);
+            padding: 1.5rem;
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            color: var(--color-primary);
+            white-space: pre-wrap;
+            word-break: break-all;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+        }
+        .output-area.visible { display: block; }
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .copy-toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--color-primary);
+            color: var(--color-bg);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius-pill);
+            font-family: var(--font-accent);
+            font-weight: 700;
+            font-size: 0.85rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .copy-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .char-count {
+            text-align: right;
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            font-family: var(--font-accent);
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="neural-bg"></canvas>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">Brain</span>Imaging Lab
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="people.html">People</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="news.html">News</a>
+                <a href="toronto.html">Toronto</a>
+                <a href="joinus.html">Join Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container form-container">
+                <div class="section-header">
+                    <h2>Update Your Profile</h2>
+                    <p style="color: var(--color-text-muted); max-width: 500px; margin: 1rem auto 0;">Fill out this form and send the generated JSON to Matt to update your profile on the website.</p>
+                </div>
+
+                <form id="member-form" autocomplete="off">
+
+                    <!-- Basic Info -->
+                    <div class="form-section-title">👤 Basic Information</div>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-input" placeholder="e.g. Jane Doe" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="role">Role *</label>
+                            <select id="role" class="form-select" required>
+                                <option value="">Select your role…</option>
+                                <option value="Principal Investigator">Principal Investigator</option>
+                                <option value="Postdoctoral Fellows">Postdoctoral Fellow</option>
+                                <option value="PhD Student">PhD Student</option>
+                                <option value="Master's Student">Master's Student</option>
+                                <option value="Research Staff / Technicians">Research Staff / Technician</option>
+                                <option value="Administrative Assistant">Administrative Assistant</option>
+                                <option value="Undergraduate Student">Undergraduate Student</option>
+                                <option value="Research Assistant">Research Assistant</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="yearJoined">Year Joined</label>
+                            <input type="number" id="yearJoined" class="form-input" placeholder="e.g. 2023" min="2000" max="2030">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="titles">Titles / Degrees</label>
+                        <div class="hint">e.g. "PhD, Medical Biophysics, University of Toronto"</div>
+                        <input type="text" id="titles" class="form-input" placeholder="PhD, Medical Biophysics">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Education</label>
+                        <div class="hint">e.g. "B.Sc. Physics, McGill University"</div>
+                        <input type="text" id="education" class="form-input" placeholder="B.Sc. Physics, McGill University">
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <!-- Photo -->
+                    <div class="form-section-title">📷 Profile Photo</div>
+
+                    <div class="form-group">
+                        <div class="photo-upload-area" id="photo-drop" onclick="document.getElementById('photo-input').click()">
+                            <p>Click to upload a photo<br><small>(Square crop preferred, min 300×300px)</small></p>
+                        </div>
+                        <input type="file" id="photo-input" accept="image/*">
+                        <div class="hint" style="margin-top: 0.5rem;">Photo will be saved for Matt to add to the site.</div>
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <!-- Bio & Research -->
+                    <div class="form-section-title">📝 Bio & Research</div>
+
+                    <div class="form-group">
+                        <label for="bio_en">Personal Bio (English) *</label>
+                        <div class="hint">Tell us about yourself outside the lab — hobbies, interests, fun facts. Keep it personal and fun!</div>
+                        <textarea id="bio_en" class="form-textarea" placeholder="When I'm not in the lab, you can find me..." required></textarea>
+                        <div class="char-count" id="bio-count">0 characters</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio_fr">Personal Bio (French)</label>
+                        <div class="hint">Optional — French version of your bio.</div>
+                        <textarea id="bio_fr" class="form-textarea" placeholder="Quand je ne suis pas au laboratoire..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="research_en">Research Summary (English)</label>
+                        <div class="hint">2–4 sentences about your current research focus and key publications.</div>
+                        <textarea id="research_en" class="form-textarea" placeholder="My research focuses on..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="research_fr">Research Summary (French)</label>
+                        <div class="hint">Optional — French version of your research summary.</div>
+                        <textarea id="research_fr" class="form-textarea" placeholder="Ma recherche se concentre sur..."></textarea>
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <!-- Quote -->
+                    <div class="form-section-title">💬 Favourite Quote</div>
+
+                    <div class="form-group">
+                        <label for="quote_en">Quote (English)</label>
+                        <input type="text" id="quote_en" class="form-input" placeholder="The only way to do great work is to love what you do.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quote_fr">Quote (French)</label>
+                        <input type="text" id="quote_fr" class="form-input" placeholder="La seule façon de faire du bon travail...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quote_author">Quote Author</label>
+                        <input type="text" id="quote_author" class="form-input" placeholder="e.g. Steve Jobs">
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <!-- Links -->
+                    <div class="form-section-title">🔗 Links</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="name@sri.utoronto.ca">
+                        </div>
+                        <div class="form-group">
+                            <label for="scholar">Google Scholar URL</label>
+                            <input type="url" id="scholar" class="form-input" placeholder="https://scholar.google.com/...">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orcid">ORCID URL</label>
+                            <input type="url" id="orcid" class="form-input" placeholder="https://orcid.org/0000-...">
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Personal Website</label>
+                            <input type="url" id="website" class="form-input" placeholder="https://yoursite.com">
+                        </div>
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary">Generate JSON</button>
+                        <button type="button" class="btn btn-secondary" id="copy-btn" style="display:none;">Copy to Clipboard</button>
+                        <button type="button" class="btn btn-secondary" id="download-btn" style="display:none;">Download JSON</button>
+                    </div>
+
+                    <div id="json-output" class="output-area" style="margin-top: 2rem;"></div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="copy-toast" id="copy-toast">✓ Copied to clipboard!</div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Brain Imaging Lab</h4>
+                    <p>Sunnybrook Research Institute<br>
+                    2075 Bayview Avenue<br>
+                    Toronto, ON M4N 3M5<br>
+                    Canada</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/neural-bg.js"></script>
+    <script>
+        // Photo preview
+        const photoInput = document.getElementById('photo-input');
+        const photoDrop = document.getElementById('photo-drop');
+        let photoDataUrl = null;
+
+        photoInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (ev) => {
+                photoDataUrl = ev.target.result;
+                photoDrop.innerHTML = `<img src="${photoDataUrl}" alt="Preview"><p>${file.name}</p>`;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        // Character count for bio
+        document.getElementById('bio_en').addEventListener('input', (e) => {
+            document.getElementById('bio-count').textContent = `${e.target.value.length} characters`;
+        });
+
+        // Form submission
+        document.getElementById('member-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const data = {
+                name: document.getElementById('name').value.trim(),
+                role: document.getElementById('role').value,
+                status: "current",
+                photo: `images/people/${document.getElementById('name').value.trim().split(' ')[0].toLowerCase()}.jpg`,
+                yearJoined: parseInt(document.getElementById('yearJoined').value) || undefined,
+            };
+
+            // Optional fields
+            const optionalText = ['titles', 'education', 'bio_en', 'bio_fr', 'research_en', 'research_fr', 'quote_en', 'quote_fr', 'quote_author'];
+            optionalText.forEach(field => {
+                const val = document.getElementById(field).value.trim();
+                if (val) data[field] = val;
+            });
+
+            // Links
+            const links = {};
+            ['email', 'scholar', 'orcid', 'website'].forEach(field => {
+                const val = document.getElementById(field).value.trim();
+                if (val) links[field] = val;
+            });
+            data.links = links;
+
+            // Clean up undefined values
+            Object.keys(data).forEach(k => data[k] === undefined && delete data[k]);
+
+            const jsonStr = JSON.stringify(data, null, 2);
+            const outputEl = document.getElementById('json-output');
+            outputEl.textContent = jsonStr;
+            outputEl.classList.add('visible');
+            document.getElementById('copy-btn').style.display = 'inline-flex';
+            document.getElementById('download-btn').style.display = 'inline-flex';
+
+            outputEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        // Copy
+        document.getElementById('copy-btn').addEventListener('click', () => {
+            const text = document.getElementById('json-output').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('copy-toast');
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2000);
+            });
+        });
+
+        // Download
+        document.getElementById('download-btn').addEventListener('click', () => {
+            const text = document.getElementById('json-output').textContent;
+            const name = document.getElementById('name').value.trim().replace(/\s+/g, '_').toLowerCase();
+            const blob = new Blob([text], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${name || 'member'}_profile.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger-btn');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                document.getElementById('nav-links').classList.toggle('nav-open');
+                hamburger.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

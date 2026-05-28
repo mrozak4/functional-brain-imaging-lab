@@ -5,22 +5,27 @@
       "role": "Principal Investigator",
       "status": "current",
       "photo": "images/people/bojana.gif",
-      "education": "PhD, Medical Biophysics, University of Toronto",
-      "bio_en": "I love reading - fiction and non-fiction alike; also Harper’s, Granta, the New Yorker. Even though I’m slow, I like biking, scooting, and outdoor skating; and I’m a huge fan of yoga. Tart flavours and jazz. Classical piano if under the weather. Thich Nhat Hanh and Marshall Rosenberg.",
-      "bio_fr": "J'adore lire, de la fiction comme de la non-fiction; aussi Harper's, Granta, le New Yorker. Même si je suis lente, j'aime le vélo, la trottinette et le patinage extérieur; et je suis une grande adepte du yoga. Saveurs acidulées et jazz. Piano classique en cas de fatigue. Thich Nhat Hanh et Marshall Rosenberg.",
+      "education": "B.A.Sc., Electrical Engineering, University of British Columbia; PhD, McGill University",
+      "titles": "Senior Scientist, Sunnybrook Health Sciences Centre; Tier 1 Canada Research Chair in Functional Brain Neuroimaging; Full Professor, University of Toronto; Platform Director of Physical Sciences, Sunnybrook",
+      "bio_en": "I love reading — fiction and non-fiction alike (Harper's, Granta, the New Yorker). Even though I'm slow, I like biking, scooting, and outdoor skating; and I'm a huge fan of yoga. Tart flavours and jazz. Classical piano if under the weather. Thich Nhat Hanh and Marshall Rosenberg.",
+      "bio_fr": "J'adore lire, de la fiction comme de la non-fiction (Harper's, Granta, le New Yorker). Même si je suis lente, j'aime le vélo, la trottinette et le patinage extérieur; et je suis une grande adepte du yoga. Saveurs acidulées et jazz. Piano classique en cas de fatigue. Thich Nhat Hanh et Marshall Rosenberg.",
       "quote_en": "Never doubt that a small group of thoughtful, committed citizens can change the world. Indeed, it is the only thing that ever has.",
       "quote_fr": "Ne doutez jamais qu'un petit groupe de citoyens réfléchis et engagés puisse changer le monde. En effet, c'est la seule chose qui y soit jamais parvenue.",
       "quote_author": "Margaret Mead",
       "links": {
         "email": "bojana@sri.utoronto.ca",
-        "scholar": "https://scholar.google.com/citations?user=Y3c3AxsAAAAJ"
-      }
+        "scholar": "https://scholar.google.com/citations?user=Y3c3AxsAAAAJ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bojana_Stefanovic_(neuroscientist)"
+      },
+      "yearJoined": 2007
     },
     {
       "name": "Andrea Trevisiol",
       "role": "Postdoctoral Fellows",
       "status": "current",
       "photo": "images/people/andrea.gif",
+      "research_en": "Andrea studies deep brain stimulation and electrophysiology in Alzheimer's disease models. His first-author paper in Theranostics (2025) demonstrated that deep brain stimulation normalizes hippocampal synchrony in TgF344-AD rats. He also contributes to work on alternating current stimulation neuromodulation, cognitive resilience, and neurovascular coupling in AD.",
+      "research_fr": "Andrea étudie la stimulation cérébrale profonde et l'électrophysiologie dans les modèles de la maladie d'Alzheimer. Son article de premier auteur dans Theranostics (2025) a démontré que la stimulation cérébrale profonde normalise la synchronie hippocampique chez les rats TgF344-AD. Il contribue également aux travaux sur la neuromodulation par stimulation à courant alternatif, la résilience cognitive et le couplage neurovasculaire dans la MA.",
       "bio_en": "When I’m not reading about neurons and glia I enjoy keeping up with other science disciplines, sipping espresso, baking pizza and bread, or if I’m tired enough firing up a video game. I love being outside and playing basketball, cruising around on my longboard, exploring new places or just chilling behind a grill. During my spare time, I’m also a full-time dad.",
       "bio_fr": "Quand je ne lis pas sur les neurones et la glie, j'aime me tenir au courant des autres disciplines scientifiques, siroter un expresso, faire de la pizza et du pain ou, si je suis assez fatigué, lancer un jeu vidéo. J'aime être dehors et jouer au basket, me promener sur mon longboard, explorer de nouveaux endroits ou simplement me détendre derrière un gril. Pendant mon temps libre, je suis aussi papa à plein temps.",
       "quote_en": "We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.",
@@ -28,13 +33,16 @@
       "quote_author": "Stephen Hawking",
       "links": {
         "email": "andrea3vs@gmail.com"
-      }
+      },
+      "yearJoined": 2022
     },
     {
       "name": "Monica Bell Vila",
       "role": "PhD Student",
       "status": "current",
       "photo": "images/people/monica.gif",
+      "research_en": "Monica investigates how alternating current stimulation (ACS) parameters modulate neuronal firing patterns, combining intracortical electrophysiology with brain stimulation in rodent models. Her first-author paper in Imaging Neuroscience (2026) characterized neuronal responses to ACS across varying frequencies and amplitudes, showing that entrainment changes persist beyond stimulation cessation — supporting ACS's potential for spike timing-dependent plasticity.",
+      "research_fr": "Monica étudie comment les paramètres de stimulation par courant alternatif (SCA) modulent les patrons de décharge neuronale, en combinant l'électrophysiologie intracorticale avec la stimulation cérébrale chez le rongeur. Son article de premier auteur dans Imaging Neuroscience (2026) a caractérisé les réponses neuronales à la SCA selon différentes fréquences et amplitudes, montrant que les changements d'entraînement persistent au-delà de la stimulation.",
       "bio_en": "I love to read, typically fiction, although I care more about how the book is written than what the book is about (favourites include The Winter Vault by Anne Michaels and In the Skin of a Lion by Michael Ondaatje). On my nights off I like to practice yoga and draw or paint.",
       "bio_fr": "J'adore lire, généralement de la fiction, bien que je me soucie plus de la façon dont le livre est écrit que de son sujet (les favoris incluent The Winter Vault d'Anne Michaels et In the Skin of a Lion de Michael Ondaatje). Pendant mes soirées de congé, j'aime pratiquer le yoga et dessiner ou peindre.",
       "quote_en": "If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a grass in the beginning.",
@@ -42,13 +50,16 @@
       "quote_author": "Vincent Van Gogh",
       "links": {
         "email": "monica.bellvila@gmail.com"
-      }
+      },
+      "yearJoined": 2021
     },
     {
       "name": "Matthew (Matt) Rozak",
       "role": "PhD Student",
       "status": "current",
       "photo": "images/people/matt.gif",
+      "research_en": "Matt develops deep learning pipelines to map neurovascular coupling at the microvascular network level using two-photon fluorescence microscopy. His first-author paper in eLife (2026) introduced an automated pipeline to reconstruct and quantify geometric changes across hundreds of interconnected blood vessels, revealing that network-level vascular coordination rises 152% with stronger neuronal stimulation.",
+      "research_fr": "Matt développe des pipelines d'apprentissage profond pour cartographier le couplage neurovasculaire au niveau du réseau microvasculaire à l'aide de la microscopie à fluorescence biphotonique. Son article de premier auteur dans eLife (2026) a introduit un pipeline automatisé pour reconstruire et quantifier les changements géométriques à travers des centaines de vaisseaux sanguins interconnectés, révélant que la coordination vasculaire au niveau du réseau augmente de 152% avec une stimulation neuronale plus forte.",
       "bio_en": "In my spare time, I can often be found catching up on the latest Netflix series, or occasionally reading fiction and news articles. I maintain a sizable board game collection, and have spent way too many nights enjoying that collection with friends. To stay active I run quite frequently, and when travelling I go surfing. I bring excitement to my life through travelling - some of my favourite places I’ve been so far include Qingdao, Montevideo, and Busan.",
       "bio_fr": "Pendant mes temps libres, on peut souvent me trouver en train de regarder les dernières séries Netflix ou de lire occasionnellement de la fiction et des articles de presse. J'entretiens une importante collection de jeux de société et j'ai passé beaucoup trop de soirées à en profiter avec des amis. Pour rester actif, je cours assez fréquemment et, en voyage, je fais du surf. Voyager m'apporte de l'excitation - certains de mes endroits préférés visités jusqu'à présent incluent Qingdao, Montevideo et Busan.",
       "quote_en": "When you become the image of your own imagination, it’s the most powerful thing you could ever do.",
@@ -56,13 +67,16 @@
       "quote_author": "RuPaul",
       "links": {
         "email": "matthew.rozak@mail.utoronto.ca"
-      }
+      },
+      "yearJoined": 2020
     },
     {
       "name": "Dustin Loren Almanza",
       "role": "PhD Student",
       "status": "current",
       "photo": "images/people/dustin.gif",
+      "research_en": "Dustin studies the intersection of metabolism and neurovascular function in Alzheimer's disease using MRI-based cerebral blood flow imaging and Neuropixels electrophysiology in the TgF344-AD rat model. His two first-author papers in Alzheimer's & Dementia (2025) and Theranostics (2024) revealed a stage-dependent obesity paradox: high-caloric diet is harmful in presymptomatic AD but transiently rescues hippocampal functional hyperemia deficits in established disease.",
+      "research_fr": "Dustin étudie l'intersection du métabolisme et de la fonction neurovasculaire dans la maladie d'Alzheimer en utilisant l'imagerie du flux sanguin cérébral par IRM et l'électrophysiologie Neuropixels dans le modèle de rat TgF344-AD. Ses deux articles de premier auteur dans Alzheimer's & Dementia (2025) et Theranostics (2024) ont révélé un paradoxe de l'obésité dépendant du stade : un régime hypercalorique est nocif dans la MA présymptomatique mais restaure transitoirement l'hyperémie fonctionnelle hippocampique dans la maladie établie.",
       "bio_en": "I've been dancing since 1st grade from Filipino folk dances to modern and jazz in high school and ended up in hip-hop when I was in university. Coffee + music is my jam. When I am stressed, working out and jogging are my outlets. Photography, singing, and trying out different cafes are my interests... where deep thought conversation is my language. I love going to the beach and traveling.",
       "bio_fr": "Je danse depuis le cours primaire, des danses folkloriques philippines au moderne et au jazz au secondaire, et j'ai fini par faire du hip-hop à l'université. Café + musique, c'est mon truc. Quand je suis stressé, le sport et le jogging sont mes exutoires. La photographie, le chant et la découverte de différents cafés sont mes centres d'intérêt... où les conversations profondes sont ma langue. J'aime aller à la plage et voyager.",
       "quote_en": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
@@ -70,25 +84,31 @@
       "quote_author": "Marie Curie",
       "links": {
         "email": "dustin.almanza@mail.utoronto.ca"
-      }
+      },
+      "yearJoined": 2020
     },
     {
       "name": "Emma Pineau",
-      "role": "Master's Student",
+      "role": "PhD Student",
       "status": "current",
       "photo": "images/people/emma.png",
-      "bio_en": "I gained a background in medical imaging during my undergrad and am excited to translate that to neuroimaging research now that I’ve joined the lab. Outside of work I am an avid fiction reader of all genres, but anything with a happy ending will always have a special place in my heart. I keep some variety in my life by having dinner parties with friends and trying new workout classes.",
+      "research_en": "Emma brings a medical imaging engineering background to the lab and contributes to electrophysiology work on cognitive resilience in Alzheimer's disease. As second author on a 2025 bioRxiv preprint, she contributed to a Neuropixels study of ~8,500 neurons identifying population-level hallmarks of maintained cognition in TgF344-AD rats.",
+      "research_fr": "Emma apporte une formation en génie de l'imagerie médicale au laboratoire et contribue aux travaux d'électrophysiologie sur la résilience cognitive dans la maladie d'Alzheimer. En tant que deuxième auteure d'une prépublication bioRxiv (2025), elle a contribué à une étude Neuropixels de ~8 500 neurones identifiant les caractéristiques populationnelles du maintien de la cognition chez les rats TgF344-AD.",
+      "bio_en": "I gained a background in medical imaging during my undergrad and am excited to translate that to neuroimaging research now that I've joined the lab. Outside of work I am an avid fiction reader of all genres, but anything with a happy ending will always have a special place in my heart. I keep some variety in my life by having dinner parties with friends and trying new workout classes.",
       "bio_fr": "J'ai acquis une formation en imagerie médicale au baccalauréat et je suis ravie de transposer cela à la recherche en neuroimagerie maintenant que j'ai rejoint le laboratoire. En dehors du travail, je suis une lectrice passionnée de fiction de tous genres, mais tout ce qui a une fin heureuse aura toujours une place spéciale dans mon cœur. Je mets de la variété dans ma vie en organisant des dîners avec des amis et en essayant de nouveaux cours de sport.",
       "quote_en": "I am not afraid of storms, for I am learning how to sail my ship.",
       "quote_fr": "Je n'ai pas peur des tempêtes, car j'apprends à naviguer sur mon navire.",
       "quote_author": "Louisa May Alcott, Little Women",
-      "links": {}
+      "links": {},
+      "yearJoined": 2025
     },
     {
       "name": "Adrienne Dorr",
       "role": "Research Staff / Technicians",
       "status": "current",
       "photo": "images/people/adrienne.gif",
+      "research_en": "Adrienne is the lab's lead microsurgery and two-photon imaging specialist with over 15 years in the lab. She is first author on landmark papers in Brain (2012, 2015) demonstrating amyloid-β-dependent microvascular compromise and venular degeneration in Alzheimer's disease models, and a JCBFM paper (2017) on exercise-induced changes in cortical microvasculature. Her surgical and imaging expertise underpins the lab's entire in vivo microscopy program.",
+      "research_fr": "Adrienne est la spécialiste principale en microchirurgie et imagerie biphotonique du laboratoire, avec plus de 15 ans d'expérience. Elle est premier auteur d'articles fondamentaux dans Brain (2012, 2015) démontrant la compromission microvasculaire dépendante de l'amyloïde-β et la dégénérescence vénulaire dans les modèles de la maladie d'Alzheimer, et un article JCBFM (2017) sur les changements microvasculaires induits par l'exercice.",
       "bio_en": "Outside of work I enjoy music, the outdoors, islands, books, spicy foods, vacations to warm locations, camping, and being silly with my boys. At work I enjoy the challenge of various microsurgical tasks, but the most exciting aspect of my job comes from capturing amazing biological images with multiphoton microscopy. My coworkers are pretty great too.",
       "bio_fr": "En dehors du travail, j'aime la musique, le plein air, les îles, les livres, les aliments épicés, les vacances dans des endroits chauds, le camping et faire la folle avec mes garçons. Au travail, j'aime le défi des tâches microchirurgicales diverses, mais l'aspect le plus excitant de mon travail vient de la capture d'images biologiques étonnantes par microscopie multiphotonique. Mes collègues sont super aussi.",
       "quote_en": "Baby steps!",
@@ -96,13 +116,16 @@
       "quote_author": "Adrienne Dorr",
       "links": {
         "email": "adorr@sri.utoronto.ca"
-      }
+      },
+      "yearJoined": 2010
     },
     {
       "name": "Margaret Koletar",
       "role": "Research Staff / Technicians",
       "status": "current",
       "photo": "images/people/margaret.gif",
+      "research_en": "Margaret is a senior research technician whose surgical and technical expertise has been central to the lab's animal studies for over a decade. Her first-author Scientific Reports paper (2019) established the refined chronic cranial window implant protocol enabling longitudinal two-photon imaging in rats. She is a coauthor on 20+ lab publications spanning neurovascular coupling, Alzheimer's disease, stroke, and brain stimulation.",
+      "research_fr": "Margaret est une technicienne de recherche sénior dont l'expertise chirurgicale et technique est au cœur des études animales du laboratoire depuis plus de dix ans. Son article de premier auteur dans Scientific Reports (2019) a établi le protocole raffiné d'implant de fenêtre crânienne chronique permettant l'imagerie biphotonique longitudinale chez le rat. Elle est coauteure de plus de 20 publications du laboratoire.",
       "bio_en": "When I’m not in the lab you can find me exploring the many walking and cycling paths through the extensive green spaces in Toronto, snowshoeing in the winter, or sailing in the summer. On a hot summer day, it’s great to end the day with a beer on the beach at Sunnyside while watching the boats out on Lake Ontario. There are so many things to do around Toronto - music, food, art, and street festivals keep me busy all year.",
       "bio_fr": "Quand je ne suis pas au laboratoire, vous pouvez me trouver en train d'explorer les nombreux sentiers pédestres et cyclables à travers les espaces verts de Toronto, de faire de la raquette en hiver ou de la voile en été. Par une chaude journée d'été, c'est génial de finir la journée avec une bière sur la plage de Sunnyside. Il y a tellement de choses à faire à Toronto - la musique, la nourriture, l'art et les festivals de rue me tiennent occupée toute l'année.",
       "quote_en": "Sometimes it is the people no one can imagine anything of, who do the things no one can imagine.",
@@ -110,7 +133,8 @@
       "quote_author": "Alan Turing",
       "links": {
         "email": "mkoletar@sri.utoronto.ca"
-      }
+      },
+      "yearJoined": 2015
     },
     {
       "name": "George",
@@ -122,13 +146,16 @@
       "quote_en": "What goes best with a cup of coffee? Another cup.",
       "quote_fr": "Qu'est-ce qui va le mieux avec une tasse de café? Une autre tasse.",
       "quote_author": "Henry Rollins",
-      "links": {}
+      "links": {},
+      "yearJoined": 2018
     },
     {
       "name": "Andrew Stanisz",
       "role": "Research Staff / Technicians",
       "status": "current",
       "photo": "images/people/andrew.gif",
+      "research_en": "Andrew is an MRI physicist providing quantitative imaging expertise across the lab's translational studies. He is a coauthor on papers in JCBFM (2024, 2026), Alzheimer's & Dementia (2025), Theranostics (2024), and Journal of Controlled Release (2025), supporting cerebral blood flow quantification, focused ultrasound studies, and metabolic imaging in Alzheimer's disease and stroke models.",
+      "research_fr": "Andrew est un physicien IRM fournissant une expertise en imagerie quantitative pour les études translationnelles du laboratoire. Il est coauteur d'articles dans JCBFM (2024, 2026), Alzheimer's & Dementia (2025), Theranostics (2024) et Journal of Controlled Release (2025), soutenant la quantification du flux sanguin cérébral, les études d'ultrasons focalisés et l'imagerie métabolique.",
       "bio_en": "I spend most of the warm months golfing and camping. Most of my free time during the winter is spent inside, playing games with friends. I’m an avid movie goer all year round.",
       "bio_fr": "Je passe la plupart des mois chauds à jouer au golf et à faire du camping. La majeure partie de mon temps libre en hiver est consacrée aux jeux avec des amis. Je suis un cinéphile passionné toute l'année.",
       "quote_en": "Yet such is oft the course of deeds that move the wheels of the world: small hands do them because they must, while the eyes of the great are elsewhere.",
@@ -136,61 +163,78 @@
       "quote_author": "Elrond, Lord of the Rings",
       "links": {
         "email": "astanisz@sri.utoronto.ca"
-      }
+      },
+      "yearJoined": 2015
     },
     {
       "name": "Jack Simiao He",
       "role": "Undergraduate Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
+      "research_en": "Jack contributes to electrophysiology research studying cognitive resilience in Alzheimer's disease. He is a coauthor on a 2025 bioRxiv preprint using Neuropixels recordings to identify neuronal population-level hallmarks of maintained cognition in TgF344-AD rats.",
+      "research_fr": "Jack contribue à la recherche en électrophysiologie étudiant la résilience cognitive dans la maladie d'Alzheimer. Il est coauteur d'une prépublication bioRxiv (2025) utilisant des enregistrements Neuropixels pour identifier les caractéristiques neuronales populationnelles du maintien de la cognition chez les rats TgF344-AD.",
       "bio_en": "Jack is an undergraduate student in the Functional Brain Imaging Lab.",
       "bio_fr": "Jack est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
+      "links": {},
+      "yearJoined": 2024
     },
     {
       "name": "Keying Chen",
-      "role": "Undergraduate Student",
+      "role": "Postdoctoral Fellows",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
-      "bio_en": "Keying is an undergraduate student in the Functional Brain Imaging Lab.",
-      "bio_fr": "Keying est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
+      "research_en": "Keying's first-author bioRxiv preprint (2025) used Neuropixels recordings of ~8,500 neurons to identify neuronal population-level hallmarks of cognitive resilience in 13-month-old TgF344-AD rats. Cognitively resilient animals recruited fewer neurons but displayed more stable representations during repeated stimulation, with distinct functional synaptic connectivity independent of amyloid and tau levels.",
+      "research_fr": "La prépublication bioRxiv de premier auteur de Keying (2025) a utilisé des enregistrements Neuropixels de ~8 500 neurones pour identifier les caractéristiques populationnelles de la résilience cognitive chez les rats TgF344-AD de 13 mois. Les animaux cognitivement résilients recrutaient moins de neurones mais présentaient des représentations plus stables lors de stimulations répétées.",
+      "bio_en": "Keying is a postdoctoral fellow in the Functional Brain Imaging Lab.",
+      "bio_fr": "Keying est stagiaire postdoctorale au laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {},
+      "yearJoined": 2025
     },
     {
       "name": "Jazlynn Xiu Min Tan",
-      "role": "Undergraduate Student",
+      "role": "PhD Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
+      "research_en": "Jazlynn's first-author paper in Brain Communications (2025) introduced a novel integration of graph theory-based stepwise connectivity with connectome gradient space to study multi-step tau propagation from the entorhinal cortex in Alzheimer's disease. She also coauthored a Nature Communications paper (2024) on tau distribution along principal axes of brain organization.",
+      "research_fr": "L'article de premier auteur de Jazlynn dans Brain Communications (2025) a introduit une intégration novatrice de la connectivité par étapes basée sur la théorie des graphes avec l'espace de gradient connectomique pour étudier la propagation multi-étapes du tau depuis le cortex entorhinal dans la maladie d'Alzheimer. Elle est aussi coauteure d'un article Nature Communications (2024) sur la distribution du tau.",
       "bio_en": "Jazlynn is an undergraduate student in the Functional Brain Imaging Lab.",
       "bio_fr": "Jazlynn est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
+      "links": {},
+      "yearJoined": 2024
     },
     {
       "name": "Spencer",
-      "role": "Undergraduate Student",
+      "role": "Research Staff / Technicians",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
       "bio_en": "Spencer is a current member of the Functional Brain Imaging Lab.",
       "bio_fr": "Spencer est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
+      "links": {},
+      "yearJoined": 2025
     },
     {
       "name": "Kim",
-      "role": "Undergraduate Student",
+      "role": "Administrative Assistant",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
       "bio_en": "Kim is a current member of the Functional Brain Imaging Lab.",
       "bio_fr": "Kim est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
+      "links": {},
+      "yearJoined": 2025
     },
     {
-      "name": "Yu",
-      "role": "Undergraduate Student",
-      "status": "current",
+      "name": "Johnson Yu",
+      "role": "Graduate Student",
+      "status": "alumni",
       "photo": "images/people/placeholder.jpg",
-      "bio_en": "Yu is a current member of the Functional Brain Imaging Lab.",
-      "bio_fr": "Yu est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
+      "bio_en": "Johnson was a graduate student in the Functional Brain Imaging Lab.",
+      "bio_fr": "Johnson était étudiant au laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {},
+      "yearJoined": 2020,
+      "yearLeft": 2024,
+      "research_en": "Johnson's first-author paper in JCBFM (2024) used micro-ultrasound to characterize cerebrovasculature following focal ischemic stroke, establishing a novel imaging approach for tracking vascular remodeling after brain injury. He also contributed to work on light-sheet microscopy connectomics and focused ultrasound blood-brain barrier modulation.",
+      "research_fr": "L'article de premier auteur de Johnson dans JCBFM (2024) a utilisé la micro-échographie pour caractériser la cérébrovasculature suite à un AVC ischémique focal, établissant une nouvelle approche d'imagerie pour suivre le remodelage vasculaire après une lésion cérébrale.",
+      "currentPosition": ""
     },
     {
       "name": "Bharathy Lingamoorthy",
@@ -218,7 +262,8 @@
       "quote_author": "Bender, Futurama",
       "yearLeft": 2022,
       "currentPosition": "Alumni",
-      "links": {}
+      "links": {},
+      "yearJoined": 2018
     },
     {
       "name": "Ahmadreza Attarpour",
@@ -232,7 +277,8 @@
       "quote_author": "Theodore Roosevelt",
       "yearLeft": 2025,
       "currentPosition": "Alumni",
-      "links": {}
+      "links": {},
+      "yearJoined": 2025
     },
     {
       "name": "James Mester",
@@ -243,7 +289,8 @@
       "bio_fr": "Doctorat 2021; Spécialiste de l'imagerie avancée, Nikon Instruments.",
       "yearLeft": 2021,
       "currentPosition": "Advanced Imaging Specialist, Nikon Instruments",
-      "links": {}
+      "links": {},
+      "yearJoined": 2017
     },
     {
       "name": "Evelyn Lake",
@@ -254,7 +301,8 @@
       "bio_fr": "Doctorat 2016; Professeure adjointe, Université Yale.",
       "yearLeft": 2016,
       "currentPosition": "Assistant Professor, Yale University",
-      "links": {}
+      "links": {},
+      "yearJoined": 2015
     },
     {
       "name": "Connor Adams",
@@ -265,7 +313,8 @@
       "bio_fr": "Maîtrise 2017; Scientifique des données, Globus Medical.",
       "yearLeft": 2017,
       "currentPosition": "Data Scientist, Globus Medical",
-      "links": {}
+      "links": {},
+      "yearJoined": 2017
     },
     {
       "name": "Lewis Joo",
@@ -276,7 +325,8 @@
       "bio_fr": "Maîtrise 2017; Technicien de recherche, fBIL.",
       "yearLeft": 2017,
       "currentPosition": "Research Technician, fBIL",
-      "links": {}
+      "links": {},
+      "yearJoined": 2017
     },
     {
       "name": "Simone Chaudhary",
@@ -287,7 +337,8 @@
       "bio_fr": "Maîtrise 2012; Résidente en radio-oncologie à l'Université McMaster.",
       "yearLeft": 2012,
       "currentPosition": "Radiation Resident at McMaster University",
-      "links": {}
+      "links": {},
+      "yearJoined": 2010
     },
     {
       "name": "Liis Lindvere",
@@ -298,7 +349,8 @@
       "bio_fr": "Maîtrise 2012; Directrice des essais cliniques, MolecuLight Inc.",
       "yearLeft": 2012,
       "currentPosition": "Manager of Clinical Trials, MolecuLight Inc.",
-      "links": {}
+      "links": {},
+      "yearJoined": 2010
     },
     {
       "name": "Rafal Janik",
@@ -309,7 +361,8 @@
       "bio_fr": "Associé de recherche 2009-2011; Chef des opérations, Xanadu.",
       "yearLeft": 2011,
       "currentPosition": "Head of Operations, Xanadu",
-      "links": {}
+      "links": {},
+      "yearJoined": 2009
     },
     {
       "name": "Aaron Lai",
@@ -320,7 +373,8 @@
       "bio_fr": "Stagiaire postdoctoral 2012-2019; Associé de recherche, SRI.",
       "yearLeft": 2019,
       "currentPosition": "Research Associate, SRI",
-      "links": {}
+      "links": {},
+      "yearJoined": 2012
     },
     {
       "name": "Paolo Bazzigaluppi",
@@ -331,7 +385,8 @@
       "bio_fr": "Stagiaire postdoctoral 2013-2018; Associé de recherche à fBIL.",
       "yearLeft": 2018,
       "currentPosition": "Research Associate, fBIL",
-      "links": {}
+      "links": {},
+      "yearJoined": 2016
     },
     {
       "name": "Lakshminarayan Chinta",
@@ -342,7 +397,8 @@
       "bio_fr": "Stagiaire postdoctoral 2009-11; PDG et co-fondateur, AttolloSE.",
       "yearLeft": 2011,
       "currentPosition": "CEO & Co-Founder, AttolloSE",
-      "links": {}
+      "links": {},
+      "yearJoined": 2009
     },
     {
       "name": "Martijn Van Raaij",
@@ -353,7 +409,8 @@
       "bio_fr": "Stagiaire postdoctoral 2009-11; Scientifique R&D industriel, DEMCON.",
       "yearLeft": 2011,
       "currentPosition": "Industrial R & D Scientist, DEMCON",
-      "links": {}
+      "links": {},
+      "yearJoined": 2010
     },
     {
       "name": "Amy Scouten",
@@ -364,7 +421,8 @@
       "bio_fr": "Stagiaire postdoctoral 2008-2009; Agente de brevets, Integral IP.",
       "yearLeft": 2009,
       "currentPosition": "Patent Agent, Integral IP",
-      "links": {}
+      "links": {},
+      "yearJoined": 2007
     },
     {
       "name": "Jamie Graham",
@@ -375,7 +433,8 @@
       "bio_fr": "Chercheur de premier cycle 2018-2020; Étudiant de premier cycle, U de T.",
       "yearLeft": 2020,
       "currentPosition": "Undergraduate Student, U of T",
-      "links": {}
+      "links": {},
+      "yearJoined": 2018
     }
   ]
 }
