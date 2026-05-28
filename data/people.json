@@ -1,0 +1,164 @@
+{
+  "members": [
+    {
+      "name": "Dr. Bojana Stefanovic",
+      "role": "Principal Investigator",
+      "status": "current",
+      "photo": "images/people/bojana-stefanovic.jpg",
+      "bio_en": "Dr. Stefanovic is the Principal Investigator and Platform Director of Physical Sciences at Sunnybrook Research Institute. She leads the Functional Brain Imaging Lab, focusing on neurovascular coupling and brain imaging.",
+      "bio_fr": "Dre Stefanovic est la chercheuse principale et directrice de la plateforme des sciences physiques à l'Institut de recherche Sunnybrook. Elle dirige le laboratoire d'imagerie fonctionnelle du cerveau, se concentrant sur le couplage neurovasculaire et l'imagerie cérébrale.",
+      "education": "PhD, Medical Biophysics, University of Toronto",
+      "links": {
+        "email": "bojana.stefanovic@sri.utoronto.ca"
+      }
+    },
+    {
+      "name": "Bharathy Lingamoorthy",
+      "role": "Administrative Assistant",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Bharathy serves as the Administrative Assistant for the lab, ensuring smooth daily operations and supporting the research team in their various projects.",
+      "bio_fr": "Bharathy occupe le poste d'adjointe administrative du laboratoire, veillant au bon déroulement des opérations quotidiennes et soutenant l'équipe de recherche dans ses divers projets.",
+      "links": {},
+      "currentPosition": "Alumni"
+    },
+    {
+      "name": "Adrienne Dorr",
+      "role": "Research Assistant",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Outside of work I enjoy music, the outdoors, islands, books, spicy foods, vacations to warm locations, camping, and being silly with my boys. At work I enjoy the challenge of various microsurgical tasks, but the most exciting aspect of my job comes from capturing amazing biological images with multiphoton microscopy.",
+      "bio_fr": "Outside of work I enjoy music, the outdoors, islands, books, spicy foods, vacations to warm locations, camping, and being silly with my boys. At work I enjoy the challenge of various microsurgical tasks, but the most exciting aspect of my job comes from capturing amazing biological images with multiphoton microscopy. (Translation pending)",
+      "links": {}
+    },
+    {
+      "name": "Tina Beckett",
+      "role": "Research Assistant",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Tina is a Research Assistant focused on supporting the lab's experiments, maintaining protocols, and assisting with advanced neuroimaging studies.",
+      "bio_fr": "Tina est une assistante de recherche dont le travail consiste à soutenir les expériences du laboratoire, à maintenir les protocoles et à collaborer aux études avancées en neuro-imagerie.",
+      "links": {},
+      "currentPosition": "Alumni"
+    },
+    {
+      "name": "Emma Pineau",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Emma is a Graduate Student investigating novel brain imaging techniques and neurovascular responses under the supervision of Dr. Stefanovic.",
+      "bio_fr": "Emma est une étudiante aux cycles supérieurs qui étudie de nouvelles techniques d'imagerie cérébrale et les réponses neurovasculaires sous la supervision de la Dre Stefanovic.",
+      "links": {},
+      "currentPosition": "Alumni"
+    },
+    {
+      "name": "Ahmadreza Attarpour",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Ahmadreza is a Graduate Student in the lab, working on advanced imaging modalities to better understand functional brain changes.",
+      "bio_fr": "Ahmadreza est un étudiant aux cycles supérieurs dans le laboratoire, travaillant sur des modalités d'imagerie avancées pour mieux comprendre les changements fonctionnels du cerveau.",
+      "links": {},
+      "currentPosition": "Alumni"
+    },
+    {
+      "name": "Dustin Loren Almanza",
+      "role": "Graduate Student",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "I've been dancing since 1st grade from Filipino folk dances to modern and jazz in high school and ended up in hip-hop when I was in university. Coffee + music is my jam. When I am stressed, working out and jogging are my outlets.",
+      "bio_fr": "I've been dancing since 1st grade from Filipino folk dances to modern and jazz in high school and ended up in hip-hop when I was in university. Coffee + music is my jam. When I am stressed, working out and jogging are my outlets. (Translation pending)",
+      "links": {}
+    },
+    {
+      "name": "Matthew (Matt) Rozak",
+      "role": "Graduate Student",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "In my spare time, I can often be found catching up on the latest Netflix series, or occasionally reading fiction and news articles. I maintain a sizable board game collection, and have spent way too many nights enjoying that collection with friends.",
+      "bio_fr": "In my spare time, I can often be found catching up on the latest Netflix series, or occasionally reading fiction and news articles. I maintain a sizable board game collection, and have spent way too many nights enjoying that collection with friends. (Translation pending)",
+      "links": {}
+    },
+    {
+      "name": "Monica Bell Vila",
+      "role": "Graduate Student",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "I love to read, typically fiction, although I care more about how the book is written than what the book is about. On my nights off I like to practice yoga and draw or paint.",
+      "bio_fr": "I love to read, typically fiction, although I care more about how the book is written than what the book is about. On my nights off I like to practice yoga and draw or paint. (Translation pending)",
+      "links": {}
+    },
+    {
+      "name": "Margaret Koletar",
+      "role": "Research Technician",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "When I’m not in the lab you can find me exploring the many walking and cycling paths through the extensive green spaces in Toronto, snowshoeing in the winter, or sailing in the summer. On a hot summer day, it’s great to end the day with a beer on the beach at Sunnyside.",
+      "bio_fr": "When I’m not in the lab you can find me exploring the many walking and cycling paths through the extensive green spaces in Toronto, snowshoeing in the winter, or sailing in the summer. On a hot summer day, it’s great to end the day with a beer on the beach at Sunnyside. (Translation pending)",
+      "links": {}
+    },
+    {
+      "name": "Andrea Trevisiol",
+      "role": "Post-Doctoral Fellow",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "When I’m not reading about neurons and glia I enjoy keeping up with other science disciplines, sipping espresso, baking pizza and bread, or if I’m tired enough firing up a video game. I love being outside and playing basketball, cruising around on my longboard, exploring.",
+      "bio_fr": "When I’m not reading about neurons and glia I enjoy keeping up with other science disciplines, sipping espresso, baking pizza and bread, or if I’m tired enough firing up a video game. I love being outside and playing basketball, cruising around on my longboard, exploring. (Translation pending)",
+      "links": {}
+    },
+    {
+      "name": "Yu",
+      "role": "Lab Member",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Yu is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Yu est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Jack",
+      "role": "Lab Member",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Jack is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Jack est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Keying",
+      "role": "Lab Member",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Keying is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Keying est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Jazzlyn",
+      "role": "Lab Member",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Jazzlyn is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Jazzlyn est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Spencer",
+      "role": "Lab Member",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Spencer is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Spencer est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Kim",
+      "role": "Lab Member",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Kim is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Kim est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    }
+  ]
+}

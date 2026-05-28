@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "people": "People",
+    "research": "Research",
+    "publications": "Publications",
+    "facilities": "Facilities",
+    "news": "News",
+    "joinus": "Join Us"
+  },
+  "home": {
+    "welcome": "Welcome to the Functional Brain Imaging Lab",
+    "tagline": "Exploring the brain through cutting-edge imaging techniques."
+  },
+  "people": {
+    "title": "Our Team",
+    "current": "Current Members",
+    "alumni": "Alumni",
+    "currentPosition": "Current Position"
+  },
+  "publications": {
+    "title": "Publications",
+    "search": "Search publications...",
+    "filterYear": "Filter by year",
+    "featured": "Featured Publications",
+    "all": "All Publications"
+  }
+}

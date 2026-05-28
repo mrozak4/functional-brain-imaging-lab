@@ -1,0 +1,13 @@
+[
+  {
+    "title": "A deep learning pipeline for mapping in situ network-level neurovascular coupling in multi-photon fluorescence microscopy",
+    "authors": ["Author A", "Stefanovic B", "Author C"],
+    "journal": "eLife",
+    "year": 2024,
+    "doi": "10.7554/eLife.12345",
+    "pmid": "12345678",
+    "abstract": "Abstract goes here...",
+    "featured": true,
+    "topics": ["Deep Learning", "Microscopy"]
+  }
+]

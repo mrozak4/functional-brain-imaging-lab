@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Brain Imaging Lab | Sunnybrook Research Institute</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="The Functional Brain Imaging Lab at Sunnybrook Research Institute investigates neurovascular coupling using two-photon microscopy and fMRI.">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">Brain</span>Imaging Lab
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="people.html">People</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="news.html">News</a>
+                <a href="joinus.html">Join Us</a>
+                <a href="fr/index.html" class="lang-toggle">FR</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="mcm-shape-1"></div>
+            <div class="mcm-shape-2"></div>
+            <div class="container hero-content">
+                <span class="tagline">Sunnybrook Research Institute</span>
+                <h1>Mapping the Mind in Motion</h1>
+                <p>We investigate neurovascular coupling in health and disease using two-photon fluorescence microscopy and functional MRI.</p>
+                <a href="research.html" class="btn btn-primary">Explore Our Research</a>
+                <a href="people.html" class="btn btn-secondary" style="margin-left: 1rem;">Meet the Team</a>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Research Pillars</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="starburst" style="margin-bottom: 1rem;"></div>
+                        <h3>Neurovascular Coupling</h3>
+                        <p>Investigating how blood flow dynamically adjusts to neuronal activity in health and neurodegenerative diseases.</p>
+                    </div>
+                    <div class="card">
+                        <div class="starburst" style="background-color: var(--color-primary); margin-bottom: 1rem;"></div>
+                        <h3>Two-Photon Microscopy</h3>
+                        <p>High-resolution 3D imaging of cerebral microcirculation and neuronal population dynamics.</p>
+                    </div>
+                    <div class="card">
+                        <div class="starburst" style="background-color: var(--color-secondary); margin-bottom: 1rem;"></div>
+                        <h3>Functional MRI</h3>
+                        <p>Non-invasive brain function imaging at high field strengths to connect cellular mechanisms to macroscopic signals.</p>
+                    </div>
+                    <div class="card">
+                        <div class="starburst" style="background-color: var(--color-dark); margin-bottom: 1rem;"></div>
+                        <h3>Optogenetics</h3>
+                        <p>Precise light-activated neuronal stimulation combined with multi-modal recording techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="card-grid" id="news-container">
+                    <!-- Placeholder for news items -->
+                    <div class="card">
+                        <span class="tagline">May 2026</span>
+                        <h3>New Publication in eLife</h3>
+                        <p>Our deep learning pipeline for mapping neurovascular coupling in multi-photon microscopy is now published.</p>
+                        <a href="publications.html">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Brain Imaging Lab</h4>
+                    <p>Sunnybrook Research Institute<br>
+                    2075 Bayview Avenue<br>
+                    Toronto, ON M4N 3M5<br>
+                    Canada</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="research.html">Research</a></p>
+                    <p><a href="publications.html">Publications</a></p>
+                    <p><a href="joinus.html">Join Us</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p><a href="#">Google Scholar</a></p>
+                    <p><a href="#">Twitter / X</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Intro overlay -->
+    <div id="intro-overlay">
+        <canvas id="intro-canvas"></canvas>
+        <button id="skip-intro" class="btn btn-primary">Skip Intro</button>
+    </div>
+
+    <script src="js/intro-controller.js"></script>
+    <script async src="js/intro.js"></script>
+</body>
+</html>

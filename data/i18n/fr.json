@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "people": "Équipe",
+    "research": "Recherche",
+    "publications": "Publications",
+    "facilities": "Installations",
+    "news": "Nouvelles",
+    "joinus": "Joignez-vous"
+  },
+  "home": {
+    "welcome": "Bienvenue au Laboratoire d'Imagerie Cérébrale Fonctionnelle",
+    "tagline": "Explorer le cerveau grâce à des techniques d'imagerie de pointe."
+  },
+  "people": {
+    "title": "Notre Équipe",
+    "current": "Membres Actuels",
+    "alumni": "Anciens Membres",
+    "currentPosition": "Poste Actuel"
+  },
+  "publications": {
+    "title": "Publications",
+    "search": "Rechercher des publications...",
+    "filterYear": "Filtrer par année",
+    "featured": "Publications en vedette",
+    "all": "Toutes les publications"
+  }
+}

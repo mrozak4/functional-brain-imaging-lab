@@ -1,0 +1,3 @@
+/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles/intro.dir
+/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles/edit_cache.dir
+/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles/rebuild_cache.dir
