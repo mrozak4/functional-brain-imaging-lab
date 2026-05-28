@@ -3,6 +3,32 @@
  * Automatically discovers and animates elements — no manual HTML classes needed.
  */
 
+// Global: Copy citation to clipboard
+function copyCitation(btn, citation) {
+    navigator.clipboard.writeText(citation).then(() => {
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = '📋 Cite';
+            btn.classList.remove('copied');
+        }, 2000);
+    }).catch(() => {
+        // Fallback for older browsers
+        const ta = document.createElement('textarea');
+        ta.value = citation;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = '📋 Cite';
+            btn.classList.remove('copied');
+        }, 2000);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // ─── 1. MRI FOCUS SCROLL REVEAL ────────────────────────────────────

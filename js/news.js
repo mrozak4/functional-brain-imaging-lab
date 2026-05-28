@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const newsContainer = document.getElementById('news-container');
     if (!newsContainer) return;
 
+    // Show skeleton loading
+    newsContainer.innerHTML = Array(4).fill('<div class="skeleton skeleton-card"></div>').join('');
+
     try {
         // Determine prefix based on pathname so it works reliably before I18n is initialized
         const isFr = window.location.pathname.includes('/fr/');

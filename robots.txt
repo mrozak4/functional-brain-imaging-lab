@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrozak4.github.io/functional-brain-imaging-lab/sitemap.xml

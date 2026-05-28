@@ -3,17 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News | Functional Brain Imaging Lab</title>
+    <title>404 — Page Not Found | Functional Brain Imaging Lab</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Latest news and updates from the Functional Brain Imaging Lab.">
-
     <link rel="icon" href="images/logo.gif" type="image/gif">
-
-    <meta property="og:title" content="News | Functional Brain Imaging Lab">
-    <meta property="og:description" content="Latest news and updates from the Functional Brain Imaging Lab.">
-    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-family: var(--font-accent);
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .error-brain {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: pulse-brain 2s ease-in-out infinite;
+        }
+        @keyframes pulse-brain {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        .error-message {
+            font-size: 1.3rem;
+            color: var(--color-text-muted);
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+        .error-subtitle {
+            font-family: var(--font-accent);
+            color: var(--color-primary);
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+    </style>
     <link rel="alternate" type="application/rss+xml" title="fBIL News" href="feed.xml">
     <meta name="view-transition" content="same-origin">
 </head>
@@ -32,28 +68,27 @@
                 <a href="research.html" data-i18n="nav.research">Research</a>
                 <a href="publications.html" data-i18n="nav.publications">Publications</a>
                 <a href="facilities.html" data-i18n="nav.facilities">Facilities</a>
-                <a href="news.html" class="active" data-i18n="nav.news">News</a>
+                <a href="news.html" data-i18n="nav.news">News</a>
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joinus.html" data-i18n="nav.joinus">Join Us</a>
-                <a href="fr/nouvelles.html" class="lang-toggle">FR</a>
-                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
-                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Lab News</h2>
-                </div>
-                
-                <div class="card-grid" id="news-container">
-                    <div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div>
-                </div>
+        <div class="error-page">
+            <div>
+                <div class="error-brain">🧠</div>
+                <div class="error-code">404</div>
+                <div class="error-subtitle">Signal Not Found</div>
+                <p class="error-message">
+                    Looks like this neural pathway doesn't lead anywhere. 
+                    The page you're looking for may have been moved or doesn't exist.
+                </p>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="research.html" class="btn btn-secondary" style="margin-left: 1rem;">Explore Research</a>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -68,15 +103,15 @@
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <p><a href="research.html" data-i18n="nav.research">Research</a></p>
-                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
-                    <p><a href="joinus.html" data-i18n="nav.joinus">Join Us</a></p>
+                    <p><a href="research.html">Research</a></p>
+                    <p><a href="publications.html">Publications</a></p>
+                    <p><a href="joinus.html">Join Us</a></p>
                 </div>
                 <div class="footer-col">
                     <h4>Connect</h4>
                     <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
                     <p><a href="feed.xml" class="rss-link"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg> RSS Feed</a></p>
-                    </div>
+                </div>
             </div>
             <div class="footer-bottom">
                 &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
@@ -84,18 +119,8 @@
         </div>
     </footer>
 
-    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
     <script src="js/i18n.js"></script>
-    <script src="js/news.js"></script>
     <script src="js/neural-bg.js"></script>
-<script src="js/animations.js"></script>
-
-    <div id="search-overlay">
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
-            <div class="search-results"></div>
-        </div>
-    </div>
-<script src="js/search.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

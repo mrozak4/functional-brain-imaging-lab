@@ -1269,4 +1269,136 @@ body.light-mode .hero {
 }
 #search-trigger:hover { color: var(--color-primary); }
 
+/* ── Skeleton Loading ── */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-bg-alt) 25%, rgba(45, 212, 191, 0.08) 50%, var(--color-bg-alt) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--border-radius-sm);
+}
+.skeleton-card {
+  height: 120px;
+  margin-bottom: 1rem;
+}
+.skeleton-line {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+.skeleton-line.short { width: 50%; }
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
 
+/* ── Typewriter Effect ── */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid var(--color-primary);
+  white-space: nowrap;
+  width: 0;
+  animation: typewriter-reveal 2.5s steps(30, end) 0.5s forwards,
+             blink-caret 0.75s step-end 8;
+}
+@keyframes typewriter-reveal {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--color-primary); }
+}
+
+/* ── Animated Gradient Border (Featured Pubs) ── */
+.pub-highlight-card {
+  position: relative;
+  overflow: hidden;
+}
+.pub-highlight-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(
+    from 0deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-tertiary),
+    var(--color-primary)
+  );
+  border-radius: inherit;
+  z-index: -1;
+  animation: rotate-gradient 4s linear infinite;
+}
+.pub-highlight-card::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: var(--color-card-solid);
+  border-radius: inherit;
+  z-index: -1;
+}
+@keyframes rotate-gradient {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ── Copy Citation Button ── */
+.copy-citation-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-family: var(--font-accent);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.copy-citation-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.copy-citation-btn.copied {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+/* ── View Transitions ── */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: fade-out 0.25s ease-in;
+}
+::view-transition-new(root) {
+  animation: fade-in 0.25s ease-out;
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── RSS Link in Footer ── */
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.rss-link svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}

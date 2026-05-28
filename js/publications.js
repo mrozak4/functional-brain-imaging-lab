@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     if (!publicationsList) return;
 
+    // Show skeleton loading
+    publicationsList.innerHTML = Array(6).fill('').map(() => `
+        <div class="skeleton skeleton-card"></div>
+    `).join('');
+
     let publications = [];
 
     try {
@@ -94,6 +99,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             pubs.forEach(pub => {
                 const authorsStr = pub.authors.map(a => a.includes('Stefanovic') ? `<strong>${a}</strong>` : a).join(', ');
+                const plainAuthors = pub.authors.join(', ');
+                const citation = `${plainAuthors} (${pub.year}). ${pub.title} ${pub.journal}.${pub.doi ? ' https://doi.org/' + pub.doi : ''}`;
+                const escapedCitation = citation.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                 html += `
                     <div class="publication-card ${pub.featured ? 'featured' : ''}">
                         <h4 class="pub-title">${pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank">${pub.title}</a>` : pub.title}</h4>
@@ -102,6 +110,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="pub-links">
                             ${pub.pmid ? `<a href="https://pubmed.ncbi.nlm.nih.gov/${pub.pmid}/" target="_blank" class="btn-sm">PubMed</a>` : ''}
                             ${pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" class="btn-sm">DOI</a>` : ''}
+                            <button class="copy-citation-btn" onclick="copyCitation(this, '${escapedCitation}')" title="Copy APA citation">📋 Cite</button>
                         </div>
                     </div>
                 `;
