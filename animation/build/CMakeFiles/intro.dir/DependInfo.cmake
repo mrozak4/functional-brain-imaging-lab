@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/main.cpp" "CMakeFiles/intro.dir/src/main.cpp.o" "gcc" "CMakeFiles/intro.dir/src/main.cpp.o.d"
-  "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.cpp" "CMakeFiles/intro.dir/src/parallax.cpp.o" "gcc" "CMakeFiles/intro.dir/src/parallax.cpp.o.d"
-  "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.cpp" "CMakeFiles/intro.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/intro.dir/src/renderer.cpp.o.d"
-  "/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.cpp" "CMakeFiles/intro.dir/src/scene_manager.cpp.o" "gcc" "CMakeFiles/intro.dir/src/scene_manager.cpp.o.d"
+  "/Users/matt/Documents/functional-brain-imaging-lab/animation/src/main.cpp" "CMakeFiles/intro.dir/src/main.cpp.o" "gcc" "CMakeFiles/intro.dir/src/main.cpp.o.d"
+  "/Users/matt/Documents/functional-brain-imaging-lab/animation/src/parallax.cpp" "CMakeFiles/intro.dir/src/parallax.cpp.o" "gcc" "CMakeFiles/intro.dir/src/parallax.cpp.o.d"
+  "/Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.cpp" "CMakeFiles/intro.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/intro.dir/src/renderer.cpp.o.d"
+  "/Users/matt/Documents/functional-brain-imaging-lab/animation/src/scene_manager.cpp" "CMakeFiles/intro.dir/src/scene_manager.cpp.o" "gcc" "CMakeFiles/intro.dir/src/scene_manager.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

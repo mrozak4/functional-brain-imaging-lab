@@ -1,6 +1,6 @@
 CMakeFiles/intro.dir/src/main.cpp.o: \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/main.cpp \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.h \
+  /Users/matt/Documents/functional-brain-imaging-lab/animation/src/main.cpp \
+  /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_main.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_stdinc.h \
@@ -619,8 +619,8 @@ CMakeFiles/intro.dir/src/main.cpp.o: \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/raw_storage_iterator.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temporary_buffer.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/optional \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.h \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.h \
+  /Users/matt/Documents/functional-brain-imaging-lab/animation/src/scene_manager.h \
+  /Users/matt/Documents/functional-brain-imaging-lab/animation/src/parallax.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/emscripten.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \

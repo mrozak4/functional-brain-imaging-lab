@@ -1,6 +1,6 @@
 CMakeFiles/intro.dir/src/renderer.cpp.o: \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.cpp \
-  /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.h \
+  /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.cpp \
+  /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_main.h \
   /Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/cache/sysroot/include/SDL2/SDL_stdinc.h \

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation
+CMAKE_SOURCE_DIR = /Users/matt/Documents/functional-brain-imaging-lab/animation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build
+CMAKE_BINARY_DIR = /Users/matt/Documents/functional-brain-imaging-lab/animation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/intro.dir/depend.make
@@ -73,60 +73,60 @@ CMakeFiles/intro.dir/codegen:
 .PHONY : CMakeFiles/intro.dir/codegen
 
 CMakeFiles/intro.dir/src/main.cpp.o: CMakeFiles/intro.dir/flags.make
-CMakeFiles/intro.dir/src/main.cpp.o: /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/main.cpp
+CMakeFiles/intro.dir/src/main.cpp.o: /Users/matt/Documents/functional-brain-imaging-lab/animation/src/main.cpp
 CMakeFiles/intro.dir/src/main.cpp.o: CMakeFiles/intro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/intro.dir/src/main.cpp.o"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/main.cpp.o -MF CMakeFiles/intro.dir/src/main.cpp.o.d -o CMakeFiles/intro.dir/src/main.cpp.o -c /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/functional-brain-imaging-lab/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/intro.dir/src/main.cpp.o"
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/main.cpp.o -MF CMakeFiles/intro.dir/src/main.cpp.o.d -o CMakeFiles/intro.dir/src/main.cpp.o -c /Users/matt/Documents/functional-brain-imaging-lab/animation/src/main.cpp
 
 CMakeFiles/intro.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/intro.dir/src/main.cpp.i"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/main.cpp > CMakeFiles/intro.dir/src/main.cpp.i
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/functional-brain-imaging-lab/animation/src/main.cpp > CMakeFiles/intro.dir/src/main.cpp.i
 
 CMakeFiles/intro.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/intro.dir/src/main.cpp.s"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/main.cpp -o CMakeFiles/intro.dir/src/main.cpp.s
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/functional-brain-imaging-lab/animation/src/main.cpp -o CMakeFiles/intro.dir/src/main.cpp.s
 
 CMakeFiles/intro.dir/src/renderer.cpp.o: CMakeFiles/intro.dir/flags.make
-CMakeFiles/intro.dir/src/renderer.cpp.o: /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.cpp
+CMakeFiles/intro.dir/src/renderer.cpp.o: /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.cpp
 CMakeFiles/intro.dir/src/renderer.cpp.o: CMakeFiles/intro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/intro.dir/src/renderer.cpp.o"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/renderer.cpp.o -MF CMakeFiles/intro.dir/src/renderer.cpp.o.d -o CMakeFiles/intro.dir/src/renderer.cpp.o -c /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/functional-brain-imaging-lab/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/intro.dir/src/renderer.cpp.o"
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/renderer.cpp.o -MF CMakeFiles/intro.dir/src/renderer.cpp.o.d -o CMakeFiles/intro.dir/src/renderer.cpp.o -c /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.cpp
 
 CMakeFiles/intro.dir/src/renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/intro.dir/src/renderer.cpp.i"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.cpp > CMakeFiles/intro.dir/src/renderer.cpp.i
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.cpp > CMakeFiles/intro.dir/src/renderer.cpp.i
 
 CMakeFiles/intro.dir/src/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/intro.dir/src/renderer.cpp.s"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/renderer.cpp -o CMakeFiles/intro.dir/src/renderer.cpp.s
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/functional-brain-imaging-lab/animation/src/renderer.cpp -o CMakeFiles/intro.dir/src/renderer.cpp.s
 
 CMakeFiles/intro.dir/src/scene_manager.cpp.o: CMakeFiles/intro.dir/flags.make
-CMakeFiles/intro.dir/src/scene_manager.cpp.o: /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.cpp
+CMakeFiles/intro.dir/src/scene_manager.cpp.o: /Users/matt/Documents/functional-brain-imaging-lab/animation/src/scene_manager.cpp
 CMakeFiles/intro.dir/src/scene_manager.cpp.o: CMakeFiles/intro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/intro.dir/src/scene_manager.cpp.o"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/scene_manager.cpp.o -MF CMakeFiles/intro.dir/src/scene_manager.cpp.o.d -o CMakeFiles/intro.dir/src/scene_manager.cpp.o -c /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/functional-brain-imaging-lab/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/intro.dir/src/scene_manager.cpp.o"
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/scene_manager.cpp.o -MF CMakeFiles/intro.dir/src/scene_manager.cpp.o.d -o CMakeFiles/intro.dir/src/scene_manager.cpp.o -c /Users/matt/Documents/functional-brain-imaging-lab/animation/src/scene_manager.cpp
 
 CMakeFiles/intro.dir/src/scene_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/intro.dir/src/scene_manager.cpp.i"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.cpp > CMakeFiles/intro.dir/src/scene_manager.cpp.i
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/functional-brain-imaging-lab/animation/src/scene_manager.cpp > CMakeFiles/intro.dir/src/scene_manager.cpp.i
 
 CMakeFiles/intro.dir/src/scene_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/intro.dir/src/scene_manager.cpp.s"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/scene_manager.cpp -o CMakeFiles/intro.dir/src/scene_manager.cpp.s
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/functional-brain-imaging-lab/animation/src/scene_manager.cpp -o CMakeFiles/intro.dir/src/scene_manager.cpp.s
 
 CMakeFiles/intro.dir/src/parallax.cpp.o: CMakeFiles/intro.dir/flags.make
-CMakeFiles/intro.dir/src/parallax.cpp.o: /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.cpp
+CMakeFiles/intro.dir/src/parallax.cpp.o: /Users/matt/Documents/functional-brain-imaging-lab/animation/src/parallax.cpp
 CMakeFiles/intro.dir/src/parallax.cpp.o: CMakeFiles/intro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/intro.dir/src/parallax.cpp.o"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/parallax.cpp.o -MF CMakeFiles/intro.dir/src/parallax.cpp.o.d -o CMakeFiles/intro.dir/src/parallax.cpp.o -c /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matt/Documents/functional-brain-imaging-lab/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/intro.dir/src/parallax.cpp.o"
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/intro.dir/src/parallax.cpp.o -MF CMakeFiles/intro.dir/src/parallax.cpp.o.d -o CMakeFiles/intro.dir/src/parallax.cpp.o -c /Users/matt/Documents/functional-brain-imaging-lab/animation/src/parallax.cpp
 
 CMakeFiles/intro.dir/src/parallax.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/intro.dir/src/parallax.cpp.i"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.cpp > CMakeFiles/intro.dir/src/parallax.cpp.i
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matt/Documents/functional-brain-imaging-lab/animation/src/parallax.cpp > CMakeFiles/intro.dir/src/parallax.cpp.i
 
 CMakeFiles/intro.dir/src/parallax.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/intro.dir/src/parallax.cpp.s"
-	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/src/parallax.cpp -o CMakeFiles/intro.dir/src/parallax.cpp.s
+	/Users/matt/Documents/antigravity/sharp-faraday/lab-website/.emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matt/Documents/functional-brain-imaging-lab/animation/src/parallax.cpp -o CMakeFiles/intro.dir/src/parallax.cpp.s
 
 # Object files for target intro
 intro_OBJECTS = \
@@ -145,7 +145,7 @@ intro.js: CMakeFiles/intro.dir/src/parallax.cpp.o
 intro.js: CMakeFiles/intro.dir/build.make
 intro.js: CMakeFiles/intro.dir/objects1.rsp
 intro.js: CMakeFiles/intro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable intro.js"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matt/Documents/functional-brain-imaging-lab/animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable intro.js"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/intro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -157,6 +157,6 @@ CMakeFiles/intro.dir/clean:
 .PHONY : CMakeFiles/intro.dir/clean
 
 CMakeFiles/intro.dir/depend:
-	cd /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build /Users/matt/Documents/antigravity/sharp-faraday/lab-website/animation/build/CMakeFiles/intro.dir/DependInfo.cmake "--color=$(COLOR)" intro
+	cd /Users/matt/Documents/functional-brain-imaging-lab/animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/matt/Documents/functional-brain-imaging-lab/animation /Users/matt/Documents/functional-brain-imaging-lab/animation /Users/matt/Documents/functional-brain-imaging-lab/animation/build /Users/matt/Documents/functional-brain-imaging-lab/animation/build /Users/matt/Documents/functional-brain-imaging-lab/animation/build/CMakeFiles/intro.dir/DependInfo.cmake "--color=$(COLOR)" intro
 .PHONY : CMakeFiles/intro.dir/depend
 

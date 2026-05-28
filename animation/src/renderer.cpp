@@ -63,3 +63,15 @@ void Renderer::drawRect(int x, int y, int w, int h, int r, int g, int b, int a) 
     SDL_SetRenderDrawColor(sdl_renderer, r, g, b, a);
     SDL_RenderFillRect(sdl_renderer, &rect);
 }
+
+void Renderer::saveFrame(const std::string& filename) {
+    if (!sdl_renderer) return;
+    int w, h;
+    SDL_GetRendererOutputSize(sdl_renderer, &w, &h);
+    SDL_Surface* surface = SDL_CreateRGBSurfaceWithFormat(0, w, h, 32, SDL_PIXELFORMAT_ARGB8888);
+    if (surface) {
+        SDL_RenderReadPixels(sdl_renderer, NULL, SDL_PIXELFORMAT_ARGB8888, surface->pixels, surface->pitch);
+        SDL_SaveBMP(surface, filename.c_str());
+        SDL_FreeSurface(surface);
+    }
+}

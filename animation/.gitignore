@@ -1,0 +1,6 @@
+build_native/
+compile_commands.json
+intro.mp4
+process_images.py
+build/frame_*.bmp
+build/frame_*.png

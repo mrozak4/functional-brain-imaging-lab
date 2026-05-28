@@ -8,9 +8,9 @@
 SceneManager::SceneManager() : currentState(SceneState::WALKING), stateTime(0.0f), characterX(100.0f), characterY(350.0f), texRbc(nullptr), texMicroscope(nullptr) {}
 
 void SceneManager::init(Renderer& renderer) {
-    texRbc = renderer.loadTexture("/assets/rbc.png");
-    texMicroscope = renderer.loadTexture("/assets/microscope.png");
-    SDL_Texture* texBg = renderer.loadTexture("/assets/background.png");
+    texRbc = renderer.loadTexture("assets/rbc.png");
+    texMicroscope = renderer.loadTexture("assets/microscope.png");
+    SDL_Texture* texBg = renderer.loadTexture("assets/background.png");
     parallax.setTexture(texBg);
 }
 
