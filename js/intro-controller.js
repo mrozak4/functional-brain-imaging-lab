@@ -4,7 +4,7 @@ var Module = {
         return canvas;
     })(),
     locateFile: function(path, prefix) {
-        if (path.endsWith('.wasm')) {
+        if (path.endsWith('.wasm') || path.endsWith('.data')) {
             return 'js/' + path;
         }
         return prefix + path;
