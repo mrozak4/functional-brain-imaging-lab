@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ─── 1. MRI FOCUS SCROLL REVEAL ────────────────────────────────────
     // Auto-detect animatable elements instead of relying on HTML classes
+    // NOTE: .stat-item is excluded — stats are handled by the counter observer below
     const animateSelectors = [
         '.card',
         '.pub-highlight-card',
         '.person-card',
         '.section-header',
         '.conference-card',
-        '.stat-item',
         '.content-block',
         '.facility-item',
         '.pub-filters-bar',
@@ -99,11 +99,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ─── 2. ANIMATED STATS COUNTER ─────────────────────────────────────
+    // First, hide the stats bar so it can animate in
+    const statsBar = document.querySelector('.stats-bar');
+    if (statsBar) {
+        statsBar.style.opacity = '0';
+        statsBar.style.transform = 'translateY(30px)';
+        statsBar.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    }
+
     const statNumbers = document.querySelectorAll('.stat-number');
     if (statNumbers.length) {
         const counterObserver = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    // Reveal the stats bar first
+                    if (statsBar) {
+                        statsBar.style.opacity = '1';
+                        statsBar.style.transform = 'translateY(0)';
+                    }
+
                     const el = entry.target;
                     const target = parseInt(el.dataset.target, 10);
                     const suffix = el.dataset.suffix || '';
