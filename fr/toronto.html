@@ -8,8 +8,15 @@
     <meta name="description" content="Reconnaissance territoriale et recommandations locales à Toronto de l'équipe du Laboratoire d'imagerie cérébrale fonctionnelle.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Ce que nous aimons de Toronto | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Reconnaissance territoriale et recommandations locales à Toronto de l'équipe du Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,11 +34,13 @@
                 <a href="toronto.html" class="active" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="../toronto.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Header -->
         <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/facilities/booking-bg.jpeg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
             <div class="container">
@@ -41,7 +50,7 @@
         </section>
 
         <!-- Land Acknowledgement -->
-        <section class="section section-alt reveal-on-scroll">
+        <section class="section section-alt">
             <div class="container" style="max-width: 800px; text-align: center;">
                 <span class="tagline">Respect et honneur</span>
                 <h2>Reconnaissance territoriale</h2>
@@ -54,17 +63,17 @@
         </section>
 
         <!-- Team Favorites Grid -->
-        <section class="section reveal-on-scroll">
+        <section class="section">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2>Nos recommandations locales</h2>
                     <p style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted);">Explorez les recommandations soigneusement choisies par l'équipe du fBIL.</p>
                 </div>
 
-                <div class="card-grid reveal-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
                     
                     <!-- Bojana -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/bojana.gif" alt="Bojana" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -78,7 +87,7 @@
                     </div>
 
                     <!-- Matt -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/matt.gif" alt="Matt" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -92,7 +101,7 @@
                     </div>
 
                     <!-- Adrienne -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/adrienne.gif" alt="Adrienne" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -106,7 +115,7 @@
                     </div>
 
                     <!-- Tina -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/tina.gif" alt="Tina" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -120,7 +129,7 @@
                     </div>
 
                     <!-- Margaret -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/margaret.gif" alt="Margaret" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -134,7 +143,7 @@
                     </div>
 
                     <!-- Andrea -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/andrea.gif" alt="Andrea" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -148,7 +157,7 @@
                     </div>
 
                     <!-- Andrew -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/andrew.gif" alt="Andrew" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -162,7 +171,7 @@
                     </div>
 
                     <!-- Monica -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/monica.gif" alt="Monica" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -176,7 +185,7 @@
                     </div>
 
                     <!-- Emma -->
-                    <div class="card person-fav-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card person-fav-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                                 <img src="../images/people/emma.png" alt="Emma" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
@@ -194,17 +203,17 @@
         </section>
 
         <!-- Resources Section -->
-        <section class="section section-alt reveal-on-scroll">
+        <section class="section section-alt">
             <div class="container">
-                <div class="section-header reveal-on-scroll" style="margin-bottom: 3rem;">
+                <div class="section-header" style="margin-bottom: 3rem;">
                     <h2>Ressources sur Toronto</h2>
                     <p style="color: var(--color-text-muted);">Liens utiles et répertoires pour en découvrir davantage sur notre ville.</p>
                 </div>
 
-                <div class="card-grid reveal-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                     
                     <!-- blogTO -->
-                    <div class="card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
+                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
                         <div>
                             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                                 <img src="../images/toronto/blogto.png" alt="blogTO Logo" style="max-height: 100%; object-fit: contain;">
@@ -216,7 +225,7 @@
                     </div>
 
                     <!-- NOW Magazine -->
-                    <div class="card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
+                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
                         <div>
                             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                                 <img src="../images/toronto/now.jpg" alt="NOW Magazine Logo" style="max-height: 100%; object-fit: contain; border-radius: var(--border-radius-sm);">
@@ -228,7 +237,7 @@
                     </div>
 
                     <!-- City of Toronto -->
-                    <div class="card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
+                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center;">
                         <div>
                             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                                 <img src="../images/toronto/cityoftoronto.jpg" alt="City of Toronto Logo" style="max-height: 100%; object-fit: contain; border-radius: 50%;">
@@ -275,5 +284,13 @@
     <script src="../js/i18n.js"></script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>

@@ -25,6 +25,36 @@ document.addEventListener('DOMContentLoaded', async () => {
                 option.textContent = year;
                 filterSelect.appendChild(option);
             });
+
+            // Also create year pill tabs
+            const tabsContainer = document.getElementById('pub-year-tabs');
+            if (tabsContainer) {
+                const allTab = document.createElement('button');
+                allTab.className = 'pub-year-tab active';
+                allTab.textContent = 'All';
+                allTab.dataset.year = '';
+                allTab.addEventListener('click', () => {
+                    filterSelect.value = '';
+                    tabsContainer.querySelectorAll('.pub-year-tab').forEach(t => t.classList.remove('active'));
+                    allTab.classList.add('active');
+                    filterAndRender();
+                });
+                tabsContainer.appendChild(allTab);
+
+                years.forEach(year => {
+                    const tab = document.createElement('button');
+                    tab.className = 'pub-year-tab';
+                    tab.textContent = year;
+                    tab.dataset.year = year;
+                    tab.addEventListener('click', () => {
+                        filterSelect.value = year;
+                        tabsContainer.querySelectorAll('.pub-year-tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        filterAndRender();
+                    });
+                    tabsContainer.appendChild(tab);
+                });
+            }
         }
 
         renderPublications(publications);

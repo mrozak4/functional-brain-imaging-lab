@@ -8,8 +8,15 @@
     <meta name="description" content="Axes de recherche et projets du Laboratoire d'imagerie cérébrale fonctionnelle.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Recherche | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Axes de recherche et projets du Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -29,11 +36,13 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a>
                 <a href="../research.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Header -->
         <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('../images/projects/cleared-perfused-mouse.png'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
             <div class="container">
@@ -43,7 +52,7 @@
         </section>
 
         <!-- Projects Sections -->
-        <section class="section reveal-on-scroll">
+        <section class="section">
             <div class="container">
                 
                 <!-- Project 1 -->
@@ -193,5 +202,13 @@
     <script src="../js/i18n.js"></script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>

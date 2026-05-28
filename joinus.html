@@ -8,8 +8,15 @@
     <meta name="description" content="Open positions and opportunities to join the Functional Brain Imaging Lab in Toronto.">
 
     <link rel="icon" href="images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Join Us | Functional Brain Imaging Lab">
+    <meta property="og:description" content="Open positions and opportunities to join the Functional Brain Imaging Lab in Toronto.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,14 +34,16 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joinus.html" class="active" data-i18n="nav.joinus">Join Us</a>
                 <a href="fr/joignez-vous.html" class="lang-toggle">FR</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="section reveal-on-scroll">
+    <main id="main-content">
+        <section class="section">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2>Join Our Lab</h2>
                 </div>
                 
@@ -43,15 +52,15 @@
                 </p>
 
                 <h3 style="margin-bottom: 2rem;">Open Positions</h3>
-                <div class="card-grid reveal-on-scroll">
-                    <div class="card reveal-on-scroll">
+                <div class="card-grid">
+                    <div class="card">
                         <span class="tagline">Postdoctoral Fellow</span>
                         <h3>Neurovascular Coupling in AD</h3>
                         <p>Seeking a postdoc to lead in vivo imaging studies of neurovascular dysfunction in Alzheimer's disease models.</p>
                         <a href="mailto:bojana.stefanovic@sri.utoronto.ca" class="btn btn-secondary" style="margin-top: 1rem;">Apply Now</a>
                     </div>
                     
-                    <div class="card reveal-on-scroll">
+                    <div class="card">
                         <span class="tagline">Graduate Students (MSc/PhD)</span>
                         <h3>Computational Image Analysis</h3>
                         <p>Opportunities for students interested in developing deep learning pipelines for microvascular network analysis.</p>
@@ -61,9 +70,9 @@
             </div>
         </section>
 
-        <section class="section section-alt reveal-on-scroll">
+        <section class="section section-alt">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2>Life in Toronto</h2>
                 </div>
                 <div style="display: flex; gap: 3rem; align-items: center; max-width: 900px; margin: 0 auto; flex-wrap: wrap;">
@@ -110,5 +119,13 @@
     <script src="js/i18n.js"></script>
     <script src="js/neural-bg.js"></script>
 <script src="js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="js/search.js"></script>
 </body>
 </html>

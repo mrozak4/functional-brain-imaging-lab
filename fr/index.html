@@ -8,8 +8,15 @@
     <meta name="description" content="Le Laboratoire d'imagerie cérébrale fonctionnelle de l'Institut de recherche Sunnybrook étudie le couplage neurovasculaire par microscopie biphotonique et IRMf.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Laboratoire d'imagerie cérébrale fonctionnelle | Institut de recherche Sunnybrook">
+    <meta property="og:description" content="Le Laboratoire d'imagerie cérébrale fonctionnelle de l'Institut de recherche Sunnybrook étudie le couplage neurovasculaire par microscopie biphotonique et IRMf.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -29,11 +36,13 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a>
                 <a href="../index.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero">
             <div class="mcm-shape-1"></div>
             <div class="mcm-shape-2"></div>
@@ -46,28 +55,51 @@
             </div>
         </section>
 
-        <section class="section section-alt reveal-on-scroll">
+        <section class="section" style="padding: 2rem 0;">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="75" data-suffix="+">0</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15" data-suffix="">0</div>
+                        <div class="stat-label">Membres</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="4" data-suffix="">0</div>
+                        <div class="stat-label">Axes de recherche</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2" data-suffix="">0</div>
+                        <div class="stat-label">Installations</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
                     <h2>Nos axes de recherche</h2>
                 </div>
-                <div class="card-grid reveal-on-scroll">
-                    <div class="card reveal-on-scroll">
+                <div class="card-grid">
+                    <div class="card">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary); margin-bottom: 1rem;"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         <h3>Couplage neurovasculaire</h3>
                         <p>Étude de l'ajustement dynamique du débit sanguin à l'activité neuronale en santé et dans les maladies neurodégénératives.</p>
                     </div>
-                    <div class="card reveal-on-scroll">
+                    <div class="card">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary); margin-bottom: 1rem;"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
                         <h3>Microscopie biphotonique</h3>
                         <p>Imagerie 3D à haute résolution de la microcirculation cérébrale et de la dynamique des populations neuronales.</p>
                     </div>
-                    <div class="card reveal-on-scroll">
+                    <div class="card">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-secondary); margin-bottom: 1rem;"><path d="M12 4v16"/><path d="M8 8v8"/><path d="M16 8v8"/><path d="M4 12h16"/><circle cx="12" cy="12" r="10"/></svg>
                         <h3>IRM fonctionnelle</h3>
                         <p>Imagerie non invasive des fonctions cérébrales à haut champ pour relier les mécanismes cellulaires aux signaux macroscopiques.</p>
                     </div>
-                    <div class="card reveal-on-scroll">
+                    <div class="card">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-tertiary); margin-bottom: 1rem;"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
                         <h3>Optogénétique</h3>
                         <p>Stimulation neuronale précise par activation lumineuse combinée à des techniques d'enregistrement multimodal.</p>
@@ -76,12 +108,12 @@
             </div>
         </section>
         
-        <section class="section reveal-on-scroll">
+        <section class="section">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2 data-i18n="news.title">Nouvelles et événements</h2>
                 </div>
-                <div class="card-grid reveal-on-scroll" id="news-container" data-limit="4">
+                <div class="card-grid" id="news-container" data-limit="4">
                     <div class="loading-spinner">Chargement des nouvelles…</div>
                 </div>
             </div>
@@ -131,5 +163,13 @@
     <script src="../js/news.js"></script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>

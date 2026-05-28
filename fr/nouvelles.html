@@ -8,8 +8,15 @@
     <meta name="description" content="Dernières nouvelles et mises à jour du Laboratoire d'imagerie cérébrale fonctionnelle.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Nouvelles | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Dernières nouvelles et mises à jour du Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,18 +34,20 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="../news.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="section reveal-on-scroll">
+    <main id="main-content">
+        <section class="section">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2 data-i18n="news.title">Nouvelles et événements</h2>
                 </div>
                 
-                <div class="card-grid reveal-on-scroll" id="news-container">
+                <div class="card-grid" id="news-container">
                     <div class="loading-spinner">Chargement des nouvelles…</div>
                 </div>
             </div>
@@ -77,5 +86,13 @@
     <script src="../js/news.js"></script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>

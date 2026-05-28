@@ -8,8 +8,15 @@
     <meta name="description" content="Latest news and updates from the Functional Brain Imaging Lab.">
 
     <link rel="icon" href="images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="News | Functional Brain Imaging Lab">
+    <meta property="og:description" content="Latest news and updates from the Functional Brain Imaging Lab.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,18 +34,20 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joinus.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="fr/nouvelles.html" class="lang-toggle">FR</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="section reveal-on-scroll">
+    <main id="main-content">
+        <section class="section">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2>Lab News</h2>
                 </div>
                 
-                <div class="card-grid reveal-on-scroll" id="news-container">
+                <div class="card-grid" id="news-container">
                     <div class="loading-spinner">Loading news...</div>
                 </div>
             </div>
@@ -77,5 +86,13 @@
     <script src="js/news.js"></script>
     <script src="js/neural-bg.js"></script>
 <script src="js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="js/search.js"></script>
 </body>
 </html>

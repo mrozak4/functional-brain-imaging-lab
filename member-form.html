@@ -151,8 +151,15 @@
     </style>
 
     <link rel="icon" href="images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Lab Member Profile Form | Functional Brain Imaging Lab">
+    <meta property="og:description" content="Update your lab member profile for the Functional Brain Imaging Lab website.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -175,10 +182,10 @@
         </div>
     </header>
 
-    <main>
-        <section class="section reveal-on-scroll">
+    <main id="main-content">
+        <section class="section">
             <div class="container form-container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2>Update Your Profile</h2>
                     <p style="color: var(--color-text-muted); max-width: 500px; margin: 1rem auto 0;">Fill out this form and send the generated JSON to Matt to update your profile on the website.</p>
                 </div>
@@ -453,5 +460,13 @@
         }
     </script>
 <script src="js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="js/search.js"></script>
 </body>
 </html>

@@ -8,8 +8,15 @@
     <meta name="description" content="Sociétés scientifiques et conférences affiliées au Laboratoire d'imagerie cérébrale fonctionnelle.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Sociétés et conférences | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Sociétés scientifiques et conférences affiliées au Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,11 +34,13 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="../conferences.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/publications/societies-header.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
             <div class="container">
                 <h1 style="color: white; margin-bottom: 1rem;">Sociétés et conférences</h1>
@@ -39,12 +48,12 @@
             </div>
         </section>
 
-        <section class="section reveal-on-scroll">
+        <section class="section">
             <div class="container">
-                <div class="card-grid reveal-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
                     
                     <!-- AAIC -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/aaic.jpg" alt="AAIC Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -59,7 +68,7 @@
                     </div>
 
                     <!-- ADPD Focus -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/adpd_focus.png" alt="AAT-AD/PD Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -73,7 +82,7 @@
                     </div>
 
                     <!-- AHA -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/aha.png" alt="AHA Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -88,7 +97,7 @@
                     </div>
 
                     <!-- Experimental Biology -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/eb.jpg" alt="EB Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -102,7 +111,7 @@
                     </div>
 
                     <!-- ESM -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/esm.jpg" alt="ESM Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -117,7 +126,7 @@
                     </div>
 
                     <!-- GRC -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/grc.jpg" alt="GRC Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -131,7 +140,7 @@
                     </div>
 
                     <!-- AD/PD -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/adpd.jpg" alt="AD/PD Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -145,7 +154,7 @@
                     </div>
 
                     <!-- ISCBFM -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/iscbfm.jpg" alt="ISCBFM Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -160,7 +169,7 @@
                     </div>
 
                     <!-- ISMRM -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/ismrm.jpg" alt="ISMRM Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -174,7 +183,7 @@
                     </div>
 
                     <!-- VAS-COG -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/vascog.png" alt="VAS-COG Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -188,7 +197,7 @@
                     </div>
 
                     <!-- SPIE -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/spie.jpg" alt="SPIE Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -203,7 +212,7 @@
                     </div>
 
                     <!-- SfN -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/sfn.jpg" alt="SfN Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -218,7 +227,7 @@
                     </div>
 
                     <!-- WSO -->
-                    <div class="card conference-card reveal-on-scroll" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
                                 <img src="../images/conferences/wso.jpg" alt="WSO Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -268,5 +277,13 @@
     <script src="../js/i18n.js"></script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>

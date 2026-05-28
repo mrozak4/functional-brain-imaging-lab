@@ -8,8 +8,15 @@
     <meta name="description" content="Installations de microscopie et d'IRM préclinique au Laboratoire d'imagerie cérébrale fonctionnelle.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Installations | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Installations de microscopie et d'IRM préclinique au Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,11 +34,13 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="../facilities.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Header -->
         <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/facilities/access-header.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
             <div class="container">
@@ -41,7 +50,7 @@
         </section>
 
         <!-- Facility Toggles -->
-        <section class="section reveal-on-scroll">
+        <section class="section">
             <div class="container">
                 <div class="tabs-container">
                     <div class="tabs-buttons">
@@ -57,7 +66,7 @@
                         </div>
 
                         <!-- Access Guidelines -->
-                        <div class="card reveal-on-scroll" style="margin-bottom: 4rem; border-color: var(--color-tertiary);">
+                        <div class="card" style="margin-bottom: 4rem; border-color: var(--color-tertiary);">
                             <span class="tagline" style="color: var(--color-tertiary);">Directives</span>
                             <h3 style="margin-bottom: 1rem;">Accès aux installations et exigences de formation</h3>
                             <p>Please contact <strong>Adrienne Dorr</strong> (adorr@sri.utoronto.ca) to arrange training. The following conditions must be met to gain access to the facility:</p>
@@ -80,10 +89,10 @@
 
                         <!-- Equipment Grid -->
                         <h3 style="margin-bottom: 2rem;">Systèmes de microscopie et d'électrophysiologie</h3>
-                        <div class="card-grid reveal-on-scroll" style="grid-template-columns: 1fr; gap: 3rem;">
+                        <div class="card-grid" style="grid-template-columns: 1fr; gap: 3rem;">
                             
                             <!-- Olympus FVMPE-RS -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/fvmpe-rs.jpg" alt="Olympus FVMPE-RS" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                                 </div>
@@ -101,7 +110,7 @@
                             </div>
 
                             <!-- Olympus FV1000MPE -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/fv1000mpe.jpg" alt="Olympus FV1000MPE" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                                 </div>
@@ -118,7 +127,7 @@
                             </div>
 
                             <!-- Zeiss Axiovert 200M -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/zeiss-axiovert.jpg" alt="Zeiss Axiovert 200M" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                                 </div>
@@ -133,7 +142,7 @@
                             </div>
 
                             <!-- Electrophysiology -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/tdt-system.jpg" alt="Tucker-Davis System" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); margin-bottom: 1rem;">
                                     <img src="../images/facilities/neuropixels.jpg" alt="Neuropixels Probe" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
@@ -158,7 +167,7 @@
                             </div>
 
                             <!-- Vevo 2100 -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/vevo2100.jpg" alt="Vevo 2100" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                                 </div>
@@ -177,7 +186,7 @@
 
                         <!-- Booking Calendars -->
                         <h3 style="margin-bottom: 2rem; margin-top: 4rem;">Calendriers de réservation</h3>
-                        <div class="card reveal-on-scroll" style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/facilities/booking-bg.jpeg'); background-size: cover; background-position: center;">
+                        <div class="card" style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/facilities/booking-bg.jpeg'); background-size: cover; background-position: center;">
                             <p>Google calendar links are embedded below. Users can request bookings through <strong>Margaret Koletar</strong> (mkoletar@sri.utoronto.ca) or directly edit them once facility training is completed.</p>
                             <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
                                 <a href="https://calendar.google.com/calendar/embed?ctz=America%2FNew_York&src=qc901bu7ogm7rda77f5bkdhuks%40group.calendar.google.com" target="_blank" class="btn btn-primary">Olympus FVMPE-RS Calendar</a>
@@ -194,10 +203,10 @@
                             <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-muted);">Systèmes d'imagerie par résonance magnétique et de spectroscopie précliniques de pointe pour évaluer la connectivité fonctionnelle, les changements structurels et les altérations métaboliques dans les modèles de rongeurs de maladies neurologiques.</p>
                         </div>
 
-                        <div class="card-grid reveal-on-scroll" style="grid-template-columns: 1fr; gap: 3rem;">
+                        <div class="card-grid" style="grid-template-columns: 1fr; gap: 3rem;">
                             
                             <!-- Bruker 7T BioSpec -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/7t-mri.jpg" alt="Bruker BioSpec 70/30" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                                 </div>
@@ -216,7 +225,7 @@
                             </div>
 
                             <!-- Bruker Ascend 300WB -->
-                            <div class="card flex-card reveal-on-scroll" style="display: flex; gap: 2rem; align-items: start;">
+                            <div class="card flex-card" style="display: flex; gap: 2rem; align-items: start;">
                                 <div style="flex: 1; min-width: 250px;">
                                     <img src="../images/facilities/300wb-mri.jpg" alt="Bruker Ascend 300WB" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                                 </div>
@@ -234,7 +243,7 @@
                             </div>
 
                             <!-- Software & Contacts -->
-                            <div class="card reveal-on-scroll" style="border-left: 4px solid var(--color-primary);">
+                            <div class="card" style="border-left: 4px solid var(--color-primary);">
                                 <h3>Logiciels et applications</h3>
                                 <p>Both Bruker preclinical MR systems are equipped with <strong>ParaVision software (PV 6.0.1)</strong> which includes application packages and pulse sequences for acquisition, analysis, and visualization of fMRI, perfusion, metabolism, diffusion, and spectroscopy.</p>
                                 
@@ -297,5 +306,13 @@
     </script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>

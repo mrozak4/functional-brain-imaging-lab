@@ -8,8 +8,15 @@
     <meta name="description" content="Publications de recherche en vedette et base de données complète du Laboratoire d'imagerie cérébrale fonctionnelle.">
 
     <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Publications | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Publications de recherche en vedette et base de données complète du Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://mrozak4.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
     <canvas id="neural-bg"></canvas>
     <header>
         <div class="container nav-container">
@@ -27,11 +34,13 @@
                 <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
                 <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="../publications.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Header -->
         <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/publications/highlighted-header.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
             <div class="container">
@@ -41,12 +50,12 @@
         </section>
 
         <!-- Highlighted Publications -->
-        <section class="section reveal-on-scroll">
+        <section class="section">
             <div class="container">
                 <div class="highlighted-pubs">
                     
                     <!-- Pub 1: Rozak eLife 2026 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">eLife &bull; 2026</div>
                         <h3>A Deep Learning Pipeline for Mapping In Situ Network-Level Neurovascular Coupling in Multi-Photon Fluorescence Microscopy</h3>
                         <p class="pub-highlight-authors">Matthew W Rozak, Adrienne Dorr, Margaret M Koletar, Maged Goubran, and Bojana Stefanovic</p>
@@ -70,7 +79,7 @@
                     </div>
 
                     <!-- Pub 2: Vila Imaging Neuroscience 2026 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Imaging Neuroscience &bull; 2026</div>
                         <h3>Parametrizing Alternating Current Stimulation for Neuromodulation</h3>
                         <p class="pub-highlight-authors">Monica Bell Vila, Andrea Trevisiol, Margaret M Koletar, and Bojana Stefanovic</p>
@@ -90,7 +99,7 @@
                     </div>
 
                     <!-- Pub 3: Dorr JCBFM 2026 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Journal of Cerebral Blood Flow &amp; Metabolism &bull; 2026</div>
                         <h3>Persistent Dysmorphology and Dysfunction of the Brain Microvasculature Following Repeated Trauma</h3>
                         <p class="pub-highlight-authors">Adrienne Dorr, James R Mester, Paolo Bazzigaluppi, Margaret M Koletar, Tina L Beckett, Matthew Burke, JoAnne McLaurin, John G Sled, and Bojana Stefanovic</p>
@@ -114,7 +123,7 @@
                     </div>
 
                     <!-- Pub 4: Chen bioRxiv 2025 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">bioRxiv (Preprint) &bull; 2025</div>
                         <h3>Stable Neuronal Representations to Repeated Stimulation Underlie Cognitive Resilience in Alzheimer's Disease Pathology</h3>
                         <p class="pub-highlight-authors">Keying Chen, Emma Pineau, Margaret Koletar, Andrea Trevisiol, Jack Simiao He, Mary Hill, Maged Goubran, John Sled, JoAnne McLaurin, and Bojana Stefanovic</p>
@@ -138,7 +147,7 @@
                     </div>
 
                     <!-- Pub 5: Tan Brain Comm 2025 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Brain Communications &bull; 2025</div>
                         <h3>Stepwise Connectivity of the Entorhinal Cortex Along Connectomic Gradients in Alzheimer's Disease</h3>
                         <p class="pub-highlight-authors">Jazlynn Xiu Min Tan, Min Su Kang, Yi-Hsuan Yeh, Gleb Bezgin, Firoza Z Lussier, Bojana Stefanovic, and Maged Goubran</p>
@@ -162,7 +171,7 @@
                     </div>
 
                     <!-- Pub 6: Trevisiol Theranostics 2025 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Theranostics &bull; 2025</div>
                         <h3>Deep Brain Stimulation-Induced Normalization of Hippocampal Synchrony in a Transgenic Rat Model of Alzheimer's Disease</h3>
                         <p class="pub-highlight-authors">Andrea Trevisiol, Tina Beckett, Monica Bell Vila, Mary Hill, Joanne McLaurin, and Bojana Stefanovic</p>
@@ -186,7 +195,7 @@
                     </div>
 
                     <!-- Pub 7: Almanza Alz & Dem 2025 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Alzheimer's &amp; Dementia &bull; 2025</div>
                         <h3>High-Caloric Intake Rescues Early Symptomatic AD-Induced Hippocampal Neurovascular Coupling Deficits</h3>
                         <p class="pub-highlight-authors">Dustin Loren V Almanza, Andrea Trevisiol, Margaret M Koletar, Aaron Y Lai, Jessica A Ribeiro, Mary E Hill, Greg J Stanisz, JoAnne McLaurin, and Bojana Stefanovic</p>
@@ -210,7 +219,7 @@
                     </div>
 
                     <!-- Pub 8: Attarpour Nature Methods 2025 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Nature Methods &bull; 2025</div>
                         <h3>A Deep Learning Pipeline for Three-Dimensional Brain-Wide Mapping of Axonal Connectivity at Single-Axon Resolution</h3>
                         <p class="pub-highlight-authors">Ahmadreza Attarpour, Misha Raffiee, Tony Xu, Jonas Osmann, Shruti Patel, Fengqing Yu, Braedyn Au, Andrew Clappison, Mahdi Biparva, Rui Zhu, Ailey Crow, Barsin Eshaghi Gharagoz, Matthew Rozak, Isabelle Aubert, JoAnne McLaurin, Karl Deisseroth, Bojana Stefanovic, and Maged Goubran</p>
@@ -234,7 +243,7 @@
                     </div>
 
                     <!-- Pub 9: Almanza Theranostics 2024 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">Theranostics &bull; 2024</div>
                         <h3>High Caloric Intake Improves Neuronal Metabolism and Functional Hyperemia in a Rat Model of Early AD Pathology</h3>
                         <p class="pub-highlight-authors">Dustin Loren V Almanza, Margaret M Koletar, Aaron Y Lai, Wilfred W Lam, Lewis Joo, Mary E Hill, Greg J Stanisz, JoAnne McLaurin, and Bojana Stefanovic</p>
@@ -258,7 +267,7 @@
                     </div>
 
                     <!-- Pub 10: Mester NeuroImage 2024 -->
-                    <div class="pub-highlight-card reveal-on-scroll">
+                    <div class="pub-highlight-card">
                         <div class="pub-highlight-meta">NeuroImage &bull; 2024</div>
                         <h3>Network Response of Brain Microvasculature to Neuronal Stimulation</h3>
                         <p class="pub-highlight-authors">James R Mester, Paolo Bazzigaluppi, Adrienne Dorr, Margaret M Koletar, Tina L Beckett, Matthew W Rozak, John G Sled, and Bojana Stefanovic</p>
@@ -276,9 +285,9 @@
         </section>
 
         <!-- Searchable Publications Database -->
-        <section class="section section-alt reveal-on-scroll">
+        <section class="section section-alt">
             <div class="container">
-                <div class="section-header reveal-on-scroll">
+                <div class="section-header">
                     <h2 data-i18n="publications.all">All Publications</h2>
                 </div>
 
@@ -293,8 +302,10 @@
                     </div>
                 </div>
 
+                <div id="pub-year-tabs" class="pub-year-tabs"></div>
+
                 <!-- Dynamically loaded list -->
-                <div class="publications-wrapper reveal-on-scroll" id="publications-list">
+                <div class="publications-wrapper" id="publications-list">
                     <div class="loading-spinner">Chargement des publications…</div>
                 </div>
 
@@ -346,5 +357,13 @@
     <script src="../js/publications.js"></script>
     <script src="../js/neural-bg.js"></script>
 <script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
 </body>
 </html>
