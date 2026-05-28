@@ -1061,6 +1061,14 @@ footer { position: relative; z-index: 1; }
   transform: translateY(0);
 }
 
+/* Prevent double-animation for nested elements */
+.reveal-on-scroll .reveal-on-scroll {
+  transform: none;
+  filter: none;
+  opacity: 1;
+  transition: none;
+}
+
 /* Back to Top Button */
 #back-to-top {
   position: fixed;
