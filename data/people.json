@@ -44,12 +44,11 @@
     {
       "name": "Emma Pineau",
       "role": "Graduate Student",
-      "status": "alumni",
+      "status": "current",
       "photo": "images/people/placeholder.jpg",
       "bio_en": "Emma is a Graduate Student investigating novel brain imaging techniques and neurovascular responses under the supervision of Dr. Stefanovic.",
       "bio_fr": "Emma est une étudiante aux cycles supérieurs qui étudie de nouvelles techniques d'imagerie cérébrale et les réponses neurovasculaires sous la supervision de la Dre Stefanovic.",
-      "links": {},
-      "currentPosition": "Alumni"
+      "links": {}
     },
     {
       "name": "Ahmadreza Attarpour",

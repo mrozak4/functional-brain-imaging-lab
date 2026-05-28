@@ -7,7 +7,7 @@ import os
 from time import sleep
 
 # Search query based on the implementation plan
-SEARCH_QUERY = '"Stefanovic B"[Author] AND ("Sunnybrook" OR "University of Toronto") AND ("2019/01/01"[Date - Publication] : "3000"[Date - Publication])'
+SEARCH_QUERY = '"Stefanovic B"[Author] AND ("Sunnybrook" OR "University of Toronto")'
 BASE_ESEARCH = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi'
 BASE_EFETCH = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi'
 DATA_FILE = 'data/publications.json'
@@ -17,7 +17,7 @@ def search_pubmed(query):
         'db': 'pubmed',
         'term': query,
         'retmode': 'json',
-        'retmax': 100
+        'retmax': 300
     }
     url = f"{BASE_ESEARCH}?{urllib.parse.urlencode(params)}"
     response = urllib.request.urlopen(url)
@@ -49,11 +49,18 @@ def fetch_details(id_list):
         author_list = article.findall('.//AuthorList/Author')
         for author in author_list:
             last_name = author.findtext('LastName')
+            fore_name = author.findtext('ForeName')
             initials = author.findtext('Initials')
-            if last_name and initials:
+            if fore_name and last_name:
+                authors.append(f"{fore_name} {last_name}")
+            elif last_name and initials:
                 authors.append(f"{last_name} {initials}")
             elif last_name:
                 authors.append(last_name)
+            else:
+                col_name = author.findtext('CollectiveName')
+                if col_name:
+                    authors.append(col_name)
                 
         # Journal and Year
         journal = article.findtext('.//Journal/Title')
