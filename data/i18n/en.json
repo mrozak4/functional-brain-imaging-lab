@@ -11,19 +11,63 @@
   },
   "home": {
     "welcome": "Welcome to the Functional Brain Imaging Lab",
-    "tagline": "Exploring the brain through cutting-edge imaging techniques."
+    "tagline": "Exploring the brain through cutting-edge imaging techniques.",
+    "recentNews": "Recent News",
+    "featuredPubs": "Featured Publications",
+    "viewAll": "View All",
+    "learnMore": "Learn More"
   },
   "people": {
     "title": "Our Team",
     "current": "Current Members",
     "alumni": "Alumni",
-    "currentPosition": "Current Position"
+    "currentPosition": "Current Position",
+    "joined": "Joined",
+    "research": "Research",
+    "roles": {
+      "pi": "Principal Investigator",
+      "postdoc": "Postdoctoral Fellows",
+      "phd": "PhD Student",
+      "msc": "Master's Student",
+      "staff": "Research Staff / Technicians",
+      "admin": "Administrative Assistant",
+      "undergrad": "Undergraduate Student",
+      "ra": "Research Assistant"
+    }
+  },
+  "research": {
+    "title": "Our Research Projects",
+    "tagline": "Investigating cellular mechanics and macroscopic signals in Alzheimer's, stroke, and concussions.",
+    "project": "Project",
+    "teamMembers": "Team Members Involved"
   },
   "publications": {
     "title": "Publications",
     "search": "Search publications...",
     "filterYear": "Filter by year",
     "featured": "Featured Publications",
-    "all": "All Publications"
+    "all": "All Publications",
+    "allYears": "All Years"
+  },
+  "facilities": {
+    "title": "Facilities",
+    "overview": "Overview"
+  },
+  "news": {
+    "title": "News & Events",
+    "readMore": "Read More"
+  },
+  "joinus": {
+    "title": "Join Us",
+    "tagline": "We are always looking for motivated students and researchers."
+  },
+  "toronto": {
+    "title": "Toronto"
+  },
+  "footer": {
+    "address": "Sunnybrook Research Institute",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "Functional Brain Imaging Lab. All rights reserved."
   }
 }

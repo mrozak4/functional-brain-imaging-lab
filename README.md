@@ -1,6 +1,6 @@
 # 🧠 Functional Brain Imaging Lab
 
-**[🌐 Visit the live site → brainimaginglab.com](https://brainimaginglab.com)**
+**[🌐 Visit the live site → mrozak4.github.io/functional-brain-imaging-lab](https://mrozak4.github.io/functional-brain-imaging-lab/)**
 
 The website for the Functional Brain Imaging Lab (fBIL) at Sunnybrook Research Institute, University of Toronto, led by Dr. Bojana Stefanovic.
 

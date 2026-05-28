@@ -27,6 +27,23 @@ document.addEventListener('DOMContentLoaded', async () => {
             "Undergraduate Student"
         ];
 
+        // Map data roles to i18n keys for display
+        const roleI18nMap = {
+            "Principal Investigator": "people.roles.pi",
+            "Postdoctoral Fellows": "people.roles.postdoc",
+            "PhD Student": "people.roles.phd",
+            "Master's Student": "people.roles.msc",
+            "Research Staff / Technicians": "people.roles.staff",
+            "Administrative Assistant": "people.roles.admin",
+            "Undergraduate Student": "people.roles.undergrad",
+            "Research Assistant": "people.roles.ra"
+        };
+
+        const translateRole = (role) => {
+            const key = roleI18nMap[role];
+            return key ? I18n.t(key) : role;
+        };
+
         // Roles that get the featured horizontal layout
         const featuredRoles = ["Principal Investigator", "Postdoctoral Fellows"];
         
@@ -64,7 +81,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Add role group header when role changes
                 if (member.role !== currentRole && !isNespresso) {
                     currentRole = member.role;
-                    html += `<div class="role-group-header"><h3>${member.role}</h3></div>`;
+                    html += `<div class="role-group-header"><h3>${translateRole(member.role)}</h3></div>`;
                 }
 
                 const quoteText = member[langQuote] || member.quote_en;
@@ -77,9 +94,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 ` : '';
 
                 const researchText = member[langResearch] || member.research_en;
+                const researchLabel = I18n.t('people.research');
                 const researchHtml = researchText ? `
                     <div class="research-summary">
-                        <h4 class="research-heading"><span class="research-icon">🔬</span> Research</h4>
+                        <h4 class="research-heading"><span class="research-icon">🔬</span> ${researchLabel}</h4>
                         <p>${researchText}</p>
                     </div>
                 ` : '';
@@ -95,8 +113,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                             </div>
                             <div class="person-details">
                                 <h3>${member.name}</h3>
-                                <p class="role">${member.role}</p>
-                                ${member.yearJoined ? `<p class="year-joined">Joined ${member.yearJoined}</p>` : ''}
+                                <p class="role">${translateRole(member.role)}</p>
+                                ${member.yearJoined ? `<p class="year-joined">${I18n.t('people.joined')} ${member.yearJoined}</p>` : ''}
                                 ${member.titles ? `<p class="titles">${member.titles}</p>` : ''}
                                 ${member.education ? `<p class="education">${member.education}</p>` : ''}
                                 ${researchHtml}
@@ -113,8 +131,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                             <img src="${prefix}${member.photo}" alt="${member.name}" class="person-photo person-photo--circle" onerror="this.src='${prefix}images/people/placeholder.jpg'">
                             <div class="person-details">
                                 <h3>${member.name}</h3>
-                                <p class="role">${member.role}</p>
-                                ${member.yearJoined ? `<p class="year-joined">Joined ${member.yearJoined}</p>` : ''}
+                                <p class="role">${translateRole(member.role)}</p>
+                                ${member.yearJoined ? `<p class="year-joined">${I18n.t('people.joined')} ${member.yearJoined}</p>` : ''}
                                 ${researchHtml}
                                 <p class="bio">${member[langBio] || member.bio_en}</p>
                                 ${quoteHtml}

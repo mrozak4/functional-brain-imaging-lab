@@ -11,19 +11,63 @@
   },
   "home": {
     "welcome": "Bienvenue au Laboratoire d'Imagerie Cérébrale Fonctionnelle",
-    "tagline": "Explorer le cerveau grâce à des techniques d'imagerie de pointe."
+    "tagline": "Explorer le cerveau grâce à des techniques d'imagerie de pointe.",
+    "recentNews": "Nouvelles récentes",
+    "featuredPubs": "Publications en vedette",
+    "viewAll": "Voir tout",
+    "learnMore": "En savoir plus"
   },
   "people": {
     "title": "Notre Équipe",
-    "current": "Membres Actuels",
-    "alumni": "Anciens Membres",
-    "currentPosition": "Poste Actuel"
+    "current": "Membres actuels",
+    "alumni": "Anciens membres",
+    "currentPosition": "Poste actuel",
+    "joined": "Depuis",
+    "research": "Recherche",
+    "roles": {
+      "pi": "Chercheure principale",
+      "postdoc": "Stagiaires postdoctoraux",
+      "phd": "Étudiant(e) au doctorat",
+      "msc": "Étudiant(e) à la maîtrise",
+      "staff": "Personnel de recherche / techniciens",
+      "admin": "Adjoint(e) administratif(ve)",
+      "undergrad": "Étudiant(e) au baccalauréat",
+      "ra": "Assistant(e) de recherche"
+    }
+  },
+  "research": {
+    "title": "Nos projets de recherche",
+    "tagline": "Étude des mécanismes cellulaires et des signaux macroscopiques dans la maladie d'Alzheimer, l'AVC et les commotions cérébrales.",
+    "project": "Projet",
+    "teamMembers": "Membres de l'équipe impliqués"
   },
   "publications": {
     "title": "Publications",
-    "search": "Rechercher des publications...",
+    "search": "Rechercher des publications…",
     "filterYear": "Filtrer par année",
     "featured": "Publications en vedette",
-    "all": "Toutes les publications"
+    "all": "Toutes les publications",
+    "allYears": "Toutes les années"
+  },
+  "facilities": {
+    "title": "Installations",
+    "overview": "Aperçu"
+  },
+  "news": {
+    "title": "Nouvelles et événements",
+    "readMore": "Lire la suite"
+  },
+  "joinus": {
+    "title": "Joignez-vous à nous",
+    "tagline": "Nous recherchons toujours des étudiants et des chercheurs motivés."
+  },
+  "toronto": {
+    "title": "Toronto"
+  },
+  "footer": {
+    "address": "Institut de recherche Sunnybrook",
+    "quickLinks": "Liens rapides",
+    "connect": "Nous joindre",
+    "copyright": "Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés."
   }
 }
