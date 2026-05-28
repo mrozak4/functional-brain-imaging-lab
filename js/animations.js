@@ -162,45 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ─── 4. CUSTOM CURSOR ──────────────────────────────────────────────
-    const cursorDot = document.getElementById('cursor-dot');
-    const cursorRing = document.getElementById('cursor-ring');
-    if (cursorDot && cursorRing && window.matchMedia('(pointer: fine)').matches) {
-        let mouseX = 0, mouseY = 0;
-        let ringX = 0, ringY = 0;
-
-        document.addEventListener('mousemove', e => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            cursorDot.style.left = mouseX + 'px';
-            cursorDot.style.top = mouseY + 'px';
-        });
-
-        // Smooth ring follow
-        function animateRing() {
-            ringX += (mouseX - ringX) * 0.15;
-            ringY += (mouseY - ringY) * 0.15;
-            cursorRing.style.left = ringX + 'px';
-            cursorRing.style.top = ringY + 'px';
-            requestAnimationFrame(animateRing);
-        }
-        animateRing();
-
-        // Expand on interactive elements
-        const interactives = 'a, button, input, select, textarea, .card, .person-card, .pub-highlight-card, .conference-card';
-        document.addEventListener('mouseover', e => {
-            if (e.target.closest(interactives)) {
-                cursorRing.classList.add('cursor-hover');
-                cursorDot.classList.add('cursor-hover');
-            }
-        });
-        document.addEventListener('mouseout', e => {
-            if (e.target.closest(interactives)) {
-                cursorRing.classList.remove('cursor-hover');
-                cursorDot.classList.remove('cursor-hover');
-            }
-        });
-    }
 
 
     // ─── 5. MOUSE-REACTIVE GRADIENT SPOTLIGHT ──────────────────────────
