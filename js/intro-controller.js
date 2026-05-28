@@ -2,7 +2,13 @@ var Module = {
     canvas: (function() {
         var canvas = document.getElementById('intro-canvas');
         return canvas;
-    })()
+    })(),
+    locateFile: function(path, prefix) {
+        if (path.endsWith('.wasm')) {
+            return 'js/' + path;
+        }
+        return prefix + path;
+    }
 };
 
 document.addEventListener("DOMContentLoaded", function() {

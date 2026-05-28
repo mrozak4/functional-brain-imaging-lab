@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilities | Functional Brain Imaging Lab</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Microscopy and preclinical MRI facilities at the Functional Brain Imaging Lab.">
+    <title>Research | Functional Brain Imaging Lab</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Research areas and projects at the Functional Brain Imaging Lab.">
 </head>
 <body>
     <header>
@@ -16,12 +16,12 @@
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="people.html">People</a>
-                <a href="research.html">Research</a>
+                <a href="research.html" class="active">Research</a>
                 <a href="publications.html">Publications</a>
-                <a href="facilities.html" class="active">Facilities</a>
+                <a href="facilities.html">Facilities</a>
                 <a href="news.html">News</a>
                 <a href="joinus.html">Join Us</a>
-                <a href="fr/installations.html" class="lang-toggle">FR</a>
+                <a href="../research.html" class="lang-toggle">EN</a>
             </nav>
         </div>
     </header>
@@ -30,26 +30,35 @@
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Facilities</h2>
+                    <h2>Research Areas</h2>
                 </div>
                 
                 <div class="card-grid" style="grid-template-columns: 1fr; gap: 3rem;">
                     <div class="card" style="display: flex; gap: 2rem; align-items: center;">
-                        <div style="flex: 1; height: 300px; background-color: var(--color-success); opacity: 0.2; border-radius: var(--border-radius-md);"></div>
                         <div style="flex: 1;">
-                            <span class="tagline">Facility 01</span>
-                            <h3>Two-Photon Fluorescence Microscopy</h3>
-                            <p>Our custom-built microscopy setup enables high-resolution 3D imaging of cerebral microcirculation in vivo. Equipped for simultaneous multi-modal recordings, optogenetic stimulation, and advanced fluorescence detection.</p>
+                            <span class="tagline">Pillar 01</span>
+                            <h3>Neurovascular Coupling</h3>
+                            <p>We investigate the mechanisms underlying neurovascular coupling, the process by which neural activity is linked to changes in cerebral blood flow. Understanding this relationship is crucial for interpreting fMRI signals and identifying neurovascular impairments in diseases like Alzheimer's and stroke.</p>
                         </div>
+                        <div style="flex: 1; height: 250px; background-color: var(--color-bg-alt); border-radius: var(--border-radius-md);"></div>
                     </div>
                     
                     <div class="card" style="display: flex; gap: 2rem; align-items: center; flex-direction: row-reverse;">
-                        <div style="flex: 1; height: 300px; background-color: var(--color-primary); opacity: 0.2; border-radius: var(--border-radius-md);"></div>
                         <div style="flex: 1;">
-                            <span class="tagline">Facility 02</span>
-                            <h3>Preclinical MRI</h3>
-                            <p>State-of-the-art preclinical MRI capabilities for assessing functional connectivity, structural changes, and metabolic alterations in rodent models of neurological diseases.</p>
+                            <span class="tagline">Pillar 02</span>
+                            <h3>Disease Models</h3>
+                            <p>Our research applies these advanced imaging techniques to preclinical models of Alzheimer's Disease, Traumatic Brain Injury (TBI), and stroke, uncovering early metabolic and vascular changes to discover new therapeutic targets.</p>
                         </div>
+                        <div style="flex: 1; height: 250px; background-color: var(--color-primary); opacity: 0.1; border-radius: var(--border-radius-md);"></div>
+                    </div>
+                    
+                    <div class="card" style="display: flex; gap: 2rem; align-items: center;">
+                        <div style="flex: 1;">
+                            <span class="tagline">Pillar 03</span>
+                            <h3>Deep Learning & Pipeline Automation</h3>
+                            <p>We develop automated, label-efficient deep learning pipelines to reconstruct microvascular networks from microscopy data, accelerating the analysis of massive multi-photon imaging datasets.</p>
+                        </div>
+                        <div style="flex: 1; height: 250px; background-color: var(--color-secondary); opacity: 0.1; border-radius: var(--border-radius-md);"></div>
                     </div>
                 </div>
             </div>
@@ -83,6 +92,6 @@
             </div>
         </div>
     </footer>
-<script src="js/i18n.js"></script>
+<script src="../js/i18n.js"></script>
 </body>
 </html>

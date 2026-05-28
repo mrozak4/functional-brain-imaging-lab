@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News | Functional Brain Imaging Lab</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Latest news and updates from the Functional Brain Imaging Lab.">
+    <title>People | Functional Brain Imaging Lab</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Meet the team at the Functional Brain Imaging Lab.">
 </head>
 <body>
     <header>
@@ -15,13 +15,13 @@
             </a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="people.html">People</a>
+                <a href="people.html" class="active">People</a>
                 <a href="research.html">Research</a>
                 <a href="publications.html">Publications</a>
                 <a href="facilities.html">Facilities</a>
-                <a href="news.html" class="active">News</a>
+                <a href="news.html">News</a>
                 <a href="joinus.html">Join Us</a>
-                <a href="fr/nouvelles.html" class="lang-toggle">FR</a>
+                <a href="../people.html" class="lang-toggle">EN</a>
             </nav>
         </div>
     </header>
@@ -30,23 +30,16 @@
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Lab News</h2>
+                    <h2>Our Team</h2>
                 </div>
                 
-                <div class="card-grid" id="news-container">
-                    <!-- Placeholder for news items -->
-                    <div class="card">
-                        <span class="tagline">June 2026</span>
-                        <h3>Conference Presentations at MICE-IT</h3>
-                        <p>Our team will be presenting new computational pipelines for cerebral microvascular network analysis at the upcoming MICE-IT conference.</p>
-                    </div>
-                    
-                    <div class="card">
-                        <span class="tagline">May 2026</span>
-                        <h3>New Publication in eLife</h3>
-                        <p>Our deep learning pipeline for mapping neurovascular coupling in multi-photon microscopy is now published.</p>
-                        <a href="publications.html">View Publication &rarr;</a>
-                    </div>
+                <div class="card-grid" id="current-members">
+                    <!-- Placeholder for JS rendered members -->
+                </div>
+                
+                <h3 style="margin-top: 4rem; margin-bottom: 2rem;">Alumni</h3>
+                <div class="card-grid" id="alumni-members">
+                    <!-- Placeholder for alumni -->
                 </div>
             </div>
         </section>
@@ -79,6 +72,7 @@
             </div>
         </div>
     </footer>
-<script src="js/i18n.js"></script>
+<script src="../js/i18n.js"></script>
+<script src="../js/people.js"></script>
 </body>
 </html>
