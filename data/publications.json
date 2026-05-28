@@ -102,36 +102,7 @@
     "featured": false,
     "topics": []
   },
-  {
-    "title": "Quantitative profiling of whole-brain connectomes at single-axon resolution using deep learning and high-resolution light sheet microscopy.",
-    "authors": [
-      "Ahmadreza Attarpour",
-      "Misha Raffiee",
-      "Tony Xu",
-      "Jonas Osmann",
-      "Shruti Patel",
-      "Fengqing Yu",
-      "Braedyn Au",
-      "Andrew Clappison",
-      "Mahdi Biparva",
-      "Rui Zhu",
-      "Ailey Crow",
-      "Barsin Eshaghi Gharagoz",
-      "Matthew Rozak",
-      "Isabelle Aubert",
-      "JoAnne McLaurin",
-      "Karl Deisseroth",
-      "Bojana Stefanovic",
-      "Maged Goubran"
-    ],
-    "journal": "bioRxiv : the preprint server for biology",
-    "year": 2025,
-    "pmid": "41292859",
-    "doi": "10.1101/2025.11.14.688340",
-    "abstract": "Revealing how individual axons create a brain-wide connectome would be indispensable for understanding brain function and behavior, yet remains technically challenging. We introduce MAPL3, an end-to-end pipeline that integrates self-supervised learning with an innovative deep architecture to capture local and global brain-wide axonal projections. MAPL3 enables subject- and population-level quantitative laminar analysis, generalizes across experiments, and outperforms state-of-the-art methods. We showcase its ability to map the circuitry of the orbitofrontal cortex from single axons to whole-brain projectome.",
-    "featured": false,
-    "topics": []
-  },
+
   {
     "title": "Stepwise connectivity of the entorhinal cortex along connectomic gradients in Alzheimer's disease.",
     "authors": [
@@ -181,7 +152,7 @@
     "year": 2025,
     "pmid": "41041062",
     "doi": "10.7150/thno.110292",
-    "abstract": "",
+    "abstract": "Background and Aim: Alzheimer's disease (AD) is a progressive neurodegenerative disorder characterized by disrupted neural network dynamics and neuronal loss. Deep brain stimulation (DBS) may restore network function and abate cognitive deficits. In a transgenic rat model of AD, we investigated the dependence of hippocampal neuronal activity on a range of DBS parameters, aiming to identify stimulation conditions that transiently restore impaired network function. Material and Methods: We used 16-month-old TgF344-AD and NTg rats under light anesthesia and performed simultaneous DBS and high-resolution intracerebral recordings in the hippocampus using a linear multielectrode array. DBS was delivered in bipolar mode, at varying frequencies, amplitudes and duration, while monitoring local field potentials (LFP) and spiking activity. Phase-amplitude coupling (PAC), neuronal power, and firing rates were analyzed prior to and following DBS. Linear mixed effects models were used to evaluate the influence of genotype, sex, and stimulation parameters on the electrophysiological markers. Results: With increasing DBS frequency and amplitude, hippocampal power and PAC rose in all rats, particularly within the delta-theta range. When compared to NTgs, TgAD rats showed attenuated power but increased PAC responses to DBS. Low frequency DBS induced higher entrainment in the post- relative to during-DBS period in all animals. Compared to their non-transgenic littermates, TgAD rats showed reduced entrainment responses. Conclusions: These findings demonstrate that hippocampal responses to DBS have a parameter-dependent profile that is differentially modulated by AD pathology. Our study provides a foundation for tailoring DBS parameters to compensate for distinct neuronal deficits in established AD, supporting the use of electrophysiological biomarkers to guide individualized neuromodulation strategies.",
     "featured": false,
     "topics": []
   },
@@ -290,7 +261,7 @@
     "year": 2024,
     "pmid": "39659583",
     "doi": "10.7150/thno.98793",
-    "abstract": "",
+    "abstract": "Introduction: While obesity has been linked to both increased and decreased rate of cognitive decline in Alzheimer's Disease (AD) patients, there is no consensus on the interaction between obesity and AD. Methods: The TgF344-AD rat model was used to investigate the effects of high carbohydrate, high fat (HCHF) diet on brain glucose metabolism and hemodynamics in the presence or absence of AD transgenes, in presymptomatic (6-month-old) vs. symptomatic (12-month-old) stages of AD progression using non-invasive neuroimaging. Results: In presymptomatic AD, HCHF exerted detrimental effects, attenuating both hippocampal glucose uptake and resting perfusion in both non-transgenic and TgAD cohorts, when compared to CHOW-fed cohorts. In contrast, HCHF consumption was beneficial in established AD, resolving the AD-progression associated attenuation in hippocampal glucose uptake and functional hyperemia. Discussion: Whereas HCHF was harmful to the presymptomatic AD brain, it ameliorated deficits in hippocampal metabolism and neurovascular coupling in symptomatic TgAD rats.",
     "featured": false,
     "topics": []
   },
@@ -484,24 +455,7 @@
     "featured": false,
     "topics": []
   },
-  {
-    "title": "A deep learning pipeline for mapping in situ network-level neurovascular coupling in multi-photon fluorescence microscopy",
-    "authors": [
-      "Author A",
-      "Stefanovic B",
-      "Author C"
-    ],
-    "journal": "eLife",
-    "year": 2024,
-    "doi": "10.7554/eLife.12345",
-    "pmid": "12345678",
-    "abstract": "Abstract goes here...",
-    "featured": true,
-    "topics": [
-      "Deep Learning",
-      "Microscopy"
-    ]
-  },
+
   {
     "title": "Ascl1 phospho-site mutations enhance neuronal conversion of adult cortical astrocytes ",
     "authors": [

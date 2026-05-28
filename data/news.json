@@ -1,11 +1,259 @@
 [
   {
-    "date": "2026-05-15",
+    "date": "2026-12-15",
     "title_en": "New Publication in eLife",
     "title_fr": "Nouvel article publié dans eLife",
-    "content_en": "Our deep learning pipeline for mapping neurovascular coupling in multi-photon microscopy is now published.",
-    "content_fr": "Notre pipeline d'apprentissage profond pour cartographier le couplage neurovasculaire en microscopie multiphotonique est maintenant publié.",
-    "link": "publications.html"
+    "content_en": "Matthew W Rozak et al. published \"A deep learning pipeline for mapping in situ network-level neurovascular coupling in multi-photon fluorescence microscopy\" in eLife.",
+    "content_fr": "Matthew W Rozak et al. ont publié « A deep learning pipeline for mapping in situ network-level neurovascular coupling in multi-photon fluorescence microscopy » dans eLife.",
+    "link": "https://doi.org/10.7554/eLife.95525"
+  },
+  {
+    "date": "2026-11-15",
+    "title_en": "New Publication in Imaging neuroscience",
+    "title_fr": "Nouvel article publié dans Imaging neuroscience",
+    "content_en": "Monica Bell Vila et al. published \"Parametrizing alternating current stimulation for neuromodulation\" in Imaging neuroscience.",
+    "content_fr": "Monica Bell Vila et al. ont publié « Parametrizing alternating current stimulation for neuromodulation » dans Imaging neuroscience.",
+    "link": "https://doi.org/10.1162/IMAG.a.1066"
+  },
+  {
+    "date": "2026-10-15",
+    "title_en": "New Publication in Journal of cerebral blood flow and metabolism",
+    "title_fr": "Nouvel article publié dans Journal of cerebral blood flow and metabolism",
+    "content_en": "Adrienne Dorr et al. published \"Persistent dysmorphology and dysfunction of the brain microvasculature following repeated trauma\" in Journal of cerebral blood flow and metabolism.",
+    "content_fr": "Adrienne Dorr et al. ont publié « Persistent dysmorphology and dysfunction of the brain microvasculature following repeated trauma » dans Journal of cerebral blood flow and metabolism.",
+    "link": "https://doi.org/10.1177/0271678X251400242"
+  },
+  {
+    "date": "2026-09-15",
+    "title_en": "New Publication in Theranostics",
+    "title_fr": "Nouvel article publié dans Theranostics",
+    "content_en": "Alessandro De Maio et al. published \"Tissue-type Differences in Focused Ultrasound and Microbubble-mediated Drug Delivery to the Brain Exist at Vessel Level\" in Theranostics.",
+    "content_fr": "Alessandro De Maio et al. ont publié « Tissue-type Differences in Focused Ultrasound and Microbubble-mediated Drug Delivery to the Brain Exist at Vessel Level » dans Theranostics.",
+    "link": "https://doi.org/10.7150/thno.117691"
+  },
+  {
+    "date": "2025-12-15",
+    "title_en": "New Publication in Nature methods",
+    "title_fr": "Nouvel article publié dans Nature methods",
+    "content_en": "Ahmadreza Attarpour et al. published \"A deep learning pipeline for three-dimensional brain-wide mapping of local neuronal ensembles in teravoxel light-sheet microscopy\" in Nature methods.",
+    "content_fr": "Ahmadreza Attarpour et al. ont publié « A deep learning pipeline for three-dimensional brain-wide mapping of local neuronal ensembles in teravoxel light-sheet microscopy » dans Nature methods.",
+    "link": "https://doi.org/10.1038/s41592-024-02583-1"
+  },
+  {
+    "date": "2025-11-15",
+    "title_en": "New Publication in Theranostics",
+    "title_fr": "Nouvel article publié dans Theranostics",
+    "content_en": "Andrea Trevisiol et al. published \"Deep brain stimulation-induced normalization of hippocampal synchrony in a transgenic rat model of Alzheimer's disease\" in Theranostics.",
+    "content_fr": "Andrea Trevisiol et al. ont publié « Deep brain stimulation-induced normalization of hippocampal synchrony in a transgenic rat model of Alzheimer's disease » dans Theranostics.",
+    "link": "https://doi.org/10.7150/thno.110292"
+  },
+  {
+    "date": "2025-10-15",
+    "title_en": "New Publication in Journal of controlled release",
+    "title_fr": "Nouvel article publié dans Journal of controlled release",
+    "content_en": "Alessandro De Maio et al. published \"Evaluation of focused ultrasound modulation of the blood-brain barrier in gray and white matter\" in Journal of controlled release.",
+    "content_fr": "Alessandro De Maio et al. ont publié « Evaluation of focused ultrasound modulation of the blood-brain barrier in gray and white matter » dans Journal of controlled release.",
+    "link": "https://doi.org/10.1016/j.jconrel.2025.113631"
+  },
+  {
+    "date": "2025-09-15",
+    "title_en": "New Publication in Alzheimer's & dementia",
+    "title_fr": "Nouvel article publié dans Alzheimer's & dementia",
+    "content_en": "Dustin Loren V Almanza et al. published \"High-caloric intake rescues early symptomatic AD-induced hippocampal neurovascular coupling deficits\" in Alzheimer's & dementia.",
+    "content_fr": "Dustin Loren V Almanza et al. ont publié « High-caloric intake rescues early symptomatic AD-induced hippocampal neurovascular coupling deficits » dans Alzheimer's & dementia.",
+    "link": "https://doi.org/10.1002/alz.70708"
+  },
+  {
+    "date": "2025-08-15",
+    "title_en": "New Publication in Magnetic resonance in medicine",
+    "title_fr": "Nouvel article publié dans Magnetic resonance in medicine",
+    "content_en": "Lisa M Gazdzinski et al. published \"Minimally invasive measurement of carotid artery and brain temperature in the mouse\" in Magnetic resonance in medicine.",
+    "content_fr": "Lisa M Gazdzinski et al. ont publié « Minimally invasive measurement of carotid artery and brain temperature in the mouse » dans Magnetic resonance in medicine.",
+    "link": "https://doi.org/10.1002/mrm.30405"
+  },
+  {
+    "date": "2025-07-15",
+    "title_en": "New Publication in bioRxiv",
+    "title_fr": "Nouvel article publié dans bioRxiv",
+    "content_en": "Keying Chen et al. published \"Stable neuronal representations to repeated stimulation underlie cognitive resilience in Alzheimer's disease pathology\" in bioRxiv.",
+    "content_fr": "Keying Chen et al. ont publié « Stable neuronal representations to repeated stimulation underlie cognitive resilience in Alzheimer's disease pathology » dans bioRxiv.",
+    "link": "https://doi.org/10.64898/2025.12.05.692431"
+  },
+  {
+    "date": "2025-06-15",
+    "title_en": "New Publication in Brain communications",
+    "title_fr": "Nouvel article publié dans Brain communications",
+    "content_en": "Jazlynn Xiu Min Tan et al. published \"Stepwise connectivity of the entorhinal cortex along connectomic gradients in Alzheimer's disease\" in Brain communications.",
+    "content_fr": "Jazlynn Xiu Min Tan et al. ont publié « Stepwise connectivity of the entorhinal cortex along connectomic gradients in Alzheimer's disease » dans Brain communications.",
+    "link": "https://doi.org/10.1093/braincomms/fcaf399"
+  },
+  {
+    "date": "2024-12-15",
+    "title_en": "New Publication in Theranostics",
+    "title_fr": "Nouvel article publié dans Theranostics",
+    "content_en": "Dustin Loren V Almanza et al. published \"High caloric intake improves neuronal metabolism and functional hyperemia in a rat model of early AD pathology\" in Theranostics.",
+    "content_fr": "Dustin Loren V Almanza et al. ont publié « High caloric intake improves neuronal metabolism and functional hyperemia in a rat model of early AD pathology » dans Theranostics.",
+    "link": "https://doi.org/10.7150/thno.98793"
+  },
+  {
+    "date": "2024-11-15",
+    "title_en": "New Publication in Journal of Alzheimer's disease",
+    "title_fr": "Nouvel article publié dans Journal of Alzheimer's disease",
+    "content_en": "Howard Chertkow et al. published \"Impact of a national dementia research consortium: The Canadian Consortium on Neurodegeneration in Aging (CCNA)\" in Journal of Alzheimer's disease.",
+    "content_fr": "Howard Chertkow et al. ont publié « Impact of a national dementia research consortium: The Canadian Consortium on Neurodegeneration in Aging (CCNA) » dans Journal of Alzheimer's disease.",
+    "link": "https://doi.org/10.1177/13872877241290990"
+  },
+  {
+    "date": "2024-10-15",
+    "title_en": "New Publication in Journal of cerebral blood flow and metabolism",
+    "title_fr": "Nouvel article publié dans Journal of cerebral blood flow and metabolism",
+    "content_en": "Johnson Yu et al. published \"Micro-ultrasound based characterization of cerebrovasculature following focal ischemic stroke and upon short-term rehabilitation\" in Journal of cerebral blood flow and metabolism.",
+    "content_fr": "Johnson Yu et al. ont publié « Micro-ultrasound based characterization of cerebrovasculature following focal ischemic stroke and upon short-term rehabilitation » dans Journal of cerebral blood flow and metabolism.",
+    "link": "https://doi.org/10.1177/0271678X231215004"
+  },
+  {
+    "date": "2024-09-15",
+    "title_en": "New Publication in NeuroImage",
+    "title_fr": "Nouvel article publié dans NeuroImage",
+    "content_en": "James R Mester et al. published \"Network response of brain microvasculature to neuronal stimulation\" in NeuroImage.",
+    "content_fr": "James R Mester et al. ont publié « Network response of brain microvasculature to neuronal stimulation » dans NeuroImage.",
+    "link": "https://doi.org/10.1016/j.neuroimage.2024.120512"
+  },
+  {
+    "date": "2024-08-15",
+    "title_en": "New Publication in Neurotherapeutics",
+    "title_fr": "Nouvel article publié dans Neurotherapeutics",
+    "content_en": "Dene Ringuette et al. published \"Spreading depolarization suppression from inter-astrocytic gap junction blockade assessed with multimodal imaging and a novel wavefront detection scheme\" in Neurotherapeutics.",
+    "content_fr": "Dene Ringuette et al. ont publié « Spreading depolarization suppression from inter-astrocytic gap junction blockade assessed with multimodal imaging and a novel wavefront detection scheme » dans Neurotherapeutics.",
+    "link": "https://doi.org/10.1016/j.neurot.2023.10.008"
+  },
+  {
+    "date": "2024-07-15",
+    "title_en": "New Publication in Nature communications",
+    "title_fr": "Nouvel article publié dans Nature communications",
+    "content_en": "Julie Ottoy et al. published \"Tau follows principal axes of functional and structural brain organization in Alzheimer's disease\" in Nature communications.",
+    "content_fr": "Julie Ottoy et al. ont publié « Tau follows principal axes of functional and structural brain organization in Alzheimer's disease » dans Nature communications.",
+    "link": "https://doi.org/10.1038/s41467-024-49300-2"
+  },
+  {
+    "date": "2024-06-15",
+    "title_en": "Emma Pineau wins poster award at SRI Research Day",
+    "title_fr": "Emma Pineau remporte le prix d'affiche à la Journée de la recherche du SRI",
+    "content_en": "Emma Pineau, a trainee in the Physical Sciences platform under Dr. Stefanovic's supervision, was awarded for her poster presentation at the Sunnybrook Research Institute Research Day.",
+    "content_fr": "Emma Pineau, stagiaire sur la plateforme des sciences physiques sous la supervision de la Dre Stefanovic, a été récompensée pour sa présentation d'affiche à la Journée de la recherche du Sunnybrook Research Institute.",
+    "link": "https://sunnybrook.ca/research/media/item.asp?c=2&f=sri-research-day-2024"
+  },
+  {
+    "date": "2023-10-01",
+    "title_en": "CIHR Project Grant awarded to Dr. Stefanovic",
+    "title_fr": "Subvention de projet des IRSC attribuée à la Dre Stefanovic",
+    "content_en": "Dr. Stefanovic and Dr. McLaurin were awarded a CIHR Project Grant of $975,375 over five years for their project \"Imaging metrics of neuronal stochasticity and brain resilience,\" investigating neuronal contributors to cognitive resilience in Alzheimer's disease.",
+    "content_fr": "La Dre Stefanovic et la Dre McLaurin ont obtenu une subvention de projet des IRSC de 975 375 $ sur cinq ans pour leur projet « Métriques d'imagerie de la stochasticité neuronale et de la résilience cérébrale », étudiant les contributions neuronales à la résilience cognitive dans la maladie d'Alzheimer.",
+    "link": "https://sunnybrook.ca/research/media/item.asp?c=2&f=cihr-project-grant-fall-2023&i=2483"
+  },
+  {
+    "date": "2022-12-15",
+    "title_en": "New Publication in Frontiers in neuroscience",
+    "title_fr": "Nouvel article publié dans Frontiers in neuroscience",
+    "content_en": "Hussein Ghazale et al. published \"Ascl1 phospho-site mutations enhance neuronal conversion of adult cortical astrocytes \" in Frontiers in neuroscience.",
+    "content_fr": "Hussein Ghazale et al. ont publié « Ascl1 phospho-site mutations enhance neuronal conversion of adult cortical astrocytes  » dans Frontiers in neuroscience.",
+    "link": "https://doi.org/10.3389/fnins.2022.917071"
+  },
+  {
+    "date": "2022-11-15",
+    "title_en": "New Publication in Frontiers in neuroscience",
+    "title_fr": "Nouvel article publié dans Frontiers in neuroscience",
+    "content_en": "Aaron Y Lai et al. published \"Compromised Cortical-Hippocampal Network Function From Transient Hypertension: Linking Mid-Life Hypertension to Late Life Dementia Risk\" in Frontiers in neuroscience.",
+    "content_fr": "Aaron Y Lai et al. ont publié « Compromised Cortical-Hippocampal Network Function From Transient Hypertension: Linking Mid-Life Hypertension to Late Life Dementia Risk » dans Frontiers in neuroscience.",
+    "link": "https://doi.org/10.3389/fnins.2022.897206"
+  },
+  {
+    "date": "2022-10-15",
+    "title_en": "New Publication in Progress in neurobiology",
+    "title_fr": "Nouvel article publié dans Progress in neurobiology",
+    "content_en": "Illsung L Joo et al. published \"Early alterations in brain glucose metabolism and vascular function in a transgenic rat model of Alzheimer's disease\" in Progress in neurobiology.",
+    "content_fr": "Illsung L Joo et al. ont publié « Early alterations in brain glucose metabolism and vascular function in a transgenic rat model of Alzheimer's disease » dans Progress in neurobiology.",
+    "link": "https://doi.org/10.1016/j.pneurobio.2022.102327"
+  },
+  {
+    "date": "2022-09-15",
+    "title_en": "New Publication in Biomedicines",
+    "title_fr": "Nouvel article publié dans Biomedicines",
+    "content_en": "Azin EbrahimAmini et al. published \"Effects of In Vivo Intracellular ATP Modulation on Neocortical Extracellular Potassium Concentration\" in Biomedicines.",
+    "content_fr": "Azin EbrahimAmini et al. ont publié « Effects of In Vivo Intracellular ATP Modulation on Neocortical Extracellular Potassium Concentration » dans Biomedicines.",
+    "link": "https://doi.org/10.3390/biomedicines10071568"
+  },
+  {
+    "date": "2021-12-15",
+    "title_en": "New Publication in Theranostics",
+    "title_fr": "Nouvel article publié dans Theranostics",
+    "content_en": "James R Mester et al. published \"Attenuation of tonic inhibition prevents chronic neurovascular impairments in a Thy1-ChR2 mouse model of repeated, mild traumatic brain injury\" in Theranostics.",
+    "content_fr": "James R Mester et al. ont publié « Attenuation of tonic inhibition prevents chronic neurovascular impairments in a Thy1-ChR2 mouse model of repeated, mild traumatic brain injury » dans Theranostics.",
+    "link": "https://doi.org/10.7150/thno.60190"
+  },
+  {
+    "date": "2021-11-15",
+    "title_en": "New Publication in Brain research",
+    "title_fr": "Nouvel article publié dans Brain research",
+    "content_en": "Aaron Y Lai et al. published \"Cerebrovascular damage after midlife transient hypertension in non-transgenic and Alzheimer's disease rats\" in Brain research.",
+    "content_fr": "Aaron Y Lai et al. ont publié « Cerebrovascular damage after midlife transient hypertension in non-transgenic and Alzheimer's disease rats » dans Brain research.",
+    "link": "https://doi.org/10.1016/j.brainres.2021.147369"
+  },
+  {
+    "date": "2021-10-15",
+    "title_en": "New Publication in Brain research",
+    "title_fr": "Nouvel article publié dans Brain research",
+    "content_en": "Mingzhe Liu et al. published \"Covert strokes prior to Alzheimer's disease onset accelerate peri-lesional pathology but not cognitive deficits in an inducible APP mouse model\" in Brain research.",
+    "content_fr": "Mingzhe Liu et al. ont publié « Covert strokes prior to Alzheimer's disease onset accelerate peri-lesional pathology but not cognitive deficits in an inducible APP mouse model » dans Brain research.",
+    "link": "https://doi.org/10.1016/j.brainres.2020.147233"
+  },
+  {
+    "date": "2021-09-15",
+    "title_en": "New Publication in Journal of cerebral blood flow and metabolism",
+    "title_fr": "Nouvel article publié dans Journal of cerebral blood flow and metabolism",
+    "content_en": "Paolo Bazzigaluppi et al. published \"Frequency selective neuronal modulation triggers spreading depolarizations in the rat endothelin-1 model of stroke\" in Journal of cerebral blood flow and metabolism.",
+    "content_fr": "Paolo Bazzigaluppi et al. ont publié « Frequency selective neuronal modulation triggers spreading depolarizations in the rat endothelin-1 model of stroke » dans Journal of cerebral blood flow and metabolism.",
+    "link": "https://doi.org/10.1177/0271678X211013656"
+  },
+  {
+    "date": "2021-08-15",
+    "title_en": "New Publication in International journal of molecular sciences",
+    "title_fr": "Nouvel article publié dans International journal of molecular sciences",
+    "content_en": "Azin EbrahimAmini et al. published \"In Vivo Neocortical [K]o Modulation by Targeted Stimulation of Astrocytes\" in International journal of molecular sciences.",
+    "content_fr": "Azin EbrahimAmini et al. ont publié « In Vivo Neocortical [K]o Modulation by Targeted Stimulation of Astrocytes » dans International journal of molecular sciences.",
+    "link": "https://doi.org/10.3390/ijms22168658"
+  },
+  {
+    "date": "2021-07-15",
+    "title_en": "New Publication in Neurobiology of disease",
+    "title_fr": "Nouvel article publié dans Neurobiology of disease",
+    "content_en": "Azin EbrahimAmini et al. published \"Neocortical in vivo focal and spreading potassium responses and the influence of astrocytic gap junctional coupling\" in Neurobiology of disease.",
+    "content_fr": "Azin EbrahimAmini et al. ont publié « Neocortical in vivo focal and spreading potassium responses and the influence of astrocytic gap junctional coupling » dans Neurobiology of disease.",
+    "link": "https://doi.org/10.1016/j.nbd.2020.105160"
+  },
+  {
+    "date": "2020-12-15",
+    "title_en": "New Publication in Journal of neurotrauma",
+    "title_fr": "Nouvel article publié dans Journal of neurotrauma",
+    "content_en": "Joe Steinman et al. published \"Non-Invasive Ultrasound Detection of Cerebrovascular Changes in a Mouse Model of Traumatic Brain Injury\" in Journal of neurotrauma.",
+    "content_fr": "Joe Steinman et al. ont publié « Non-Invasive Ultrasound Detection of Cerebrovascular Changes in a Mouse Model of Traumatic Brain Injury » dans Journal of neurotrauma.",
+    "link": "https://doi.org/10.1089/neu.2019.6872"
+  },
+  {
+    "date": "2020-11-15",
+    "title_en": "New Publication in Brain",
+    "title_fr": "Nouvel article publié dans Brain",
+    "content_en": "Christopher D Morrone et al. published \"Regional differences in Alzheimer's disease pathology confound behavioural rescue after amyloid-β attenuation\" in Brain.",
+    "content_fr": "Christopher D Morrone et al. ont publié « Regional differences in Alzheimer's disease pathology confound behavioural rescue after amyloid-β attenuation » dans Brain.",
+    "link": "https://doi.org/10.1093/brain/awz371"
+  },
+  {
+    "date": "2020-10-15",
+    "title_en": "New Publication in NeuroImage",
+    "title_fr": "Nouvel article publié dans NeuroImage",
+    "content_en": "Ewelina Maliszewska-Cyna et al. published \"The effects of voluntary running on cerebrovascular morphology and spatial short-term memory in a mouse model of amyloidosis\" in NeuroImage.",
+    "content_fr": "Ewelina Maliszewska-Cyna et al. ont publié « The effects of voluntary running on cerebrovascular morphology and spatial short-term memory in a mouse model of amyloidosis » dans NeuroImage.",
+    "link": "https://doi.org/10.1016/j.neuroimage.2020.117269"
   },
   {
     "date": "2020-09-01",
