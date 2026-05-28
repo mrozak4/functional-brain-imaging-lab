@@ -14,13 +14,14 @@
                 <span class="logo-accent">Brain</span>Imaging Lab
             </a>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="people.html">People</a>
-                <a href="research.html">Research</a>
-                <a href="publications.html">Publications</a>
-                <a href="facilities.html">Facilities</a>
-                <a href="news.html">News</a>
-                <a href="joinus.html" class="active">Join Us</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="equipe.html" data-i18n="nav.people">People</a>
+                <a href="recherche.html" data-i18n="nav.research">Research</a>
+                <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                <a href="installations.html" data-i18n="nav.facilities">Facilities</a>
+                <a href="nouvelles.html" data-i18n="nav.news">News</a>
+                <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
+                <a href="joignez-vous.html" class="active" data-i18n="nav.joinus">Join Us</a>
                 <a href="../joinus.html" class="lang-toggle">EN</a>
             </nav>
         </div>
@@ -61,11 +62,12 @@
                 <div class="section-header">
                     <h2>Life in Toronto</h2>
                 </div>
-                <div style="display: flex; gap: 3rem; align-items: center; max-width: 900px; margin: 0 auto;">
-                    <div style="flex: 1; height: 350px; background-color: var(--color-bg); border-radius: var(--border-radius-lg);"></div>
-                    <div style="flex: 1;">
+                <div style="display: flex; gap: 3rem; align-items: center; max-width: 900px; margin: 0 auto; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px; height: 350px; background-image: url('images/facilities/booking-bg.jpeg'); background-size: cover; background-position: center; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);"></div>
+                    <div style="flex: 1; min-width: 300px;">
                         <p>Toronto is a vibrant, diverse city with a thriving scientific community. As a hub for both neuroscience research and artificial intelligence, it offers an incredible environment for interdisciplinary collaboration.</p>
                         <p>Our lab is located at the Sunnybrook Research Institute, offering state-of-the-art facilities surrounded by green space, with easy transit access to downtown Toronto.</p>
+                        <a href="toronto.html" class="btn btn-primary" style="margin-top: 1rem;">See What We Love About Toronto</a>
                     </div>
                 </div>
             </div>
@@ -84,9 +86,10 @@
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <p><a href="research.html">Research</a></p>
-                    <p><a href="publications.html">Publications</a></p>
-                    <p><a href="joinus.html">Join Us</a></p>
+                    <p><a href="recherche.html" data-i18n="nav.research">Research</a></p>
+                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
+                    <p><a href="toronto.html" data-i18n="nav.toronto">Toronto</a></p>
+                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a></p>
                 </div>
                 <div class="footer-col">
                     <h4>Connect</h4>
@@ -99,6 +102,6 @@
             </div>
         </div>
     </footer>
-<script src="../js/i18n.js"></script>
+    <script src="../js/i18n.js"></script>
 </body>
 </html>

@@ -33,7 +33,9 @@ for file in html_files:
         'facilities.html': 'installations.html',
         'news.html': 'nouvelles.html',
         'joinus.html': 'joignez-vous.html',
-        'index.html': 'index.html'
+        'index.html': 'index.html',
+        'toronto.html': 'toronto.html',
+        'conferences.html': 'conferences.html'
     }
     
     fr_file = fr_name_map.get(file)
@@ -53,6 +55,10 @@ for file in html_files:
         en_link = f'href="../{file}"'
         fr_content = re.sub(r'href=".*?"\s+class="lang-toggle"', f'{en_link} class="lang-toggle"', fr_content)
         
+        # Translate internal links
+        for en_page, fr_page in fr_name_map.items():
+            fr_content = fr_content.replace(f'href="{en_page}"', f'href="{fr_page}"')
+            
         # Write to fr directory
         with open(fr_path, 'w') as f:
             f.write(fr_content)

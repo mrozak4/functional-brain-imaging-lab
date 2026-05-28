@@ -401,3 +401,331 @@ footer {
   right: 2rem;
   z-index: 10000;
 }
+
+/* Premium custom styling additions */
+.person-quote {
+  font-style: italic;
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.person-quote cite {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  color: var(--color-dark);
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+}
+
+.quote-mark {
+  color: var(--color-secondary);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+/* Person details container for layout styling */
+.person-card, .alumni-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.person-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  background-color: var(--color-bg-alt);
+}
+
+.role {
+  font-family: var(--font-accent);
+  color: var(--color-tertiary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.education, .year-left, .current-position {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.links a {
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Highlighted Publications */
+.pub-highlight-card {
+  background-color: var(--color-card);
+  border-radius: var(--border-radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-bg-alt);
+  margin-bottom: 3rem;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.pub-highlight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.pub-highlight-meta {
+  font-family: var(--font-accent);
+  color: var(--color-tertiary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pub-highlight-authors {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.pub-highlight-body {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .pub-highlight-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pub-highlight-abstract {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.pub-highlight-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pub-highlight-gallery figure {
+  margin: 0;
+}
+
+.pub-highlight-gallery img {
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-bg-alt);
+}
+
+.pub-highlight-gallery figcaption {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* Dynamic Publication List Search Filters */
+.pub-filters-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-wrapper {
+  flex: 2;
+  min-width: 250px;
+}
+
+.select-wrapper {
+  flex: 1;
+  min-width: 150px;
+}
+
+#pub-search {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-pill);
+  border: 2px solid var(--color-bg-alt);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+#pub-search:focus {
+  border-color: var(--color-primary);
+}
+
+#pub-filter {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-pill);
+  border: 2px solid var(--color-bg-alt);
+  font-family: var(--font-accent);
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color-card);
+  transition: border-color var(--transition-fast);
+}
+
+#pub-filter:focus {
+  border-color: var(--color-primary);
+}
+
+.publication-card {
+  background-color: var(--color-card);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-bg-alt);
+  transition: border-color var(--transition-fast);
+}
+
+.publication-card:hover {
+  border-color: var(--color-primary);
+}
+
+.pub-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.pub-meta {
+  font-size: 0.85rem;
+  font-family: var(--font-accent);
+  margin-bottom: 0.75rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--color-bg-alt);
+  color: var(--color-dark);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-sm:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.loading-spinner {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 2rem;
+  font-family: var(--font-accent);
+}
+
+/* Facilities Tabs */
+.tabs-container {
+  width: 100%;
+}
+
+.tabs-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid var(--color-bg-alt);
+  padding-bottom: 1.5rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 2rem;
+  border-radius: var(--border-radius-pill);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid var(--color-dark);
+  background-color: transparent;
+  color: var(--color-dark);
+  transition: all var(--transition-fast);
+}
+
+.tab-btn:hover, .tab-btn.active {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn var(--transition-smooth);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Badges for project team members */
+.badge {
+  display: inline-block;
+  background-color: var(--color-bg-alt);
+  color: var(--color-dark);
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--border-radius-pill);
+  text-transform: uppercase;
+}
+
+/* Responsive grid layouts */
+@media (max-width: 768px) {
+  .flex-card {
+    flex-direction: column !important;
+  }
+}

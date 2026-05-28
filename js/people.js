@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const data = await response.json();
         
         const langBio = `bio_${I18n.locale}`;
+        const langQuote = `quote_${I18n.locale}`;
         
         const rolesOrder = [
             "Principal Investigator",
@@ -35,17 +36,29 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             let html = '';
             current.forEach(member => {
+                const quoteText = member[langQuote] || member.quote_en;
+                const quoteAuthor = member.quote_author;
+                const quoteHtml = quoteText ? `
+                    <blockquote class="person-quote">
+                        <span class="quote-mark">“</span>${quoteText}<span class="quote-mark">”</span>
+                        ${quoteAuthor ? `<cite>— ${quoteAuthor}</cite>` : ''}
+                    </blockquote>
+                ` : '';
+
                 html += `
                     <div class="person-card">
                         <img src="${prefix}${member.photo}" alt="${member.name}" class="person-photo" onerror="this.src='${prefix}images/people/placeholder.jpg'">
-                        <h3>${member.name}</h3>
-                        <p class="role">${member.role}</p>
-                        ${member.education ? `<p class="education">${member.education}</p>` : ''}
-                        <p class="bio">${member[langBio] || member.bio_en}</p>
-                        <div class="links">
-                            ${member.links?.scholar ? `<a href="${member.links.scholar}" target="_blank">Google Scholar</a>` : ''}
-                            ${member.links?.orcid ? `<a href="${member.links.orcid}" target="_blank">ORCID</a>` : ''}
-                            ${member.links?.email ? `<a href="mailto:${member.links.email}">Email</a>` : ''}
+                        <div class="person-details">
+                            <h3>${member.name}</h3>
+                            <p class="role">${member.role}</p>
+                            ${member.education ? `<p class="education">${member.education}</p>` : ''}
+                            <p class="bio">${member[langBio] || member.bio_en}</p>
+                            ${quoteHtml}
+                            <div class="links">
+                                ${member.links?.scholar ? `<a href="${member.links.scholar}" target="_blank" class="scholar-link">Google Scholar</a>` : ''}
+                                ${member.links?.orcid ? `<a href="${member.links.orcid}" target="_blank" class="orcid-link">ORCID</a>` : ''}
+                                ${member.links?.email ? `<a href="mailto:${member.links.email}" class="email-link">Email</a>` : ''}
+                            </div>
                         </div>
                     </div>
                 `;
@@ -59,14 +72,26 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             let html = '';
             alumni.forEach(member => {
+                const quoteText = member[langQuote] || member.quote_en;
+                const quoteAuthor = member.quote_author;
+                const quoteHtml = quoteText ? `
+                    <blockquote class="person-quote">
+                        <span class="quote-mark">“</span>${quoteText}<span class="quote-mark">”</span>
+                        ${quoteAuthor ? `<cite>— ${quoteAuthor}</cite>` : ''}
+                    </blockquote>
+                ` : '';
+
                 html += `
                     <div class="alumni-card">
                         <img src="${prefix}${member.photo}" alt="${member.name}" class="person-photo" onerror="this.src='${prefix}images/people/placeholder.jpg'">
-                        <h3>${member.name}</h3>
-                        <p class="role">${member.role}</p>
-                        <p class="year-left">Left: ${member.yearLeft}</p>
-                        <p class="current-position"><strong>${I18n.t('people.currentPosition')}:</strong> ${member.currentPosition}</p>
-                        <p class="bio">${member[langBio] || member.bio_en}</p>
+                        <div class="person-details">
+                            <h3>${member.name}</h3>
+                            <p class="role">${member.role}</p>
+                            <p class="year-left">Left: ${member.yearLeft}</p>
+                            <p class="current-position"><strong>${I18n.t('people.currentPosition')}:</strong> ${member.currentPosition}</p>
+                            <p class="bio">${member[langBio] || member.bio_en}</p>
+                            ${quoteHtml}
+                        </div>
                     </div>
                 `;
             });

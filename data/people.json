@@ -4,146 +4,170 @@
       "name": "Dr. Bojana Stefanovic",
       "role": "Principal Investigator",
       "status": "current",
-      "photo": "images/people/bojana-stefanovic.jpg",
-      "bio_en": "Dr. Stefanovic is the Principal Investigator and Platform Director of Physical Sciences at Sunnybrook Research Institute. She leads the Functional Brain Imaging Lab, focusing on neurovascular coupling and brain imaging.",
-      "bio_fr": "Dre Stefanovic est la chercheuse principale et directrice de la plateforme des sciences physiques à l'Institut de recherche Sunnybrook. Elle dirige le laboratoire d'imagerie fonctionnelle du cerveau, se concentrant sur le couplage neurovasculaire et l'imagerie cérébrale.",
+      "photo": "images/people/bojana.gif",
       "education": "PhD, Medical Biophysics, University of Toronto",
+      "bio_en": "I love reading - fiction and non-fiction alike; also Harper’s, Granta, the New Yorker. Even though I’m slow, I like biking, scooting, and outdoor skating; and I’m a huge fan of yoga. Tart flavours and jazz. Classical piano if under the weather. Thich Nhat Hanh and Marshall Rosenberg.",
+      "bio_fr": "J'adore lire, de la fiction comme de la non-fiction; aussi Harper's, Granta, le New Yorker. Même si je suis lente, j'aime le vélo, la trottinette et le patinage extérieur; et je suis une grande adepte du yoga. Saveurs acidulées et jazz. Piano classique en cas de fatigue. Thich Nhat Hanh et Marshall Rosenberg.",
+      "quote_en": "Never doubt that a small group of thoughtful, committed citizens can change the world. Indeed, it is the only thing that ever has.",
+      "quote_fr": "Ne doutez jamais qu'un petit groupe de citoyens réfléchis et engagés puisse changer le monde. En effet, c'est la seule chose qui y soit jamais parvenue.",
+      "quote_author": "Margaret Mead",
       "links": {
-        "email": "bojana.stefanovic@sri.utoronto.ca"
+        "email": "bojana@sri.utoronto.ca",
+        "scholar": "https://scholar.google.com/citations?user=Y3c3AxsAAAAJ"
       }
     },
     {
-      "name": "Bharathy Lingamoorthy",
-      "role": "Administrative Assistant",
-      "status": "alumni",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Bharathy serves as the Administrative Assistant for the lab, ensuring smooth daily operations and supporting the research team in their various projects.",
-      "bio_fr": "Bharathy occupe le poste d'adjointe administrative du laboratoire, veillant au bon déroulement des opérations quotidiennes et soutenant l'équipe de recherche dans ses divers projets.",
-      "links": {},
-      "currentPosition": "Alumni"
-    },
-    {
-      "name": "Adrienne Dorr",
-      "role": "Research Assistant",
+      "name": "Andrea Trevisiol",
+      "role": "Postdoctoral Fellows",
       "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Outside of work I enjoy music, the outdoors, islands, books, spicy foods, vacations to warm locations, camping, and being silly with my boys. At work I enjoy the challenge of various microsurgical tasks, but the most exciting aspect of my job comes from capturing amazing biological images with multiphoton microscopy.",
-      "bio_fr": "Outside of work I enjoy music, the outdoors, islands, books, spicy foods, vacations to warm locations, camping, and being silly with my boys. At work I enjoy the challenge of various microsurgical tasks, but the most exciting aspect of my job comes from capturing amazing biological images with multiphoton microscopy. (Translation pending)",
-      "links": {}
-    },
-    {
-      "name": "Tina Beckett",
-      "role": "Research Assistant",
-      "status": "alumni",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Tina is a Research Assistant focused on supporting the lab's experiments, maintaining protocols, and assisting with advanced neuroimaging studies.",
-      "bio_fr": "Tina est une assistante de recherche dont le travail consiste à soutenir les expériences du laboratoire, à maintenir les protocoles et à collaborer aux études avancées en neuro-imagerie.",
-      "links": {},
-      "currentPosition": "Alumni"
-    },
-    {
-      "name": "Emma Pineau",
-      "role": "Graduate Student",
-      "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Emma is a Graduate Student investigating novel brain imaging techniques and neurovascular responses under the supervision of Dr. Stefanovic.",
-      "bio_fr": "Emma est une étudiante aux cycles supérieurs qui étudie de nouvelles techniques d'imagerie cérébrale et les réponses neurovasculaires sous la supervision de la Dre Stefanovic.",
-      "links": {}
-    },
-    {
-      "name": "Ahmadreza Attarpour",
-      "role": "Graduate Student",
-      "status": "alumni",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Ahmadreza is a Graduate Student in the lab, working on advanced imaging modalities to better understand functional brain changes.",
-      "bio_fr": "Ahmadreza est un étudiant aux cycles supérieurs dans le laboratoire, travaillant sur des modalités d'imagerie avancées pour mieux comprendre les changements fonctionnels du cerveau.",
-      "links": {},
-      "currentPosition": "Alumni"
-    },
-    {
-      "name": "Dustin Loren Almanza",
-      "role": "Graduate Student",
-      "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "I've been dancing since 1st grade from Filipino folk dances to modern and jazz in high school and ended up in hip-hop when I was in university. Coffee + music is my jam. When I am stressed, working out and jogging are my outlets.",
-      "bio_fr": "I've been dancing since 1st grade from Filipino folk dances to modern and jazz in high school and ended up in hip-hop when I was in university. Coffee + music is my jam. When I am stressed, working out and jogging are my outlets. (Translation pending)",
-      "links": {}
-    },
-    {
-      "name": "Matthew (Matt) Rozak",
-      "role": "Graduate Student",
-      "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "In my spare time, I can often be found catching up on the latest Netflix series, or occasionally reading fiction and news articles. I maintain a sizable board game collection, and have spent way too many nights enjoying that collection with friends.",
-      "bio_fr": "In my spare time, I can often be found catching up on the latest Netflix series, or occasionally reading fiction and news articles. I maintain a sizable board game collection, and have spent way too many nights enjoying that collection with friends. (Translation pending)",
-      "links": {}
+      "photo": "images/people/andrea.gif",
+      "bio_en": "When I’m not reading about neurons and glia I enjoy keeping up with other science disciplines, sipping espresso, baking pizza and bread, or if I’m tired enough firing up a video game. I love being outside and playing basketball, cruising around on my longboard, exploring new places or just chilling behind a grill. During my spare time, I’m also a full-time dad.",
+      "bio_fr": "Quand je ne lis pas sur les neurones et la glie, j'aime me tenir au courant des autres disciplines scientifiques, siroter un expresso, faire de la pizza et du pain ou, si je suis assez fatigué, lancer un jeu vidéo. J'aime être dehors et jouer au basket, me promener sur mon longboard, explorer de nouveaux endroits ou simplement me détendre derrière un gril. Pendant mon temps libre, je suis aussi papa à plein temps.",
+      "quote_en": "We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.",
+      "quote_fr": "Nous ne sommes qu'une race avancée de singes sur une planète mineure d'une étoile très moyenne. Mais nous pouvons comprendre l'Univers. Cela nous rend très spéciaux.",
+      "quote_author": "Stephen Hawking",
+      "links": {
+        "email": "andrea3vs@gmail.com"
+      }
     },
     {
       "name": "Monica Bell Vila",
-      "role": "Graduate Student",
+      "role": "PhD Student",
       "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "I love to read, typically fiction, although I care more about how the book is written than what the book is about. On my nights off I like to practice yoga and draw or paint.",
-      "bio_fr": "I love to read, typically fiction, although I care more about how the book is written than what the book is about. On my nights off I like to practice yoga and draw or paint. (Translation pending)",
+      "photo": "images/people/monica.gif",
+      "bio_en": "I love to read, typically fiction, although I care more about how the book is written than what the book is about (favourites include The Winter Vault by Anne Michaels and In the Skin of a Lion by Michael Ondaatje). On my nights off I like to practice yoga and draw or paint.",
+      "bio_fr": "J'adore lire, généralement de la fiction, bien que je me soucie plus de la façon dont le livre est écrit que de son sujet (les favoris incluent The Winter Vault d'Anne Michaels et In the Skin of a Lion de Michael Ondaatje). Pendant mes soirées de congé, j'aime pratiquer le yoga et dessiner ou peindre.",
+      "quote_en": "If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a grass in the beginning.",
+      "quote_fr": "Si je vaux quelque chose plus tard, je vaux quelque chose maintenant. Car le blé est du blé, même si les gens pensent au début que c'est une herbe.",
+      "quote_author": "Vincent Van Gogh",
+      "links": {
+        "email": "monica.bellvila@gmail.com"
+      }
+    },
+    {
+      "name": "Matthew (Matt) Rozak",
+      "role": "PhD Student",
+      "status": "current",
+      "photo": "images/people/matt.gif",
+      "bio_en": "In my spare time, I can often be found catching up on the latest Netflix series, or occasionally reading fiction and news articles. I maintain a sizable board game collection, and have spent way too many nights enjoying that collection with friends. To stay active I run quite frequently, and when travelling I go surfing. I bring excitement to my life through travelling - some of my favourite places I’ve been so far include Qingdao, Montevideo, and Busan.",
+      "bio_fr": "Pendant mes temps libres, on peut souvent me trouver en train de regarder les dernières séries Netflix ou de lire occasionnellement de la fiction et des articles de presse. J'entretiens une importante collection de jeux de société et j'ai passé beaucoup trop de soirées à en profiter avec des amis. Pour rester actif, je cours assez fréquemment et, en voyage, je fais du surf. Voyager m'apporte de l'excitation - certains de mes endroits préférés visités jusqu'à présent incluent Qingdao, Montevideo et Busan.",
+      "quote_en": "When you become the image of your own imagination, it’s the most powerful thing you could ever do.",
+      "quote_fr": "Devenir l'image de votre propre imagination est la chose la plus puissante que vous puissiez faire.",
+      "quote_author": "RuPaul",
+      "links": {
+        "email": "matthew.rozak@mail.utoronto.ca"
+      }
+    },
+    {
+      "name": "Dustin Loren Almanza",
+      "role": "PhD Student",
+      "status": "current",
+      "photo": "images/people/dustin.gif",
+      "bio_en": "I've been dancing since 1st grade from Filipino folk dances to modern and jazz in high school and ended up in hip-hop when I was in university. Coffee + music is my jam. When I am stressed, working out and jogging are my outlets. Photography, singing, and trying out different cafes are my interests... where deep thought conversation is my language. I love going to the beach and traveling.",
+      "bio_fr": "Je danse depuis le cours primaire, des danses folkloriques philippines au moderne et au jazz au secondaire, et j'ai fini par faire du hip-hop à l'université. Café + musique, c'est mon truc. Quand je suis stressé, le sport et le jogging sont mes exutoires. La photographie, le chant et la découverte de différents cafés sont mes centres d'intérêt... où les conversations profondes sont ma langue. J'aime aller à la plage et voyager.",
+      "quote_en": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+      "quote_fr": "Rien dans la vie n'est à craindre, tout est à comprendre. Il est temps de comprendre plus pour avoir moins peur.",
+      "quote_author": "Marie Curie",
+      "links": {
+        "email": "dustin.almanza@mail.utoronto.ca"
+      }
+    },
+    {
+      "name": "Emma Pineau",
+      "role": "Master's Student",
+      "status": "current",
+      "photo": "images/people/emma.png",
+      "bio_en": "I gained a background in medical imaging during my undergrad and am excited to translate that to neuroimaging research now that I’ve joined the lab. Outside of work I am an avid fiction reader of all genres, but anything with a happy ending will always have a special place in my heart. I keep some variety in my life by having dinner parties with friends and trying new workout classes.",
+      "bio_fr": "J'ai acquis une formation en imagerie médicale au baccalauréat et je suis ravie de transposer cela à la recherche en neuroimagerie maintenant que j'ai rejoint le laboratoire. En dehors du travail, je suis une lectrice passionnée de fiction de tous genres, mais tout ce qui a une fin heureuse aura toujours une place spéciale dans mon cœur. Je mets de la variété dans ma vie en organisant des dîners avec des amis et en essayant de nouveaux cours de sport.",
+      "quote_en": "I am not afraid of storms, for I am learning how to sail my ship.",
+      "quote_fr": "Je n'ai pas peur des tempêtes, car j'apprends à naviguer sur mon navire.",
+      "quote_author": "Louisa May Alcott, Little Women",
       "links": {}
+    },
+    {
+      "name": "Adrienne Dorr",
+      "role": "Research Staff / Technicians",
+      "status": "current",
+      "photo": "images/people/adrienne.gif",
+      "bio_en": "Outside of work I enjoy music, the outdoors, islands, books, spicy foods, vacations to warm locations, camping, and being silly with my boys. At work I enjoy the challenge of various microsurgical tasks, but the most exciting aspect of my job comes from capturing amazing biological images with multiphoton microscopy. My coworkers are pretty great too.",
+      "bio_fr": "En dehors du travail, j'aime la musique, le plein air, les îles, les livres, les aliments épicés, les vacances dans des endroits chauds, le camping et faire la folle avec mes garçons. Au travail, j'aime le défi des tâches microchirurgicales diverses, mais l'aspect le plus excitant de mon travail vient de la capture d'images biologiques étonnantes par microscopie multiphotonique. Mes collègues sont super aussi.",
+      "quote_en": "Baby steps!",
+      "quote_fr": "Un pas à la fois!",
+      "quote_author": "Adrienne Dorr",
+      "links": {
+        "email": "adorr@sri.utoronto.ca"
+      }
     },
     {
       "name": "Margaret Koletar",
-      "role": "Research Technician",
+      "role": "Research Staff / Technicians",
       "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "When I’m not in the lab you can find me exploring the many walking and cycling paths through the extensive green spaces in Toronto, snowshoeing in the winter, or sailing in the summer. On a hot summer day, it’s great to end the day with a beer on the beach at Sunnyside.",
-      "bio_fr": "When I’m not in the lab you can find me exploring the many walking and cycling paths through the extensive green spaces in Toronto, snowshoeing in the winter, or sailing in the summer. On a hot summer day, it’s great to end the day with a beer on the beach at Sunnyside. (Translation pending)",
+      "photo": "images/people/margaret.gif",
+      "bio_en": "When I’m not in the lab you can find me exploring the many walking and cycling paths through the extensive green spaces in Toronto, snowshoeing in the winter, or sailing in the summer. On a hot summer day, it’s great to end the day with a beer on the beach at Sunnyside while watching the boats out on Lake Ontario. There are so many things to do around Toronto - music, food, art, and street festivals keep me busy all year.",
+      "bio_fr": "Quand je ne suis pas au laboratoire, vous pouvez me trouver en train d'explorer les nombreux sentiers pédestres et cyclables à travers les espaces verts de Toronto, de faire de la raquette en hiver ou de la voile en été. Par une chaude journée d'été, c'est génial de finir la journée avec une bière sur la plage de Sunnyside. Il y a tellement de choses à faire à Toronto - la musique, la nourriture, l'art et les festivals de rue me tiennent occupée toute l'année.",
+      "quote_en": "Sometimes it is the people no one can imagine anything of, who do the things no one can imagine.",
+      "quote_fr": "Parfois, ce sont les personnes dont on n'attend rien qui font des choses que personne n'aurait pu imaginer.",
+      "quote_author": "Alan Turing",
+      "links": {
+        "email": "mkoletar@sri.utoronto.ca"
+      }
+    },
+    {
+      "name": "George",
+      "role": "Nespresso Machine",
+      "status": "current",
+      "photo": "images/people/george.gif",
+      "bio_en": "Originally from Switzerland, George joined the lab in February 2018. George rapidly distinguished itself by bringing together lab members and providing comforting warm drinks, and quickly became an invaluable and celebrated member of the group.",
+      "bio_fr": "Originaire de Suisse, George a rejoint le laboratoire en février 2018. George s'est rapidement distingué en rassemblant les membres du laboratoire et en offrant des boissons chaudes réconfortantes, devenant rapidement un membre indispensable et célébré du groupe.",
+      "quote_en": "What goes best with a cup of coffee? Another cup.",
+      "quote_fr": "Qu'est-ce qui va le mieux avec une tasse de café? Une autre tasse.",
+      "quote_author": "Henry Rollins",
       "links": {}
     },
     {
-      "name": "Andrea Trevisiol",
-      "role": "Post-Doctoral Fellow",
+      "name": "Andrew Stanisz",
+      "role": "Research Staff / Technicians",
+      "status": "current",
+      "photo": "images/people/andrew.gif",
+      "bio_en": "I spend most of the warm months golfing and camping. Most of my free time during the winter is spent inside, playing games with friends. I’m an avid movie goer all year round.",
+      "bio_fr": "Je passe la plupart des mois chauds à jouer au golf et à faire du camping. La majeure partie de mon temps libre en hiver est consacrée aux jeux avec des amis. Je suis un cinéphile passionné toute l'année.",
+      "quote_en": "Yet such is oft the course of deeds that move the wheels of the world: small hands do them because they must, while the eyes of the great are elsewhere.",
+      "quote_fr": "Pourtant, tel est souvent le cours des actions qui font tourner les roues du monde : les petites mains les font parce qu'elles le doivent, tandis que les yeux des grands sont ailleurs.",
+      "quote_author": "Elrond, Lord of the Rings",
+      "links": {
+        "email": "astanisz@sri.utoronto.ca"
+      }
+    },
+    {
+      "name": "Jack Simiao He",
+      "role": "Undergraduate Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
-      "bio_en": "When I’m not reading about neurons and glia I enjoy keeping up with other science disciplines, sipping espresso, baking pizza and bread, or if I’m tired enough firing up a video game. I love being outside and playing basketball, cruising around on my longboard, exploring.",
-      "bio_fr": "When I’m not reading about neurons and glia I enjoy keeping up with other science disciplines, sipping espresso, baking pizza and bread, or if I’m tired enough firing up a video game. I love being outside and playing basketball, cruising around on my longboard, exploring. (Translation pending)",
+      "bio_en": "Jack is an undergraduate student in the Functional Brain Imaging Lab.",
+      "bio_fr": "Jack est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
       "links": {}
     },
     {
-      "name": "Yu",
-      "role": "Lab Member",
+      "name": "Keying Chen",
+      "role": "Undergraduate Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
-      "bio_en": "Yu is a current member of the Functional Brain Imaging Lab.",
-      "bio_fr": "Yu est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "bio_en": "Keying is an undergraduate student in the Functional Brain Imaging Lab.",
+      "bio_fr": "Keying est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
       "links": {}
     },
     {
-      "name": "Jack",
-      "role": "Lab Member",
+      "name": "Jazlynn Xiu Min Tan",
+      "role": "Undergraduate Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
-      "bio_en": "Jack is a current member of the Functional Brain Imaging Lab.",
-      "bio_fr": "Jack est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
-    },
-    {
-      "name": "Keying",
-      "role": "Lab Member",
-      "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Keying is a current member of the Functional Brain Imaging Lab.",
-      "bio_fr": "Keying est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
-      "links": {}
-    },
-    {
-      "name": "Jazzlyn",
-      "role": "Lab Member",
-      "status": "current",
-      "photo": "images/people/placeholder.jpg",
-      "bio_en": "Jazzlyn is a current member of the Functional Brain Imaging Lab.",
-      "bio_fr": "Jazzlyn est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "bio_en": "Jazlynn is an undergraduate student in the Functional Brain Imaging Lab.",
+      "bio_fr": "Jazlynn est un étudiant de premier cycle au laboratoire d'imagerie fonctionnelle du cerveau.",
       "links": {}
     },
     {
       "name": "Spencer",
-      "role": "Lab Member",
+      "role": "Undergraduate Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
       "bio_en": "Spencer is a current member of the Functional Brain Imaging Lab.",
@@ -152,11 +176,205 @@
     },
     {
       "name": "Kim",
-      "role": "Lab Member",
+      "role": "Undergraduate Student",
       "status": "current",
       "photo": "images/people/placeholder.jpg",
       "bio_en": "Kim is a current member of the Functional Brain Imaging Lab.",
       "bio_fr": "Kim est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Yu",
+      "role": "Undergraduate Student",
+      "status": "current",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Yu is a current member of the Functional Brain Imaging Lab.",
+      "bio_fr": "Yu est un membre actuel du laboratoire d'imagerie fonctionnelle du cerveau.",
+      "links": {}
+    },
+    {
+      "name": "Bharathy Lingamoorthy",
+      "role": "Administrative Assistant",
+      "status": "alumni",
+      "photo": "images/people/bharathy.gif",
+      "bio_en": "My friends would desribe me as easy-going, a good listener, and an amazing barista. For the past two years, I have enjoyed working with this team as a member of Dr. Stefanovic’s lab.",
+      "bio_fr": "Mes amis me décriraient comme facile à vivre, à l'écoute et une barista incroyable. Pendant ces deux années, j'ai aimé travailler avec cette équipe en tant que membre du laboratoire de la Dre Stefanovic.",
+      "quote_en": "You don’t have to be great to start, but you have to start to be great.",
+      "quote_fr": "Il n'est pas nécessaire d'être grand pour commencer, mais il faut commencer pour être grand.",
+      "quote_author": "Zig Ziglar",
+      "yearLeft": 2021,
+      "currentPosition": "Alumni",
+      "links": {}
+    },
+    {
+      "name": "Tina Beckett",
+      "role": "Research Assistant",
+      "status": "alumni",
+      "photo": "images/people/tina.gif",
+      "bio_en": "Outside of the lab I love camping in Algonquin Park on the Victoria Day long weekend, snowboarding & cross-country skiing in the winter, playing softball in the summer, and very occasionally running a half-marathon. I absolutely love modern art and am usually in the midst of reading one (or two or three) art history books, and planning visits to contemporary art museums whenever I’m travelling.",
+      "bio_fr": "En dehors du laboratoire, j'adore camper dans le parc Algonquin, faire du snowboard et du ski de fond en hiver, jouer au softball en été et, très occasionnellement, courir un semi-marathon. J'adore l'art moderne et je suis généralement en train de lire un (ou deux ou trois) livres d'histoire de l'art, et je prévois des visites de musées d'art contemporain lors de mes déplacements.",
+      "quote_en": "It’s gonna be fun on a bun!",
+      "quote_fr": "Ça va être du plaisir en boîte!",
+      "quote_author": "Bender, Futurama",
+      "yearLeft": 2022,
+      "currentPosition": "Alumni",
+      "links": {}
+    },
+    {
+      "name": "Ahmadreza Attarpour",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/ahmadreza.gif",
+      "bio_en": "My main research area is using data analysis and computational methods in the field of Neuroscience. My purpose in the educational milieu is to have a contribution to solving existing scientific challenges in the mentioned area. Joining this lab was a milestone during the worst situation (COVID pandemic) all of us have confronted. Outside of the lab, I enjoy playing Volleyball and video games.",
+      "bio_fr": "Mon principal domaine de recherche est l'utilisation de l'analyse de données et de méthodes de calcul dans le domaine des neurosciences. Mon but dans le milieu éducatif est de contribuer à résoudre les défis scientifiques existants. Rejoindre ce laboratoire a été une étape importante dans la pire des situations (la pandémie de COVID). En dehors du laboratoire, j'aime jouer au volley-ball et aux jeux vidéo.",
+      "quote_en": "Believe you can, and you are halfway there.",
+      "quote_fr": "Croyez que vous le pouvez, et vous en êtes déjà à la moitié du chemin.",
+      "quote_author": "Theodore Roosevelt",
+      "yearLeft": 2025,
+      "currentPosition": "Alumni",
+      "links": {}
+    },
+    {
+      "name": "James Mester",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "PhD 2021; Advanced Imaging Specialist, Nikon Instruments.",
+      "bio_fr": "Doctorat 2021; Spécialiste de l'imagerie avancée, Nikon Instruments.",
+      "yearLeft": 2021,
+      "currentPosition": "Advanced Imaging Specialist, Nikon Instruments",
+      "links": {}
+    },
+    {
+      "name": "Evelyn Lake",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "PhD 2016; Assistant Professor, Yale University.",
+      "bio_fr": "Doctorat 2016; Professeure adjointe, Université Yale.",
+      "yearLeft": 2016,
+      "currentPosition": "Assistant Professor, Yale University",
+      "links": {}
+    },
+    {
+      "name": "Connor Adams",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "MSc 2017; Data Scientist, Globus Medical.",
+      "bio_fr": "Maîtrise 2017; Scientifique des données, Globus Medical.",
+      "yearLeft": 2017,
+      "currentPosition": "Data Scientist, Globus Medical",
+      "links": {}
+    },
+    {
+      "name": "Lewis Joo",
+      "role": "Research Staff / Technicians",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "MSc 2017; Research Technician, fBIL.",
+      "bio_fr": "Maîtrise 2017; Technicien de recherche, fBIL.",
+      "yearLeft": 2017,
+      "currentPosition": "Research Technician, fBIL",
+      "links": {}
+    },
+    {
+      "name": "Simone Chaudhary",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "MSc 2012; Radiation Resident at McMaster University.",
+      "bio_fr": "Maîtrise 2012; Résidente en radio-oncologie à l'Université McMaster.",
+      "yearLeft": 2012,
+      "currentPosition": "Radiation Resident at McMaster University",
+      "links": {}
+    },
+    {
+      "name": "Liis Lindvere",
+      "role": "Graduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "MSc 2012; Manager of Clinical Trials, MolecuLight Inc.",
+      "bio_fr": "Maîtrise 2012; Directrice des essais cliniques, MolecuLight Inc.",
+      "yearLeft": 2012,
+      "currentPosition": "Manager of Clinical Trials, MolecuLight Inc.",
+      "links": {}
+    },
+    {
+      "name": "Rafal Janik",
+      "role": "Research Staff / Technicians",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Research Associate 2009-2011; Head of Operations, Xanadu.",
+      "bio_fr": "Associé de recherche 2009-2011; Chef des opérations, Xanadu.",
+      "yearLeft": 2011,
+      "currentPosition": "Head of Operations, Xanadu",
+      "links": {}
+    },
+    {
+      "name": "Aaron Lai",
+      "role": "Postdoctoral Fellows",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Post-doctoral fellow 2012-2019; Research Associate, SRI.",
+      "bio_fr": "Stagiaire postdoctoral 2012-2019; Associé de recherche, SRI.",
+      "yearLeft": 2019,
+      "currentPosition": "Research Associate, SRI",
+      "links": {}
+    },
+    {
+      "name": "Paolo Bazzigaluppi",
+      "role": "Postdoctoral Fellows",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Post-doctoral fellow 2013-2018; Research Associate at fBIL.",
+      "bio_fr": "Stagiaire postdoctoral 2013-2018; Associé de recherche à fBIL.",
+      "yearLeft": 2018,
+      "currentPosition": "Research Associate, fBIL",
+      "links": {}
+    },
+    {
+      "name": "Lakshminarayan Chinta",
+      "role": "Postdoctoral Fellows",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Post-doctoral fellow 2009-11; CEO & Co-Founder, AttolloSE.",
+      "bio_fr": "Stagiaire postdoctoral 2009-11; PDG et co-fondateur, AttolloSE.",
+      "yearLeft": 2011,
+      "currentPosition": "CEO & Co-Founder, AttolloSE",
+      "links": {}
+    },
+    {
+      "name": "Martijn Van Raaij",
+      "role": "Postdoctoral Fellows",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Post-doctoral fellow 2009-11; Industrial R & D Scientist, DEMCON.",
+      "bio_fr": "Stagiaire postdoctoral 2009-11; Scientifique R&D industriel, DEMCON.",
+      "yearLeft": 2011,
+      "currentPosition": "Industrial R & D Scientist, DEMCON",
+      "links": {}
+    },
+    {
+      "name": "Amy Scouten",
+      "role": "Postdoctoral Fellows",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Post-doctoral fellow 2008-2009; Patent Agent, Integral IP.",
+      "bio_fr": "Stagiaire postdoctoral 2008-2009; Agente de brevets, Integral IP.",
+      "yearLeft": 2009,
+      "currentPosition": "Patent Agent, Integral IP",
+      "links": {}
+    },
+    {
+      "name": "Jamie Graham",
+      "role": "Undergraduate Student",
+      "status": "alumni",
+      "photo": "images/people/placeholder.jpg",
+      "bio_en": "Undergraduate researcher 2018-2020; Undergraduate Student, U of T.",
+      "bio_fr": "Chercheur de premier cycle 2018-2020; Étudiant de premier cycle, U de T.",
+      "yearLeft": 2020,
+      "currentPosition": "Undergraduate Student, U of T",
       "links": {}
     }
   ]

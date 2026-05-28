@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Functional Brain Imaging Lab</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Publications and research papers from the Functional Brain Imaging Lab.">
+    <meta name="description" content="Highlighted research publications and complete database search from the Functional Brain Imaging Lab.">
 </head>
 <body>
     <header>
@@ -14,45 +14,200 @@
                 <span class="logo-accent">Brain</span>Imaging Lab
             </a>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="people.html">People</a>
-                <a href="research.html">Research</a>
-                <a href="publications.html" class="active">Publications</a>
-                <a href="facilities.html">Facilities</a>
-                <a href="news.html">News</a>
-                <a href="joinus.html">Join Us</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="people.html" data-i18n="nav.people">People</a>
+                <a href="research.html" data-i18n="nav.research">Research</a>
+                <a href="publications.html" class="active" data-i18n="nav.publications">Publications</a>
+                <a href="facilities.html" data-i18n="nav.facilities">Facilities</a>
+                <a href="news.html" data-i18n="nav.news">News</a>
+                <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
+                <a href="joinus.html" data-i18n="nav.joinus">Join Us</a>
                 <a href="fr/publications.html" class="lang-toggle">FR</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Hero Header -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/publications/highlighted-header.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
+            <div class="container">
+                <h1 style="color: white; margin-bottom: 1rem;" data-i18n="publications.featured">Featured Publications</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--color-bg);">Discover key scientific findings and methodological innovations from our team.</p>
+            </div>
+        </section>
+
+        <!-- Highlighted Publications -->
         <section class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2>Publications</h2>
-                </div>
-                
-                <p style="text-align: center; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 3rem;">
-                    Our publication list is automatically updated from PubMed.
-                </p>
-
-                <div class="card-grid" id="publications-container" style="grid-template-columns: 1fr;">
-                    <!-- Placeholder for JS rendered publications -->
-                    <div class="card">
-                        <span class="tagline">eLife &bull; 2024</span>
-                        <h3>A deep learning pipeline for mapping in situ network-level neurovascular coupling in multi-photon fluorescence microscopy</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Authors: J. Smith, A. Johnson, B. Stefanovic.</p>
-                        <a href="#" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View on PubMed</a>
-                    </div>
+                <div class="highlighted-pubs">
                     
-                    <div class="card">
-                        <span class="tagline">NeuroImage &bull; 2024</span>
-                        <h3>Network response of brain microvasculature to neuronal stimulation</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Authors: M. Doe, B. Stefanovic.</p>
-                        <a href="#" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View on PubMed</a>
+                    <!-- Pub 1 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Journal of Cerebral Blood Flow & Metabolism &bull; 2021</div>
+                        <h3>Frequency Selective Neuronal Modulation Triggers Spreading Depolarizations in the Rat Endothelin-1 Model of Stroke</h3>
+                        <p class="pub-highlight-authors">Paolo Bazzigaluppi, James Mester, Illsung L Joo, Iliya Weisspapir, Adrienne Dorr, Margaret M Koletar, Tina L Beckett, Houman Khosravani, Peter Carlen, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Ischemia is one of the most common causes of acquired brain injury. Central to its noxious sequelae are spreading depolarizations (SDs), waves of persistent depolarizations which start at the location of the flow obstruction and expand outwards leading to excitotoxic damage. We investigated the role of peri-injection zone pyramidal neurons in triggering SDs by optogenetic stimulation in an endothelin-1 rat model of focal ischemia. Our concurrent two photon fluorescence microscopy data and local field potential recordings indicated that a ≥ 60% drop in cortical arteriolar red blood cell velocity was associated with SDs at the ET-1 injection site. SDs were also observed in the peri-injection zone, which subsequently exhibited elevated neuronal activity in the low-frequency bands. Critically, SDs were triggered by low- but not high-frequency optogenetic stimulation of peri-injection zone pyramidal neurons.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="images/publications/bazzigaluppi-jcbfm-fig1.jpg" alt="Stroke LFP Waveforms">
+                                    <figcaption>Fig 1: Evoked LFP and velocity responses during localized stroke induction.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/bazzigaluppi-jcbfm-fig4.jpg" alt="Two-Photon Stroke Vessel Propagation">
+                                    <figcaption>Fig 4: Two-photon imaging tracking spreading depolarization fronts.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1177/0271678X21990003" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 2 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Theranostics &bull; 2021</div>
+                        <h3>Attenuation of Tonic Inhibition Prevents Chronic Neurovascular Impairments in a Thy1-ChR2 Mouse Model of Repeated, Mild Traumatic Brain Injury</h3>
+                        <p class="pub-highlight-authors">James R Mester, Paolo Bazzigaluppi, Adrienne Dorr, Tina Beckett, Matthew Burke, JoAnne McLaurin, John G Sled, Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Mild traumatic brain injury (mTBI), the most common type of brain trauma, frequently leads to chronic cognitive deficits. To elucidate its pathophysiological sequelae, we combined optogenetics, two-photon microscopy, and intracortical electrophysiology in mice to stimulate peri-contusional neurons weeks following repeated closed-head injury. Compared to shams, mTBI mice showed doubled cortical venular speeds and strongly elevated reactivity, while peri-contusional neurons exhibited attenuated spontaneous activity. Post-mortem immunofluorescence revealed signs of peri-contusional senescence and DNA damage. These alterations were largely prevented by chronic, low-dose, systemic administration of a GABA-A receptor inverse agonist (L-655,708), commencing 3 days following the final impact.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="images/publications/mester-theranostics-fig1.jpg" alt="mTBI Setup and Behavior">
+                                    <figcaption>Fig 1: Pipeline of closed-head impacts, behavior, and optogenetic verification.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/mester-theranostics-fig2.jpg" alt="Microvascular Speed Changes">
+                                    <figcaption>Fig 2: Chronic alteration of local microvascular diameter and resting velocity.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.7150/thno.60190" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 3 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Hypertension &bull; 2019</div>
+                        <h3>Combinatorial Treatment Using Umbilical Cord Perivascular Cells and Aβ Clearance Rescues Vascular Function Following Transient Hypertension in a Rat Model of Alzheimer Disease</h3>
+                        <p class="pub-highlight-authors">Paolo Bazzigaluppi, Tina L Beckett, Margaret M Koletar, Mary E Hill, Aaron Lai, Arunachala Trivedi, Lynsie Thomason, Adrienne Dorr, Denis Gallagher, Clifford L Librach, Illsung L Joo, JoAnne McLaurin, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Mid-life transient hypertension is a risk factor for Alzheimer's disease (AD). We used arterial spin labeling MRI to longitudinally assess brain vascular function and immunohistopathology to examine cerebrovascular remodeling and amyloid load. Hypertension was induced for 1 month by L-NAME in TgF344-AD rats at the prodromal stage. Following hypertension, nontransgenic rats showed transient changes, whereas TgF344-AD animals exhibited sustained vascular deficits. Human umbilical cord perivascular cells (HUCPVCs) in combination with scyllo-inositol (inhibitor of Aβ oligomerization) normalized hippocampal vascular function and remodeling, in contrast to either treatment alone.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="images/publications/bazzigaluppi-hypertension-fig4.jpg" alt="ASL CBF Maps">
+                                    <figcaption>Fig 4: Longitudinal CBF maps showing hippocampal perfusion recovery.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/bazzigaluppi-hypertension-fig6.jpg" alt="Vascular Remodeling Histology">
+                                    <figcaption>Fig 6: Vascular density and amyloid plaque load after combo treatment.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1161/HYPERTENSIONAHA.119.13098" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 4 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">NeuroImage &bull; 2019</div>
+                        <h3>In Vivo Neurovascular Response to Focused Photoactivation of Channelrhodopsin-2</h3>
+                        <p class="pub-highlight-authors">James R Mester, Paolo Bazzigaluppi, Iliya Weisspapir, Adrienne Dorr, Tina L Beckett, Margaret M Koletar, John G Sled, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> We examined the neuronal and cerebrovascular responses to focused (raster-scan) and diffuse (fiber optic) photostimulation of channelrhodopsin in the Thy1-ChR2 mouse. Local field potentials (LFP) and two-photon microscopy of red blood cell (RBC) speed in penetrating vessels revealed ~40% larger LFP responses and twice as large cerebrovascular responses under focused vs. diffuse stimulation. Focused activation also doubled the signal-to-noise ratio of the vascular response, demonstrating clear advantages for optogenetics integrated into laser scanning microscopy platforms.
+                            </div>
+                            <div class="pub-highlight-gallery" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                                <figure>
+                                    <img src="images/publications/mester-neuroimage-fig3.png" alt="RBC Speed Curves">
+                                    <figcaption>Fig 3: RBC velocity profiles under focused stimulation.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/mester-neuroimage-fig7.png" alt="Spatial Profiles of Activation">
+                                    <figcaption>Fig 7: Spatial maps of vascular dilation relative to focal laser target.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/mester-neuroimage-fig8.png" alt="Signal-to-Noise Comparison">
+                                    <figcaption>Fig 8: SNR comparison between stimulation configurations.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1016/j.neuroimage.2019.01.058" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 5 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Scientific Reports &bull; 2019</div>
+                        <h3>Refinement of a Chronic Cranial Window Implant in the Rat for Longitudinal In Vivo Two-Photon Fluorescence Microscopy of Neurovascular Function</h3>
+                        <p class="pub-highlight-authors">Margaret M Koletar, Adrienne Dorr, Mary E Brown, JoAnne McLaurin, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Longitudinal two-photon imaging in rats presents challenges due to wound healing craniotomy closure and inflammation. We refined a cranial window preparation using sterile surgical technique, precise tissue handling, customized window placement, and modified home cages. Immunohistochemical analysis using GFAP and Iba-1 showed activation of astrocytes and microglia immediately inferior to the window at one week, which resolved by four weeks. Patton windows remained clear for up to 14 weeks, enabling cell-resolution imaging up to 600 µm deep in rodent cortex.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="images/publications/koletar-scireports-fig1.jpg" alt="Window Design">
+                                    <figcaption>Fig 1: Mechanical drawing and assembly of the cranial window implant.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/koletar-scireports-fig2.jpg" alt="Astrocytic/Microglial Activation">
+                                    <figcaption>Fig 2: GFAP and Iba-1 activation profiles over 1 to 4 weeks post-op.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="images/publications/koletar-scireports-fig3.jpg" alt="Longitudinal Imaging Depth">
+                                    <figcaption>Fig 3: Maximum imaging depth and resolution patency over 14 weeks.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1038/s41598-019-41966-9" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Searchable Publications Database -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="publications.all">All Publications</h2>
+                </div>
+
+                <div class="pub-filters-bar">
+                    <div class="search-wrapper">
+                        <input type="text" id="pub-search" placeholder="Search publications..." data-i18n-placeholder="publications.search">
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="pub-filter">
+                            <option value="" data-i18n="publications.filterYear">Filter by year</option>
+                        </select>
                     </div>
                 </div>
+
+                <!-- Dynamically loaded list -->
+                <div class="publications-wrapper" id="publications-list">
+                    <div class="loading-spinner">Loading publications...</div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Bojana+Stefanovic" target="_blank" class="btn btn-primary">Full List on PubMed &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conferences & Societies Header -->
+        <section class="section" style="background-image: linear-gradient(rgba(250, 246, 240, 0.9), rgba(250, 246, 240, 0.9)), url('images/publications/societies-header.jpg'); background-size: cover; background-position: center; border-top: 2px solid var(--color-bg-alt);">
+            <div class="container" style="text-align: center;">
+                <h2>Societies & Conferences</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--color-text-muted);">We are active members of major international bioimaging and neuroscience societies.</p>
+                <a href="conferences.html" class="btn btn-secondary">View Society & Conference Affiliations</a>
             </div>
         </section>
     </main>
@@ -69,9 +224,9 @@
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <p><a href="research.html">Research</a></p>
-                    <p><a href="publications.html">Publications</a></p>
-                    <p><a href="joinus.html">Join Us</a></p>
+                    <p><a href="research.html" data-i18n="nav.research">Research</a></p>
+                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
+                    <p><a href="joinus.html" data-i18n="nav.joinus">Join Us</a></p>
                 </div>
                 <div class="footer-col">
                     <h4>Connect</h4>
@@ -84,7 +239,7 @@
             </div>
         </div>
     </footer>
-<script src="js/i18n.js"></script>
-<script src="js/publications.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/publications.js"></script>
 </body>
 </html>

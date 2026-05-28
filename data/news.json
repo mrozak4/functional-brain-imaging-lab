@@ -1,10 +1,50 @@
 [
   {
-    "date": "2024-10-15",
-    "title_en": "New Paper Published in eLife",
+    "date": "2026-05-15",
+    "title_en": "New Publication in eLife",
     "title_fr": "Nouvel article publié dans eLife",
-    "content_en": "We are excited to share our latest research...",
-    "content_fr": "Nous sommes ravis de partager nos dernières recherches...",
-    "link": "https://doi.org/..."
+    "content_en": "Our deep learning pipeline for mapping neurovascular coupling in multi-photon microscopy is now published.",
+    "content_fr": "Notre pipeline d'apprentissage profond pour cartographier le couplage neurovasculaire en microscopie multiphotonique est maintenant publié.",
+    "link": "publications.html"
+  },
+  {
+    "date": "2020-09-01",
+    "title_en": "Dr. Stefanovic appointed Platform Director of Physical Sciences",
+    "title_fr": "Dre Stefanovic nommée directrice de la plateforme des sciences physiques",
+    "content_en": "Following an extensive international search, Dr. Stefanovic was announced as the new Platform Director of Physical Sciences at Sunnybrook Research Institute (SRI), effective September 1, 2020.",
+    "content_fr": "À la suite d'une recherche internationale approfondie, la Dre Stefanovic a été annoncée comme nouvelle directrice de la plateforme des sciences physiques de l'Institut de recherche Sunnybrook (SRI), à compter du 1er septembre 2020.",
+    "link": "https://sunnybrook.ca/research/media/item.asp?c=2&f=platform-director-physical-sciences&i=2172"
+  },
+  {
+    "date": "2020-07-15",
+    "title_en": "CIHR Project Grant awarded to Dr. Stefanovic",
+    "title_fr": "Subvention de projet des IRSC attribuée à la Dre Stefanovic",
+    "content_en": "The Project Grant program supports ideas with the greatest potential to advance health-related fundamental or applied knowledge. Seven research projects led by SRI scientists were awarded Project Grants from the CIHR Spring 2020 competition—a funding rate of 18%, beating the national average.",
+    "content_fr": "Le programme de subventions de projet soutient les idées ayant le plus grand potentiel de faire progresser les connaissances fondamentales ou appliquées liées à la santé. Sept projets de recherche dirigés par des scientifiques du SRI ont obtenu des subventions lors du concours du printemps 2020 des IRSC—un taux de réussite de 18%, supérieur à la moyenne nationale.",
+    "link": "https://sunnybrook.ca/research/media/item.asp?c=2&f=CIHR-project-grant-2020&i=2179"
+  },
+  {
+    "date": "2020-03-10",
+    "title_en": "James Mester takes home top award at the Hurvitz Brain Sciences Research Retreat",
+    "title_fr": "James Mester remporte le premier prix à la retraite de recherche Hurvitz Brain Sciences",
+    "content_en": "Sixty trainees presented their research at the 2020 Hurvitz Brain Sciences Research Retreat, which was judged by ten high school co-op students from throughout Toronto. James earned a perfect score and tied for 1st place in the poster competition.",
+    "content_fr": "Soixante stagiaires ont présenté leurs recherches lors de la retraite de recherche Hurvitz Brain Sciences 2020, évaluée par dix étudiants de niveau secondaire de Toronto. James a obtenu un score parfait et s'est classé premier ex-aequo au concours d'affiches.",
+    "link": "https://sunnybrook.ca/research/media/item.asp?c=2&f=brain-sciences-poster-competition-2020&i=2037"
+  },
+  {
+    "date": "2019-11-15",
+    "title_en": "Margaret Koletar featured in the OAVT Career Spotlight of the Month",
+    "title_fr": "Margaret Koletar en vedette dans le coup de projecteur sur la carrière du mois de l'OAVT",
+    "content_en": "Margaret celebrated her 20th year as a Registered Veterinary Technician (RVT) this year! She was interviewed about her experience as an RVT and the path that led to her work here at Sunnybrook Research Institute.",
+    "content_fr": "Margaret a célébré sa 20e année en tant que technicienne vétérinaire agréée (RVT) cette année! Elle a été interviewée sur son expérience de RVT et sur le parcours qui l'a menée à son travail ici au Sunnybrook Research Institute.",
+    "link": "http://oavt.org/view.asp?ccid=617"
+  },
+  {
+    "date": "2019-06-25",
+    "title_en": "Dr. Stefanovic awarded Tier 1 Canada Research Chair in Functional Neuroimaging",
+    "title_fr": "Dre Stefanovic se voit attribuer une chaire de recherche du Canada de niveau 1 en neuroimagerie fonctionnelle",
+    "content_en": "Tier 1 Canada Research Chairs (CRCs) are held for seven years and are awarded to researchers who are viewed as world leaders in their fields. Dr. Stefanovic was recognized with a CRC in Neuroimaging, the country's highest research honour.",
+    "content_fr": "Les chaires de recherche du Canada (CRC) de niveau 1 sont détenues pendant sept ans et sont attribuées à des chercheurs considérés comme des leaders mondiaux dans leur domaine. La Dre Stefanovic a été reconnue par une CRC en neuroimagerie, le plus grand honneur de recherche du pays.",
+    "link": "https://sunnybrook.ca/research/media/item.asp?c=1&f=three-sri-scientists-awarded-research-chairs&i=1919"
   }
 ]

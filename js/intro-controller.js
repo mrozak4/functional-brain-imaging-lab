@@ -5,6 +5,9 @@ var Module = {
     })(),
     locateFile: function(path, prefix) {
         if (path.endsWith('.wasm') || path.endsWith('.data')) {
+            if (window.location.pathname.includes('/fr/')) {
+                return '../js/' + path;
+            }
             return 'js/' + path;
         }
         return prefix + path;
