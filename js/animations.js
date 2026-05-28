@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. MRI Focus Scroll Reveal
     const observerOptions = {
         root: null,
-        rootMargin: '0px 0px -10% 0px', // Trigger slightly before it comes into view
-        threshold: 0.1
+        rootMargin: '0px 0px -15% 0px', // Trigger slightly later so it's more visible on screen
+        threshold: 0.15 // Wait until 15% of the element is visible
     };
 
     const scrollObserver = new IntersectionObserver((entries, observer) => {

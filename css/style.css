@@ -1047,11 +1047,11 @@ footer { position: relative; z-index: 1; }
 /* MRI Focus Scroll Animations */
 .reveal-on-scroll {
   opacity: 0;
-  filter: blur(10px);
-  transform: translateY(20px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
-              filter 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: blur(15px);
+  transform: translateY(50px);
+  transition: opacity 1.0s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              filter 1.0s cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 1.0s cubic-bezier(0.2, 0.8, 0.2, 1);
   will-change: opacity, filter, transform;
 }
 
